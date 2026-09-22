@@ -1,0 +1,33 @@
+{
+  "review_date":"2026-09-22",
+  "tool":"FastQC 0.12.1 (Galaxy 0.74+galaxy1)",
+  "expected_raw_fastq_files":34,
+  "completed_reviewed_files":34,
+  "complete_pairs_reviewed":17,
+  "sources":{"galaxy_computed_reports":32,"locally_computed_fastqc_0_12_1_reports":2},
+  "read_length_bp":150,
+  "reads_per_file_range":[37886040,47840900],
+  "gc_percent_range":[50,52],
+  "baseline_module_results":{"pass":["Per base sequence quality","Per tile sequence quality","Per sequence quality scores","Per sequence GC content","Per base N content","Sequence Length Distribution","Overrepresented sequences","Adapter Content"],"warn":[],"fail":["Per base sequence content","Sequence Duplication Levels"]},
+  "module_exceptions":[{"raw_id":162,"module":"Per sequence GC content","status":"warn"},{"raw_id":163,"module":"Per sequence GC content","status":"warn"}],
+  "previously_reviewed_raw_report_ids":[3,48,50,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,97,99,101,103,105],
+  "additional_reviews":[
+    {"run":"SRR24828478","sample":"KRAS P3","r1_web_id":119,"r2_web_id":117,"r1_raw_id":120,"r2_raw_id":118,"reads_each_mate":42073244,"gc_each_mate":51},
+    {"run":"SRR24828481","sample":"KRAS P4","r1_web_id":115,"r2_web_id":113,"r1_raw_id":116,"r2_raw_id":114,"reads_each_mate":40452536,"gc_each_mate":51},
+    {"run":"SRR24828472","sample":"KRAS P5_v2","r1_web_id":139,"r2_web_id":145,"r1_raw_id":140,"r2_raw_id":146,"reads_each_mate":43166706,"gc_each_mate":50},
+    {"run":"SRR24828471","sample":"KRAS P5","source":"Local FastQC 0.12.1 on complete user-supplied paired files; raw reports uploaded to Galaxy","r1_web_id":null,"r2_web_id":null,"r1_raw_id":162,"r2_raw_id":163,"reads_each_mate":37886040,"gc_each_mate":51}
+  ],
+  "partial_run_reviews":[],
+  "independent_validation_reports":[{"run":"SRR24828471","mate":2,"input_id":151,"web_id":152,"raw_id":153,"reads":37886040,"length_bp":150,"gc_percent":51,"excluded_from_34_file_summary":true,"reason":"Same mate is represented by local report 163; do not count twice.","gc_plot_review":"Broad approximately bell-shaped distribution with a high-GC shoulder; no isolated sharp secondary peak visible. Cause not established."}],
+  "unusable_inputs":[
+    {"run":"SRR24828471","mate":1,"input_id":127,"fastqc_web_id":143,"fastqc_raw_id":144,"problem":"Input was marked ok but FastQC failed: Ran out of data in the middle of a fastq entry. Your file is probably truncated."},
+    {"run":"SRR24828471","mate":2,"input_id":128,"fastqc_web_id":141,"fastqc_raw_id":142,"problem":"Import error; downstream FastQC paused. Import stderr: OSError: [Errno 9] Bad file descriptor."},
+    {"run":"SRR24828471","mate":1,"input_id":150,"fastqc_web_id":154,"fastqc_raw_id":155,"problem":"Second URL import again truncated (738 MB). Import log ignored Bad file descriptor; FastQC failed mid-record."}
+  ],
+  "old_multiqc":{"web_id":108,"files":22,"duplication_percent_range":[57.0,65.2],"coverage_note":"Not a summary of all 34 input files."},
+  "paused_multiqc":{"output_ids":[147,148,149],"reason":"Depends on unusable inputs 127/128 via reports 144/142; replace these reports in a new run."},
+  "excluded_reports":[{"web_id":137,"raw_id":138,"reason":"FastQC on pilot BAM, not raw FASTQ"}],
+  "replacement_multiqc":{"plot_collection_id":164,"web_id":165,"stats_id":166,"job_id":"bbd44e69cb8906b5a3cfd869f45c6d15","state_at_last_check":"ok","input_count":34,"observed_rows":34,"duplication_percent_range_displayed":[57.0,67.3]},
+  "final_recovery_validation":{"r1_input_id":175,"r2_input_id":176,"r1_web_id":181,"r2_web_id":183,"r1_raw_id":182,"r2_raw_id":184,"state":"ok","reads_each_mate":37886040,"length_bp":150,"gc_each_mate":51,"same_modules_as_local_pair":true,"excluded_from_34_file_summary_to_avoid_double_counting":true},
+  "repair_status":"Complete local mates finished full FastQC with 37886040 reads each; local R1 sequences/qualities exactly match canonical ENA. MultiQC 165 combines 32 Galaxy reports with local reports 162/163 and has 34 verified rows. SRA recovery completed into paired collection 156 (175/176). Final Galaxy FastQC 181/183 completed and independently confirmed matching full-length counts and module flags. Original truncated/failed data were retained and excluded."
+}
