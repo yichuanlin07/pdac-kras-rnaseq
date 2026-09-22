@@ -1,6 +1,6 @@
 # PDAC KRAS RNA sequencing analysis
 
-This repository records a coursework analysis of RNA sequencing data from pancreatic ductal adenocarcinoma (PDAC) cells treated with control or KRAS-targeting small interfering RNA (siRNA). The current work checks read quality and prepares reference-genome alignments. It does not yet establish differential gene expression or treatment effects.
+This repository records a coursework analysis of RNA sequencing data from pancreatic ductal adenocarcinoma (PDAC) cells treated with control or KRAS-targeting small interfering RNA (siRNA). Read-quality review and all 17 full-run alignments are complete. KRAS M1 has an unresolved paired-alignment anomaly. No differential gene expression or treatment effect is established.
 
 ## Data
 
@@ -32,6 +32,9 @@ Analyses run on [Galaxy](https://galaxy-main.usegalaxy.org/). This is a coursewo
 
 Checked on 22 September 2026:
 
+- **All 17 full-run HISAT2 summaries are available:** 727,731,715 input pairs; overall read alignment 95.79%–97.72%. Fourteen batch outputs are combined with Control M1, KRAS P1 and recovered KRAS P5. See [full results and provenance](analysis/2026-09-22/full_alignment/README.md).
+- **KRAS M1 is flagged, not passed:** only 1,371 concordantly unique pairs (0.0030%) and 75.56% discordant pairs, despite 96.51% overall read alignment. Check mate identity/order and pairing settings before counting genes. No specific cause or repair is established.
+- **Strand inference supports unstranded mode for Control M1 and KRAS P1:** the remaining runs used this setting without individual confirmation.
 - **All 34 raw files reviewed:** 17 complete run pairs. The summary uses 32 Galaxy FastQC reports plus two local FastQC 0.12.1 reports for verified complete SRR24828471 files. All pass base/read quality, N content, length, overrepresented-sequence and adapter checks. All have base-composition and duplication Fail flags. Both SRR24828471 mates have a GC-distribution Warn. These module flags are not failed software jobs.
 - **Six HISAT2 pilots completed:** Control M1 overall alignment 96.63%; KRAS P1 96.40%, for each of unstranded, FR and RF settings. These two inputs are different cell lines, so the difference is not evidence of a treatment effect.
 - **Complete MultiQC finished:** dataset 165 contains exactly 34 file entries; duplication ranges from 57.0% to 67.3%. Statistics are in 166 and plot data in collection 164. This replaces paused summary 148.
@@ -41,7 +44,7 @@ See the [dated analysis record](analysis/2026-09-22/README.md) for dataset numbe
 
 Pilot alignments use the first 1,000,000 read pairs, not a random sample or the full sequencing run. Their mapping percentages must be labeled as pilot results. No gene-count matrix, differential-expression result or enrichment analysis is currently reported.
 
-The [updated Week 2 report](reports/WK2YLINREP_2026-09-22_checked.pdf) includes the complete QC summary, completed pilot alignments, sample-design limits and repair status. The older interim PDF is retained as a historical snapshot. A [Chinese explanation](analysis/2026-09-22/interpretation_zh.md) distinguishes QC flags, file damage and sample replication.
+The [latest Week 2 report](reports/WK2YLINREP_2026-09-22_full_alignment.pdf) includes all 17 full-run alignments, QC interpretation and the unresolved KRAS M1 anomaly. The earlier checked and interim PDFs are historical snapshots. The [Chinese explanation](analysis/2026-09-22/interpretation_zh.md) covers earlier QC flags, file recovery and sample replication.
 
 ## Repository contents
 
@@ -50,6 +53,8 @@ The [updated Week 2 report](reports/WK2YLINREP_2026-09-22_checked.pdf) includes 
 - `.gitignore`: excludes raw reads, large alignment files and local secrets.
 
 Small result files include `hisat2_pilot_results.json`, `fastqc_review.json` and `validate_summaries.py`. Run `python3 analysis/2026-09-22/validate_summaries.py` to check pilot arithmetic and QC coverage. This validates the transcribed summaries, not the underlying reads.
+
+Run `python3 analysis/2026-09-22/full_alignment/validate_full_alignment.py` for full-run arithmetic checks and regenerated `results.json`. Seventeen small source summaries are retained; this does not validate underlying read pairing or BAM contents.
 
 Raw FASTQ and BAM files are not stored in Git. Keep them in Galaxy or dedicated data storage, and use public accessions and manifests to locate inputs. Galaxy history numbers identify datasets within the originating history; they are not public accession numbers.
 
