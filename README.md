@@ -13,6 +13,8 @@ The local input inventory contains 17 paired-end sequencing runs, or 34 compress
 
 Each run has an R1 and an R2 file. P5_v2 is a separate sequencing-run label; its biological-replicate status must be confirmed before any statistical comparison. M and P labels are retained as supplied and should not be assigned a biological meaning without checking the study metadata.
 
+The [run manifest](analysis/2026-09-22/run_manifest.md) maps these local labels to public accessions and ENA sample aliases. In particular, local KRAS P5 maps to `SRR24828471` / `MP2_K2v2`, whereas local P5_v2 maps to `SRR24828472` / `MP2_K2`. Use the accession, not the suffix alone, to identify each run.
+
 ## Workflow
 
 1. Check sample names, run accessions and R1/R2 pairing.
@@ -30,9 +32,12 @@ Analysis is in progress. At the start of the 22 September 2026 review, Galaxy co
 
 Pilot alignments use the first 1,000,000 read pairs, not a random sample or the full sequencing run. Their mapping percentages must be labeled as pilot results. No gene-count matrix, differential-expression result or enrichment analysis is currently reported.
 
+The [Week 2 interim report](reports/WK2YLINREP_2026-09-22_interim.pdf) contains the 26 previously checked FastQC reports and distinguishes them from pending work. The new MultiQC job uses 34 raw-read FastQC inputs; it must finish before its coverage and results can be confirmed.
+
 ## Repository contents
 
 - `analysis/2026-09-22/`: analysis records, parameters and checked result summaries.
+- `reports/`: dated progress reports; filenames marked `interim` are not final alignment reports.
 - `.gitignore`: excludes raw reads, large alignment files and local secrets.
 
 Raw FASTQ and BAM files are not stored in Git. Keep them in Galaxy or dedicated data storage, and use public accessions and manifests to locate inputs. Galaxy history numbers identify datasets within the originating history; they are not public accession numbers.

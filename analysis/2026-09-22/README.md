@@ -20,7 +20,26 @@ The local input set contains 34 compressed FASTQ files from 17 sequencing runs. 
 | HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 7, 8 | 131 BAM, 132 summary | KRAS P1 pilot, unstranded, first 1,000,000 read pairs |
 | HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 7, 8 | 133 BAM, 134 summary | Same KRAS P1 pilot, Forward FR |
 | HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 7, 8 | 135 BAM, 136 summary | Same KRAS P1 pilot, Reverse RF |
+| FastQC 0.12.1, Galaxy 0.74+galaxy1 | 129, 128, 127, 130 | 139–146 | Both mates of the two imported runs |
+| MultiQC 1.35, Galaxy 1.35+galaxy4 | 34 FastQC raw-data reports listed below | 147 plots collection, 148 webpage, 149 statistics | Complete raw-read QC summary with plot-data export |
 
 HISAT2 uses the built-in `Human (Homo sapiens) (b38): hg38` reference, paired-end input, Phred+33 qualities, no end trimming, and default alignment and splice settings. The pilot saves a machine-readable alignment summary. It does not represent a full-run alignment result.
 
 No existing Galaxy datasets were deleted.
+
+## Pending results and exclusions
+
+At the latest check on 22 September, the new outputs were still unavailable. HISAT2 pilots and the missing-file imports had not returned usable results. No mapping rate or full-run alignment is claimed. MultiQC also depends on the pending FastQC jobs.
+
+An extra FastQC job was accidentally submitted for pilot BAM dataset 131. Its outputs are 137 and 138. They are retained but excluded from the raw-FASTQ summary. The correction submitted FastQC separately for raw input 130, producing outputs 145 and 146.
+
+MultiQC input history numbers: `3, 48, 50, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 97, 99, 101, 103, 105, 114, 116, 118, 120, 140, 142, 144, 146`. These are 34 distinct raw-data reports. Output 138 is not included.
+
+## Next checks
+
+1. Check whether the imports and quality checks finish successfully. Inspect errors before retrying any job.
+2. Confirm MultiQC contains 34 distinct file entries with the expected R1/R2 names.
+3. Read the six pilot alignment summaries and record paired-read denominators and strand options.
+4. Confirm library strand specificity from protocol information or annotated alignments. Do not infer it from the largest mapping percentage alone.
+5. Remove the pilot limit for full alignments after validating inputs and settings.
+6. Replace the interim report only after checking the new results. Keep raw reads and BAM files outside Git.
