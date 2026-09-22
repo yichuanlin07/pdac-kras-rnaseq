@@ -1,0 +1,21 @@
+{
+  "platform": "https://galaxy-main.usegalaxy.org/",
+  "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/hisat2/hisat2/2.2.3+galaxy0",
+  "reference_label": "Human (Homo sapiens) (b38): hg38",
+  "reference_index_source": "Galaxy built-in index",
+  "library_layout": "paired",
+  "strand_settings_compared": ["unstranded", "FR", "RF"],
+  "skip_pairs": 0,
+  "maximum_pairs": 1000000,
+  "sampling_method": "first N read pairs, not random",
+  "trim5": 0,
+  "trim3": 0,
+  "quality_encoding": "Phred+33",
+  "new_summary": true,
+  "save_summary_file": true,
+  "other_options": "Galaxy wrapper defaults",
+  "samples": [
+    {"sample": "Control_siRNA_M1", "r1_history_number": 13, "r2_history_number": 15, "summary_history_numbers": {"unstranded": 122, "FR": 124, "RF": 126}},
+    {"sample": "KRAS_siRNA_P1", "r1_history_number": 7, "r2_history_number": 8, "summary_history_numbers": {"unstranded": 132, "FR": 134, "RF": 136}}
+  ]
+}

@@ -1,0 +1,16 @@
+# Raw reads and large alignment files stay outside Git.
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.cram
+*.crai
+__pycache__/
+.DS_Store
+.env
+*.key
+*.pem
+tmp/
