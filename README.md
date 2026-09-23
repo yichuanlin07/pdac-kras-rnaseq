@@ -28,6 +28,8 @@ The coursework workflow uses [Galaxy](https://galaxy-main.usegalaxy.org/), with 
 | [Sample list](analysis/2026-09-22/run_manifest.md) | Cell lines, run accessions and input files |
 | [中文说明](analysis/2026-09-22/interpretation_zh.md) | 质量检查、文件恢复和重复样本说明 |
 
+[galaxy_backup/](galaxy_backup/README.md) is reserved for Galaxy exports and dataset lists. No exports have been added yet.
+
 Earlier PDFs in `reports/` show previous stages of the work. Raw FASTQ and BAM alignment files are stored outside Git.
 
 ## Check the saved results
