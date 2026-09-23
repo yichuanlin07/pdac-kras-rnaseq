@@ -1,4 +1,4 @@
-# Raw reads and large alignment files stay outside Git.
+# Store raw reads and alignment files separately.
 *.fastq
 *.fastq.gz
 *.fq

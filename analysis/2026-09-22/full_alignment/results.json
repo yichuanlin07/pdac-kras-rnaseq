@@ -1,10 +1,10 @@
 {
   "as_of": "2026-09-22",
-  "scope": "17 full-run summaries; historical 1-million-pair pilots excluded",
+  "scope": "17 full sequencing runs. The earlier 1-million-pair pilots are excluded.",
   "metric_definitions": {
-    "overall_alignment_pct": "100 * (1 - unaligned individual reads / (2 * input pairs)); includes mates mapped separately",
-    "concordant_unique_pct": "100 * concordantly uniquely aligned pairs / input pairs",
-    "discordant_unique_pct": "100 * discordantly aligned pairs / input pairs"
+    "overall_alignment_pct": "100 * (1 - unaligned reads / (2 * input pairs)). Includes reads aligned separately from their mate.",
+    "concordant_unique_pct": "100 * concordant unique pairs / input pairs",
+    "discordant_unique_pct": "100 * discordant unique pairs / input pairs"
   },
   "total_pairs": 727731715,
   "overall_alignment_pct_range": [
@@ -14,7 +14,7 @@
   "flagged_samples": [
     "KRAS M1"
   ],
-  "validation_limit": "Arithmetic and source transcription checks do not validate read identifiers, pairing order, BAM contents or biological suitability.",
+  "validation_limit": "These checks cover the text summaries. They do not inspect read names, pairing order or BAM files, or determine whether a run is suitable for gene counting.",
   "samples": [
     {
       "total_pairs": 40237116,

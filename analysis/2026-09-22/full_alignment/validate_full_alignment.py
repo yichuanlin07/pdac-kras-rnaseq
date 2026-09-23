@@ -1,4 +1,4 @@
-"""Parse retained HISAT2 summaries; validate arithmetic, not biological validity."""
+"""Check HISAT2 summary counts and percentages, then rebuild results.json."""
 from pathlib import Path
 import hashlib
 import json
@@ -55,16 +55,16 @@ def build():
     assert len(rows)==17 and len({r['sample'] for r in rows})==17
     rows.sort(key=lambda r: list(ACCESSIONS).index(r['sample']))
     result = {
-        'as_of':'2026-09-22', 'scope':'17 full-run summaries; historical 1-million-pair pilots excluded',
+        'as_of':'2026-09-22', 'scope':'17 full sequencing runs. The earlier 1-million-pair pilots are excluded.',
         'metric_definitions':{
-            'overall_alignment_pct':'100 * (1 - unaligned individual reads / (2 * input pairs)); includes mates mapped separately',
-            'concordant_unique_pct':'100 * concordantly uniquely aligned pairs / input pairs',
-            'discordant_unique_pct':'100 * discordantly aligned pairs / input pairs',
+            'overall_alignment_pct':'100 * (1 - unaligned reads / (2 * input pairs)). Includes reads aligned separately from their mate.',
+            'concordant_unique_pct':'100 * concordant unique pairs / input pairs',
+            'discordant_unique_pct':'100 * discordant unique pairs / input pairs',
         },
         'total_pairs':sum(r['total_pairs'] for r in rows),
         'overall_alignment_pct_range':[min(r['overall_alignment_pct'] for r in rows), max(r['overall_alignment_pct'] for r in rows)],
         'flagged_samples':['KRAS M1'],
-        'validation_limit':'Arithmetic and source transcription checks do not validate read identifiers, pairing order, BAM contents or biological suitability.',
+        'validation_limit':'These checks cover the text summaries. They do not inspect read names, pairing order or BAM files, or determine whether a run is suitable for gene counting.',
         'samples':rows,
     }
     (HERE/'results.json').write_text(json.dumps(result,indent=2)+'\n')

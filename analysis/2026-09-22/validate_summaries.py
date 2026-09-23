@@ -1,4 +1,4 @@
-"""Check arithmetic and coverage in the manually verified Galaxy summaries."""
+"""Check pilot counts, quality-report coverage and local FastQC files."""
 import json
 from hashlib import sha256
 from pathlib import Path
@@ -30,5 +30,5 @@ for mate, expected_sha in ((1, '588252df5c659d64548e29edd7366334f350f29ece191394
     assert 'Sequence length\t150\n' in content
     assert '>>Per sequence GC content\twarn\n' in content
     assert len([line for line in content.splitlines() if line.startswith('>>') and line.endswith('\tfail')]) == 2
-print(f"Validated {len(pilots['results'])} pilot summaries and {len(ids)} raw-read QC reports.")
-print('Validated 34 unique MultiQC rows and both local report hashes/module results.')
+print(f"Checked {len(pilots['results'])} pilot summaries and quality reports for {len(ids)} input files.")
+print('Checked all 34 MultiQC entries and both local FastQC files, including their checksums and module results.')

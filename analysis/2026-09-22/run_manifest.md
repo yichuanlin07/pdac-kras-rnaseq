@@ -1,6 +1,8 @@
-# Sequencing run manifest
+# Samples and sequencing runs
 
-Local labels are retained as supplied. Public aliases were checked through the [ENA study record](https://www.ebi.ac.uk/ena/browser/view/PRJNA980201) on 22 September 2026. All listed runs are paired-end RNA sequencing. R1 and R2 are two files from one run, not independent samples.
+This list links the project's sample names to public sequencing records and Galaxy inputs. The European Nucleotide Archive (ENA) records were checked on 22 September 2026. Each run contains two paired files, R1 and R2.
+
+## Run accessions
 
 | Local label | Run accession | ENA sample alias | Galaxy R1 | Galaxy R2 |
 | --- | --- | --- | --- | --- |
@@ -22,11 +24,13 @@ Local labels are retained as supplied. Public aliases were checked through the [
 | KRAS P5 | SRR24828471 | MP2_K2v2 | 175 (collection 156) | 176 (collection 156) |
 | KRAS P5_v2 | SRR24828472 | MP2_K2 | 129 | 130 |
 
-Galaxy numbers apply only to the originating history. Inputs 129 and 130 completed FastQC with matching mate counts. Original input 127 and retry 150 are truncated and marked `DO_NOT_USE_TRUNCATED`; input 128 failed import. Separate R2 replacement 151 passed FastQC. The preferred matched SRR24828471 pair is now **175/176 in collection 156**, recovered together with SRA Toolkit. Retain old inputs for provenance, but exclude bad or redundant copies from analysis. Local label mappings come from the local inventory; ENA aliases alone do not establish byte identity.
+Galaxy numbers identify datasets in the original history. The table retains the original input numbers where listed. Full alignment of Control P1 used replacement inputs 251/252; the read direction was checked, but file identity was not.
+
+KRAS P5 uses the recovered pair **175/176 in collection 156**. Earlier R1 imports 127 and 150 were incomplete and are labelled `DO_NOT_USE_TRUNCATED`; R2 import 128 failed. R2 replacement 151 passed FastQC, but the final analysis uses the two files recovered together. KRAS P5_v2 inputs 129/130 also completed FastQC with matching read counts.
 
 ## Cell lines and comparisons
 
-ENA BioSample records were checked on 22 September 2026. `SC` denotes scramble siRNA control and `K2` denotes KRAS siRNA. R1 and R2 are mates, not replicates.
+In the public sample names, `SC` means scramble siRNA control and `K2` means KRAS siRNA treatment.
 
 | Local number | Cell line | ENA source classification | Control BioSample | KRAS BioSample |
 | --- | --- | --- | --- | --- |
@@ -39,22 +43,24 @@ ENA BioSample records were checked on 22 September 2026. `SC` denotes scramble s
 | P4 | HPAC | Primary | SAMN35622208 | SAMN35622207 |
 | P5 | MiaPaca-2 | Primary | SAMN35622211 | SAMN35622210 and SAMN35622209 |
 
-Compare control and KRAS treatment within each cell line. The M and P groups are different cell lines, not matched primary/metastatic samples from the same patients. Cell-line differences can confound a simple M-versus-P comparison. The two pilot inputs, Control M1 and KRAS P1, are also different cell lines and cannot isolate a treatment effect.
+Compare treatments within each cell line. The M and P groups come from different cell lines, rather than matched primary and metastatic samples from the same patients. Control M1 and KRAS P1, used for the pilots, are also different cell lines.
 
-The [source paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11301402/) describes eight cell lines as the biological replicates for each treatment in Figure 1. A downstream model should account for cell line as well as treatment. Resolve the extra MiaPaca-2 run before deciding which columns enter that model.
+The [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11301402/) uses eight cell lines as biological replicates for each treatment in Figure 1. The expression analysis should account for both cell line and treatment. The extra MiaPaca-2 run needs to be resolved before choosing the final inputs.
 
 ### The two MiaPaca-2 KRAS runs
 
-- Local **KRAS P5**: SRR24828471, SRX20593397, [SAMN35622210](https://www.ebi.ac.uk/ena/browser/api/xml/SAMN35622210), alias `MP2_K2v2`, metadata `replicate=TRUE`.
-- Local **KRAS P5_v2**: SRR24828472, SRX20593396, [SAMN35622209](https://www.ebi.ac.uk/ena/browser/api/xml/SAMN35622209), alias `MP2_K2`, metadata `replicate=FALSE`.
+| Local name | Run | Experiment | BioSample | Public alias | Repeat field |
+| --- | --- | --- | --- | --- | --- |
+| KRAS P5 | SRR24828471 | SRX20593397 | [SAMN35622210](https://www.ebi.ac.uk/ena/browser/api/xml/SAMN35622210) | MP2_K2v2 | replicate=TRUE |
+| KRAS P5_v2 | SRR24828472 | SRX20593396 | [SAMN35622209](https://www.ebi.ac.uk/ena/browser/api/xml/SAMN35622209) | MP2_K2 | replicate=FALSE |
 
-These are distinct public run, experiment and BioSample records. The local `v2` suffix is opposite to the public alias, so use accession numbers to avoid a swap. `replicate=TRUE` does not specify whether the repeat is biological, technical or a replacement experiment. Do not automatically merge, discard or count it as a ninth independent cell-line replicate. The library records state TruSeq, oligo-dT selection and paired-end sequencing, but do not settle strand specificity.
+The local `v2` label is attached to the opposite run from the public `v2` alias. Use the run accession to identify the files.
 
-ENA sample XML can be inspected using `https://www.ebi.ac.uk/ena/browser/api/xml/` followed by the BioSample accession. Public run metadata are available from the [ENA study record](https://www.ebi.ac.uk/ena/browser/view/PRJNA980201).
+The repeat field does not say whether the second run is a biological repeat, technical repeat or replacement experiment. Both remain separate for now. The library records list TruSeq, oligo-dT selection and paired-end sequencing, but do not establish strand specificity.
 
-## Expected checksums for newly imported files
+## File checksums
 
-These are ENA reference values, not completed Galaxy checksum validations.
+These sizes and MD5 checksums come from ENA. They are reference values for the exported FASTQ files; Galaxy copies have not all been checked against them.
 
 | Filename | Expected bytes | ENA MD5 |
 | --- | --- | --- |
@@ -63,6 +69,10 @@ These are ENA reference values, not completed Galaxy checksum validations.
 | SRR24828472_1.fastq.gz | 2930283917 | 1aaf3ff07a635d3cdf82754272c73233 |
 | SRR24828472_2.fastq.gz | 3001011805 | 34cdbf3cd3a08a5fcb738b22f963dba7 |
 
-Local recovery check: `KRAS_siRNA_P5_2.fastq.gz` has 2,603,110,042 bytes and MD5 `f56e4529719292d8c8bd01af9b24b6b8`, matching ENA. The local R1 is gzip-valid and contains 37,886,040 complete 150-base records with SRR24828471 headers. Its compressed MD5 differs from ENA. A streaming comparison of every read-header first token in local R1 and R2 returned an exact match (37,886,040 records in the same order); this confirms pair identifiers, not equality of R1 and R2 sequences. The local R1 uses longer SRA-style headers and repeated plus-line identifiers. A complete canonical ENA R1 was subsequently downloaded: its compressed MD5 matches the reference, and **all sequence and quality lines match the local R1 in order**. The compressed-file difference is representational, not a difference in the recovered read sequences or qualities.
+The local SRR24828471 R2 matches the ENA size and MD5. The local R1 has 37,886,040 complete records of 150 bases and passes gzip checks. All R1/R2 read identifiers match in order.
 
-Repair inputs 150/151 use the ENA URLs above. Input 150 again proved truncated (738 MB versus the expected approximately 2.58 GB), with an ignored `Bad file descriptor` error in the import log. The independent SRA Toolkit recovery succeeded: paired collection 156 contains 175 (forward) and 176 (reverse); log 159 reports 37,886,040 paired spots. FastQC 181/183 independently confirmed the full count, 150 bp, 51% GC and matching module flags for both reconstructed mates. The final 34-file MultiQC uses the verified local pair's reports 162/163, not failed, empty or duplicate validation outputs. Keep both reconstructed SRA mates together because their identifier format differs from the ENA export.
+The local R1 has a different compressed MD5 because its headers and plus lines use a different format. A complete ENA R1 was downloaded and matched to the reference MD5. Every sequence and quality line in it matches the local R1 in order.
+
+SRA Toolkit later recovered both mates into Galaxy collection 156. Log 159 records 37,886,040 paired spots. FastQC reports 181/183 confirm the read count, length and quality flags for both mates. Keep 175/176 together because their read identifiers use a different format from the ENA export.
+
+Full checks are in [recovery_checks.json](recovery_checks.json). Public records are available from the [ENA study page](https://www.ebi.ac.uk/ena/browser/view/PRJNA980201).

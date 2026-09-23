@@ -1,10 +1,10 @@
 {
   "checked_date": "2026-09-22",
-  "source": "Authenticated Galaxy job Details: Tool Standard Error and parameters",
+  "source": "Counts and settings checked in the Galaxy job details and standard-error output.",
   "tool": "HISAT2 2.2.3 (Galaxy 2.2.3+galaxy0)",
   "reference": "Human (Homo sapiens) (b38): hg38",
   "pairs_per_job": 1000000,
-  "sampling": "first N pairs; not random and not full-run alignment",
+  "sampling": "The first 1000000 read pairs from each input, in file order.",
   "percent_denominators": {"overall_alignment_rate": "2000000 individual reads", "concordant_exactly_once": "1000000 read pairs"},
   "results": [
     {"sample":"Control M1","cell_line":"Pa01C","strand":"unstranded","summary_id":122,"job_id":"bbd44e69cb8906b51ff90c4cf234d3b2","state":"ok","concordant_1":864024,"concordant_gt1":75311,"discordant_1":6406,"remaining_pairs":54259,"remaining_mate_0":67398,"remaining_mate_1":35955,"remaining_mate_gt1":5165,"overall_percent":96.63},
@@ -14,5 +14,5 @@
     {"sample":"KRAS P1","cell_line":"Pa16C","strand":"FR","summary_id":134,"job_id":"bbd44e69cb8906b51e9ef6a83569df1c","state":"ok","concordant_1":874297,"concordant_gt1":61893,"discordant_1":6560,"remaining_pairs":57250,"remaining_mate_0":71906,"remaining_mate_1":37799,"remaining_mate_gt1":4795,"overall_percent":96.40},
     {"sample":"KRAS P1","cell_line":"Pa16C","strand":"RF","summary_id":136,"job_id":"bbd44e69cb8906b5b753997a1f8c00b6","state":"ok","concordant_1":874297,"concordant_gt1":61893,"discordant_1":6560,"remaining_pairs":57250,"remaining_mate_0":71906,"remaining_mate_1":37799,"remaining_mate_gt1":4795,"overall_percent":96.40}
   ],
-  "limits": ["These two pilots use different cell lines and cannot isolate treatment effects.", "Identical FR and RF mapping rates do not establish library strand specificity."]
+  "limits": ["Control M1 and KRAS P1 are different cell lines, so their comparison cannot isolate the treatment effect.", "The matching FR and RF alignment rates do not identify strand specificity."]
 }

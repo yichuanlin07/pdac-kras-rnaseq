@@ -1,9 +1,7 @@
-# Galaxy backup
+# Galaxy backups
 
-Store exported Galaxy history records, dataset lists, workflows and small result files here.
+This folder is for Galaxy history exports, dataset lists, workflows and small result files. No exports have been added yet.
 
-Create a dated folder for each backup, using `YYYY-MM-DD`. Include the history name, export date and a list of datasets so the files can be traced back to Galaxy. Keep dataset names and IDs when exporting files.
+Save each backup in a folder named for its date, such as `2026-09-23`. Record the history name, export date and dataset IDs alongside the files.
 
-Large FASTQ and BAM files are excluded by the repository's `.gitignore`. Keep those in separate storage and record their location in the dated folder. A dataset list alone is not a backup of the underlying data.
-
-No Galaxy exports have been added yet.
+The repository excludes large FASTQ and BAM files. Back them up in separate storage and record their location here before deleting them from Galaxy. An exported file list records what was present; it does not contain the data itself.

@@ -1,8 +1,8 @@
 # Analysis notes — 22 September 2026
 
-Week 2 work covered read-quality checks, recovery of missing files and alignment to human hg38 in Galaxy. This folder contains the sample list, tool settings and saved results.
+This folder records the Week 2 analysis in Galaxy: sample checks, recovery of missing files, read quality and alignment to human hg38.
 
-Quality checks now cover all 34 FASTQ files from 17 paired-end runs. All 17 full alignment summaries are also available in [full_alignment/](full_alignment/README.md), including the unresolved KRAS M1 pairing issue.
+The 22 September results include quality checks for all 34 FASTQ files and full alignment summaries for 17 runs in [full_alignment/](full_alignment/README.md), including the unresolved KRAS M1 pairing issue.
 
 ## Read quality
 
@@ -16,7 +16,7 @@ FastQC reviewed both files from each run. MultiQC 165 combines 32 Galaxy reports
 | GC distribution | Warn for both SRR24828471 mates; pass for the other 32 files |
 | Duplication | 57.0%–67.3% |
 
-Composition and duplication flags need interpretation in RNA-seq. Library preparation can affect base composition, and abundant transcripts can produce repeated sequences. These flags alone do not justify trimming or removing duplicate reads. The GC warning also does not establish contamination.
+Library preparation can affect base composition, while abundant transcripts and amplification can produce repeated sequences. The flags do not identify the cause, so they were not used alone to decide on trimming or duplicate removal. The GC warning also leaves the cause unresolved.
 
 The complete results are in [fastqc_review.json](fastqc_review.json) and [multiqc_summary.json](multiqc_summary.json). Galaxy dataset 166 holds the MultiQC statistics, and collection 164 holds the plot data. The older MultiQC 108 covers only 22 files; MultiQC 148 paused after input failures.
 
@@ -41,7 +41,7 @@ The pilots used HISAT2 2.2.3+galaxy0, the built-in hg38 reference, paired-end re
 
 ## Recovering KRAS P5
 
-The active Galaxy history initially lacked both mates of KRAS P5 and P5_v2. The P5_v2 import completed, but the KRAS P5 (`SRR24828471`) imports failed or produced incomplete files.
+Both KRAS P5 and P5_v2 were missing from the active history at the start. P5_v2 imported successfully. P5 (`SRR24828471`) needed several recovery attempts:
 
 | Attempt | Outcome |
 | --- | --- |
@@ -58,7 +58,7 @@ The local R2 matches the ENA MD5 checksum. Every local R1 sequence and quality l
 
 ## Galaxy records
 
-These numbers refer to datasets in the original Galaxy history.
+The following dataset numbers belong to the Galaxy history used for this analysis.
 
 | Work | Inputs | Outputs |
 | --- | --- | --- |
@@ -84,7 +84,7 @@ Its input reports were:
 
 Failed or paused reports 142, 144 and 155 were excluded. Reports 137/138 came from an accidental FastQC run on a pilot BAM file. Report 153 and recovery reports 181–184 check mates already represented in MultiQC. Empty collections 160/161 and 177/178 were also excluded. Local R1 upload 185 is a backup without a separate completeness check.
 
-Existing datasets were retained. The [sample list](run_manifest.md) identifies the inputs used for analysis, and the [full alignment record](full_alignment/README.md) covers the later runs.
+At the end of this analysis, existing datasets remained in the history. The [sample list](run_manifest.md) identifies the inputs used for analysis, and the [full alignment record](full_alignment/README.md) covers the later runs.
 
 ## Check the saved summaries
 

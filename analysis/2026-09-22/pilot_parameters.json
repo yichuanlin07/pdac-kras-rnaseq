@@ -7,7 +7,7 @@
   "strand_settings_compared": ["unstranded", "FR", "RF"],
   "skip_pairs": 0,
   "maximum_pairs": 1000000,
-  "sampling_method": "first N read pairs, not random",
+  "sampling_method": "The first 1000000 read pairs in file order; no random sampling.",
   "trim5": 0,
   "trim3": 0,
   "quality_encoding": "Phred+33",

@@ -1,5 +1,5 @@
 {
-  "source": "Galaxy MultiQC 1.35 dataset 165, visible General Statistics table",
+  "source": "General Statistics table from Galaxy MultiQC 1.35, dataset 165.",
   "report_generated_utc": "2026-09-22 13:18",
   "state": "ok",
   "displayed_rows": 34,
@@ -22,7 +22,7 @@
       "KRAS_siRNA_P5_2"
     ]
   },
-  "note": "These numeric table values are rounded as displayed by MultiQC. Do not use rounded million-read values to test exact mate equality.",
+  "note": "Values use the rounding shown in MultiQC. Exact R1/R2 count comparisons require the full counts from FastQC.",
   "columns": [
     "sample_name",
     "duplication_percent",

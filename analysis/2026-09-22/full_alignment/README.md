@@ -1,12 +1,12 @@
 # Full HISAT2 alignment results
 
-All 17 sequencing runs have full alignment summaries as of **22 September 2026**. Together, they contain 727,731,715 read pairs aligned against the human hg38 reference.
+HISAT2 processed 727,731,715 read pairs from 17 sequencing runs against human hg38. This page summarizes the full-run results recorded on **22 September 2026**.
 
-**KRAS M1 needs further checks before gene counting.** Most of its reads align individually, but very few align as expected pairs. The cause is still unknown.
+KRAS M1 stands out from the other runs: most reads align, but very few form the expected pairs. Its cause needs to be checked before this run is used for gene counting.
 
 ## Results
 
-The table below uses three measures:
+The percentages describe different parts of the alignment:
 
 - **Overall alignment:** the percentage of individual reads that align, including reads aligned separately from their mate.
 - **Concordant unique pairs:** the percentage of input pairs that align to one location with the expected orientation and spacing.
@@ -34,7 +34,7 @@ The table below uses three measures:
 
 KRAS M1 has only 1,371 concordant unique pairs out of 45,292,678 input pairs. Another 85,829 pairs align concordantly to multiple locations, while 34,222,895 pairs align discordantly. Its 96.51% overall alignment rate therefore does not show that pairing is correct.
 
-Before counting genes for this run, check the R1/R2 identities, read order and paired-end settings. The Galaxy job finished successfully with no read limit and default paired-end settings. Different file compression alone does not explain the result.
+The next checks are the R1/R2 identities, read order and paired-end settings. The Galaxy job completed with no read limit and default paired-end settings. The available summaries do not identify a cause; the difference in input compression is not enough to diagnose one.
 
 Gene counts and differential expression results are not yet available. Treatment comparisons should use control and KRAS runs from the same cell line. The two MiaPaca-2 KRAS runs remain separate until their repeat type is clear; see the [sample and run list](../run_manifest.md).
 
@@ -58,7 +58,7 @@ RSeQC Infer Experiment was used to check strand specificity on two pilot alignme
 | Control M1 | 0.0637 | 0.4690 | 0.4673 |
 | KRAS P1 | 0.0851 | 0.4580 | 0.4569 |
 
-The two orientation groups have nearly equal fractions, supporting an unstranded setting for these inputs. The other runs used that setting without individual confirmation. Strand specificity describes the relationship between reads and transcript direction; it is a separate setting from paired-read orientation and spacing.
+Both inputs have similar fractions in the two orientation groups, which supports unstranded alignment. The same setting was used for the other runs, although they were not tested individually. This strand check concerns transcript direction, rather than the orientation and spacing of paired reads.
 
 ## Files and sources
 
@@ -90,4 +90,4 @@ python3 analysis/2026-09-22/full_alignment/validate_full_alignment.py
 
 The script checks that counts add up, each unaligned pair accounts for two separately considered reads, and reported percentages agree with the counts. It then replaces `results.json` with the calculated results.
 
-These checks cover the text summaries. They do not inspect read names, pairing order or BAM alignment files, and cannot resolve the KRAS M1 issue.
+The script checks summary arithmetic only. Resolving KRAS M1 requires examining the reads and alignment files.

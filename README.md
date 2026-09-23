@@ -1,14 +1,14 @@
 # PDAC KRAS RNA-seq analysis
 
-Coursework analysis of RNA sequencing (RNA-seq) data from pancreatic ductal adenocarcinoma (PDAC) cell lines. The project compares control treatment with KRAS-targeting small interfering RNA (siRNA) treatment to study changes in gene expression.
+This coursework project uses RNA sequencing (RNA-seq) to study pancreatic ductal adenocarcinoma (PDAC) cell lines. It compares control samples with samples treated with KRAS-targeting small interfering RNA (siRNA).
 
 The data come from [PRJNA980201](https://www.ebi.ac.uk/ena/browser/view/PRJNA980201), published with Klomp et al., *Defining the KRAS- and ERK-dependent transcriptome in KRAS-mutant cancers* ([Science, 2024](https://doi.org/10.1126/science.adk0775)).
 
 ## Progress
 
-As of 22 September 2026, quality checks cover all 34 FASTQ files, and HISAT2 alignment summaries are available for all 17 runs. Overall read alignment ranges from 95.79% to 97.72%.
+The saved results cover work completed on 22 September 2026: quality checks for 34 FASTQ files and full HISAT2 alignments for 17 runs. Overall read alignment ranges from 95.79% to 97.72%.
 
-KRAS M1 has an unresolved pairing problem: only 0.0030% of its read pairs align concordantly to a unique location. It needs further checks before gene counting. Gene counts and differential expression results are not yet available.
+KRAS M1 needs a pairing review: only 0.0030% of its read pairs align concordantly to a unique location. It needs further checks before gene counting. Gene counts and differential expression results are not yet available.
 
 ## Data and methods
 
@@ -26,11 +26,11 @@ The coursework workflow uses [Galaxy](https://galaxy-main.usegalaxy.org/), with 
 | [Analysis notes](analysis/2026-09-22/README.md) | Read quality, pilot alignments and file recovery |
 | [Full alignment results](analysis/2026-09-22/full_alignment/README.md) | Results for all 17 runs, settings and the KRAS M1 issue |
 | [Sample list](analysis/2026-09-22/run_manifest.md) | Cell lines, run accessions and input files |
-| [中文说明](analysis/2026-09-22/interpretation_zh.md) | 质量检查、文件恢复和重复样本说明 |
+| [中文说明](analysis/2026-09-22/interpretation_zh.md) | 分析进度、样本关系和结果说明 |
 
 [galaxy_backup/](galaxy_backup/README.md) is reserved for Galaxy exports and dataset lists. No exports have been added yet.
 
-Earlier PDFs in `reports/` show previous stages of the work. Raw FASTQ and BAM alignment files are stored outside Git.
+The PDFs in `reports/` describe successive stages of the work. Their wording was revised on 23 September; each keeps its original data cutoff. Raw FASTQ and BAM alignment files are stored outside Git.
 
 ## Check the saved results
 

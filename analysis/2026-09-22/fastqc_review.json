@@ -15,19 +15,19 @@
     {"run":"SRR24828478","sample":"KRAS P3","r1_web_id":119,"r2_web_id":117,"r1_raw_id":120,"r2_raw_id":118,"reads_each_mate":42073244,"gc_each_mate":51},
     {"run":"SRR24828481","sample":"KRAS P4","r1_web_id":115,"r2_web_id":113,"r1_raw_id":116,"r2_raw_id":114,"reads_each_mate":40452536,"gc_each_mate":51},
     {"run":"SRR24828472","sample":"KRAS P5_v2","r1_web_id":139,"r2_web_id":145,"r1_raw_id":140,"r2_raw_id":146,"reads_each_mate":43166706,"gc_each_mate":50},
-    {"run":"SRR24828471","sample":"KRAS P5","source":"Local FastQC 0.12.1 on complete user-supplied paired files; raw reports uploaded to Galaxy","r1_web_id":null,"r2_web_id":null,"r1_raw_id":162,"r2_raw_id":163,"reads_each_mate":37886040,"gc_each_mate":51}
+    {"run":"SRR24828471","sample":"KRAS P5","source":"FastQC 0.12.1 reports from the complete local R1/R2 files, uploaded to Galaxy.","r1_web_id":null,"r2_web_id":null,"r1_raw_id":162,"r2_raw_id":163,"reads_each_mate":37886040,"gc_each_mate":51}
   ],
   "partial_run_reviews":[],
-  "independent_validation_reports":[{"run":"SRR24828471","mate":2,"input_id":151,"web_id":152,"raw_id":153,"reads":37886040,"length_bp":150,"gc_percent":51,"excluded_from_34_file_summary":true,"reason":"Same mate is represented by local report 163; do not count twice.","gc_plot_review":"Broad approximately bell-shaped distribution with a high-GC shoulder; no isolated sharp secondary peak visible. Cause not established."}],
+  "independent_validation_reports":[{"run":"SRR24828471","mate":2,"input_id":151,"web_id":152,"raw_id":153,"reads":37886040,"length_bp":150,"gc_percent":51,"excluded_from_34_file_summary":true,"reason":"Local report 163 already covers this R2 file.","gc_plot_review":"The curve is roughly bell-shaped with a shoulder at high GC. No separate sharp peak is visible. The cause is unknown."}],
   "unusable_inputs":[
     {"run":"SRR24828471","mate":1,"input_id":127,"fastqc_web_id":143,"fastqc_raw_id":144,"problem":"Input was marked ok but FastQC failed: Ran out of data in the middle of a fastq entry. Your file is probably truncated."},
     {"run":"SRR24828471","mate":2,"input_id":128,"fastqc_web_id":141,"fastqc_raw_id":142,"problem":"Import error; downstream FastQC paused. Import stderr: OSError: [Errno 9] Bad file descriptor."},
     {"run":"SRR24828471","mate":1,"input_id":150,"fastqc_web_id":154,"fastqc_raw_id":155,"problem":"Second URL import again truncated (738 MB). Import log ignored Bad file descriptor; FastQC failed mid-record."}
   ],
-  "old_multiqc":{"web_id":108,"files":22,"duplication_percent_range":[57.0,65.2],"coverage_note":"Not a summary of all 34 input files."},
-  "paused_multiqc":{"output_ids":[147,148,149],"reason":"Depends on unusable inputs 127/128 via reports 144/142; replace these reports in a new run."},
-  "excluded_reports":[{"web_id":137,"raw_id":138,"reason":"FastQC on pilot BAM, not raw FASTQ"}],
+  "old_multiqc":{"web_id":108,"files":22,"duplication_percent_range":[57.0,65.2],"coverage_note":"This older report covers 22 of the 34 files."},
+  "paused_multiqc":{"output_ids":[147,148,149],"reason":"Paused because reports 144/142 depend on failed inputs 127/128. MultiQC 165 replaces this run."},
+  "excluded_reports":[{"web_id":137,"raw_id":138,"reason":"Excluded because FastQC was run on a pilot BAM file."}],
   "replacement_multiqc":{"plot_collection_id":164,"web_id":165,"stats_id":166,"job_id":"bbd44e69cb8906b5a3cfd869f45c6d15","state_at_last_check":"ok","input_count":34,"observed_rows":34,"duplication_percent_range_displayed":[57.0,67.3]},
   "final_recovery_validation":{"r1_input_id":175,"r2_input_id":176,"r1_web_id":181,"r2_web_id":183,"r1_raw_id":182,"r2_raw_id":184,"state":"ok","reads_each_mate":37886040,"length_bp":150,"gc_each_mate":51,"same_modules_as_local_pair":true,"excluded_from_34_file_summary_to_avoid_double_counting":true},
-  "repair_status":"Complete local mates finished full FastQC with 37886040 reads each; local R1 sequences/qualities exactly match canonical ENA. MultiQC 165 combines 32 Galaxy reports with local reports 162/163 and has 34 verified rows. SRA recovery completed into paired collection 156 (175/176). Final Galaxy FastQC 181/183 completed and independently confirmed matching full-length counts and module flags. Original truncated/failed data were retained and excluded."
+  "repair_status":"Recovery is complete. Both local files contain 37886040 reads, and all local R1 sequences and qualities match the complete ENA R1. MultiQC 165 covers 34 files using 32 Galaxy reports and local reports 162/163. SRA Toolkit recovered pair 175/176 in collection 156; FastQC 181/183 confirms the counts and quality flags. Failed imports remain in the history but are excluded from analysis."
 }

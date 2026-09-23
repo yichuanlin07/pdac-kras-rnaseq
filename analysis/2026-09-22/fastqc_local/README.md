@@ -1,10 +1,10 @@
 # FastQC results for SRR24828471
 
-This folder contains the FastQC reports for the complete local R1 and R2 files of KRAS P5 (`SRR24828471`), checked on 22 September 2026.
+FastQC 0.12.1 checked the complete local KRAS P5 (`SRR24828471`) files on 22 September 2026. The two text reports are saved here.
 
 ## Results
 
-Both files contain 37,886,040 reads of 150 bases, with 51% GC content. FastQC reports:
+R1 and R2 each contain 37,886,040 reads, all 150 bases long, with 51% GC content. Their FastQC results are the same:
 
 | Check | R1 and R2 |
 | --- | --- |
@@ -13,7 +13,7 @@ Both files contain 37,886,040 reads of 150 bases, with 51% GC content. FastQC re
 | GC distribution | Warn |
 | All other reported modules | Pass |
 
-The R2 file matches the European Nucleotide Archive (ENA) MD5 checksum. The local R1 has different file formatting, but every sequence and quality line matches the complete ENA R1. The ENA copy's MD5 was also checked. Details are in [recovery_checks.json](../recovery_checks.json).
+The R2 MD5 matches the European Nucleotide Archive (ENA) reference. R1 uses different header formatting; its sequences and quality scores match the complete ENA R1 in order. The ENA copy also matches its reference MD5. See [recovery_checks.json](../recovery_checks.json).
 
 These reports were uploaded to Galaxy as datasets 162/163. MultiQC 165 combines them with 32 Galaxy reports to cover all 34 input files. The separate Galaxy R2 report 153 checks the same mate and was excluded to avoid counting it twice.
 
@@ -32,7 +32,7 @@ The run used default adapter, contaminant and limit settings, with no trimming. 
 
 ## File checksums
 
-SHA-256 checksums identify the tool archive and the two saved reports:
+Use these SHA-256 checksums to identify the downloaded archive and saved reports:
 
 ```text
 FastQC archive  5f4dba8780231a25a6b8e11ab2c238601920c9704caa5458d9de559575d58aa7
