@@ -1,90 +1,99 @@
-# Galaxy analysis record
+# Analysis notes — 22 September 2026
 
-This folder records the Week 2 quality checks and reference alignment of the PDAC KRAS RNA sequencing data. Results are added only after the corresponding Galaxy job has finished and its output has been checked.
+Week 2 work covered read-quality checks, recovery of missing files and alignment to human hg38 in Galaxy. This folder contains the sample list, tool settings and saved results.
 
-## Starting state
+Quality checks now cover all 34 FASTQ files from 17 paired-end runs. All 17 full alignment summaries are also available in [full_alignment/](full_alignment/README.md), including the unresolved KRAS M1 pairing issue.
 
-On 22 September 2026, the active Galaxy history contained 30 raw FASTQ files and 26 FastQC webpage reports. No HISAT2 output was present before this analysis. The account used about 119 GB of its 268.4 GB quota.
+## Read quality
 
-The local input set contains 34 compressed FASTQ files from 17 sequencing runs. Both mates of KRAS P5 and KRAS P5_v2 were absent from the active history. The P5_v2 label identifies a separate run; it is not yet established as an independent biological replicate.
+FastQC reviewed both files from each run. MultiQC 165 combines 32 Galaxy reports with two [local reports](fastqc_local/README.md) for the recovered SRR24828471 files.
 
-## Jobs submitted
+| Check | Result |
+| --- | --- |
+| Files included | 34, covering 17 complete pairs |
+| Base/read quality, N content, read length, overrepresented sequences and adapters | All pass |
+| Base composition and sequence duplication | Fail in all files |
+| GC distribution | Warn for both SRR24828471 mates; pass for the other 32 files |
+| Duplication | 57.0%–67.3% |
 
-| Tool | Input history numbers | Output history numbers | Purpose |
-| --- | --- | --- | --- |
-| FastQC 0.12.1, Galaxy 0.74+galaxy1 | 112, 111, 110, 106 | 113–120 | Complete quality checks for KRAS P3 and P4 |
-| HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 13, 15 | 121 BAM, 122 summary | Control M1 pilot, unstranded, first 1,000,000 read pairs |
-| HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 13, 15 | 123 BAM, 124 summary | Same Control M1 pilot, Forward FR |
-| HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 13, 15 | 125 BAM, 126 summary | Same Control M1 pilot, Reverse RF |
-| ENA URL import | SRR24828471 and SRR24828472 | 127–130 | Both mates of KRAS P5 and P5_v2, fastqsanger.gz |
-| HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 7, 8 | 131 BAM, 132 summary | KRAS P1 pilot, unstranded, first 1,000,000 read pairs |
-| HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 7, 8 | 133 BAM, 134 summary | Same KRAS P1 pilot, Forward FR |
-| HISAT2 2.2.3, Galaxy 2.2.3+galaxy0 | 7, 8 | 135 BAM, 136 summary | Same KRAS P1 pilot, Reverse RF |
-| FastQC 0.12.1, Galaxy 0.74+galaxy1 | 129, 128, 127, 130 | 139–146 | Both mates of the two imported runs |
-| MultiQC 1.35, Galaxy 1.35+galaxy4 | 34 FastQC raw-data reports listed below | 147 plots collection, 148 webpage, 149 statistics | Complete raw-read QC summary with plot-data export |
+Composition and duplication flags need interpretation in RNA-seq. Library preparation can affect base composition, and abundant transcripts can produce repeated sequences. These flags alone do not justify trimming or removing duplicate reads. The GC warning also does not establish contamination.
 
-HISAT2 uses the built-in `Human (Homo sapiens) (b38): hg38` reference, paired-end input, Phred+33 qualities, no end trimming, and default alignment and splice settings. The pilot saves a machine-readable alignment summary. It does not represent a full-run alignment result.
+The complete results are in [fastqc_review.json](fastqc_review.json) and [multiqc_summary.json](multiqc_summary.json). Galaxy dataset 166 holds the MultiQC statistics, and collection 164 holds the plot data. The older MultiQC 108 covers only 22 files; MultiQC 148 paused after input failures.
 
-No existing Galaxy datasets were deleted.
+## Pilot alignments
 
-## Verified results
+Six HISAT2 pilot jobs each used the first 1,000,000 read pairs. They tested three strand settings on Control M1 and KRAS P1.
 
-All six HISAT2 jobs finished successfully. The summary percentages below were checked against the job's standard-error summary and strand parameters. Overall alignment counts individual reads; concordant unique alignment counts read pairs. Each job processed exactly 1,000,000 pairs.
+| Input | Strand setting | Overall read alignment | Concordant unique pairs | Galaxy summary |
+| --- | --- | ---: | ---: | --- |
+| Control M1 | Unstranded | 96.63% | 86.40% | 122 |
+| Control M1 | FR | 96.63% | 86.44% | 124 |
+| Control M1 | RF | 96.63% | 86.44% | 126 |
+| KRAS P1 | Unstranded | 96.40% | 87.43% | 132 |
+| KRAS P1 | FR | 96.40% | 87.43% | 134 |
+| KRAS P1 | RF | 96.40% | 87.43% | 136 |
 
-| Input | Strand setting | Overall read alignment | Concordant unique pairs | Summary |
-| --- | --- | --- | --- | --- |
-| Control M1 (Pa01C) | Unstranded | 96.63% | 86.40% | 122 |
-| Control M1 (Pa01C) | FR | 96.63% | 86.44% | 124 |
-| Control M1 (Pa01C) | RF | 96.63% | 86.44% | 126 |
-| KRAS P1 (Pa16C) | Unstranded | 96.40% | 87.43% | 132 |
-| KRAS P1 (Pa16C) | FR | 96.40% | 87.43% | 134 |
-| KRAS P1 (Pa16C) | RF | 96.40% | 87.43% | 136 |
+FR and RF are the forward and reverse strand options. Their similar mapping rates do not identify strand specificity. Later RSeQC checks supported unstranded alignment for these two inputs; see the [full alignment settings](full_alignment/README.md#parameters-and-strand-inference).
 
-Full integer counts and job IDs are in [hisat2_pilot_results.json](hisat2_pilot_results.json). A small difference between these two cell lines cannot be attributed to KRAS treatment. Identical FR/RF percentages do not identify the library's strand specificity.
+Control M1 and KRAS P1 are different cell lines, so their alignment rates cannot isolate a treatment effect. Counts and job IDs are saved in [hisat2_pilot_results.json](hisat2_pilot_results.json); settings are in [pilot_parameters.json](pilot_parameters.json).
 
-FastQC now has **34 reviewed raw-file reports**, covering all 17 complete mate pairs. The final aggregate uses 32 Galaxy reports plus two local FastQC 0.12.1 reports from complete SRR24828471 files (uploaded as 162/163). KRAS P3 has 42,073,244 reads per mate; P4 has 40,452,536; SRR24828472 has 43,166,706; SRR24828471 has 37,886,040. All are 150 bases long. Composition and duplication Fail in every file. Both SRR24828471 mates additionally have a GC-distribution Warn; other listed modules Pass. See [fastqc_review.json](fastqc_review.json) for source IDs and coverage.
+The pilots used HISAT2 2.2.3+galaxy0, the built-in hg38 reference, paired-end reads, Phred+33 quality scores, no end trimming and default alignment and splice settings.
 
-**MultiQC 165 completed successfully**, with 34/34 General Statistics rows, 32 GC Pass results and two GC Warn results. The displayed duplication range is **57.0%–67.3%**. Stats are in 166 and eight plot-data tables in collection 164. [multiqc_summary.json](multiqc_summary.json) preserves the displayed values, explicitly rounded. The job ID is `bbd44e69cb8906b5a3cfd869f45c6d15`.
+## Recovering KRAS P5
 
-## Error diagnosis and repair
+The active Galaxy history initially lacked both mates of KRAS P5 and P5_v2. The P5_v2 import completed, but the KRAS P5 (`SRR24828471`) imports failed or produced incomplete files.
 
-- Input 127 (SRR24828471 R1) was marked `ok`, but FastQC 143/144 failed with `Ran out of data in the middle of a fastq entry. Your file is probably truncated.` A green import alone does not establish a complete file.
-- Input 128 (R2) failed import. The import log contains `OSError: [Errno 9] Bad file descriptor`; downstream FastQC 141/142 paused.
-- MultiQC 147–149 depends on those reports, so it paused too. It is not a completed 34-file summary.
-- A local R2 recovery copy passed gzip and ENA MD5 checks. A browser upload was interrupted before completion and is not a verified replacement. We switched to separate server-side ENA URL imports: **150 R1 and 151 R2**. Original error datasets were not removed.
-- Replacement FastQC: **154 webpage / 155 raw data for R1 failed again**. Input 150 is only 738 MB, and the import log again contains an ignored `Bad file descriptor`. **152 webpage / 153 raw data for R2 completed** with the expected 37,886,040 reads.
-- Both complete local files passed FastQC. R1 and R2 header first tokens match in order. The R2 compressed MD5 matches ENA. A complete canonical ENA R1 was downloaded and its compressed MD5 verified; every sequence and quality line matches the local R1. Details and commands are in [recovery_checks.json](recovery_checks.json) and [fastqc_local/README.md](fastqc_local/README.md).
-- An independent **fasterq-dump 3.1.1+galaxy1** recovery succeeded: paired collection **156**, R1 **175**, R2 **176**, log **159**. The log records **37,886,040 spots, 75,772,080 reads read and written**, and two FASTQ files. It uses split-3, biological reads only, no minimum-length filter and gzip output. Single-end collection 157 and other collection 158 are empty, as expected for this fully paired run. Keep both SRA mates together; do not mix its instrument-based identifiers with an ENA mate.
-- Final Galaxy FastQC checks on 175/176 **completed and were reviewed**: collections **179 webpage / 180 raw**, with **181/182 for R1** and **183/184 for R2**. Both contain 37,886,040 reads, 150 bp and 51% GC. Both have composition/duplication Fail, GC Warn and all remaining listed modules Pass, matching the local reports. They are independent validation reports, not two extra samples in MultiQC 165. The local-copy R1 upload is an auxiliary backup, not an additional sample.
-- Inputs 127 and 150 have been renamed with the `DO_NOT_USE_TRUNCATED` prefix and annotated. Their data are retained.
+| Attempt | Outcome |
+| --- | --- |
+| First import, 127/128 | R1 was truncated; R2 failed. FastQC reported an incomplete FASTQ entry. |
+| Second import, 150/151 | R1 was truncated again, at 738 MB rather than about 2.58 GB. R2 passed FastQC. |
+| Local files | Both complete files passed the file checks and produced FastQC reports uploaded as 162/163. |
+| SRA Toolkit recovery, collection 156 | Recovered both complete mates as 175/176. FastQC 181/183 confirmed the expected read counts and quality results. |
 
-## Exclusions
+The failed imports logged `OSError: [Errno 9] Bad file descriptor`. Inputs 127 and 150 are labelled `DO_NOT_USE_TRUNCATED`. Use **175/176 together** for analysis: their identifier format differs from the ENA export.
 
-An extra FastQC job was accidentally submitted for pilot BAM dataset 131. Its outputs are 137 and 138. They are retained but excluded from the raw-FASTQ summary. The correction submitted FastQC separately for raw input 130, producing outputs 145 and 146.
+SRA Toolkit 3.1.1+galaxy1 used split-3, biological reads only, no minimum-length filter and gzip output. Log 159 records 37,886,040 spots and 75,772,080 reads written. Both recovered mates contain 37,886,040 reads, 150 bases long, with 51% GC. Their FastQC flags match the local files.
 
-Old paused MultiQC input history numbers: `3, 48, 50, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 97, 99, 101, 103, 105, 114, 116, 118, 120, 140, 142, 144, 146`. Exclude **142, 144 and 155** (failed/paused) and **138** (BAM QC). The attempted replacement selection 155/153 did not produce a new MultiQC job after 155 failed. Select verified replacement reports only once recovery is complete.
+The local R2 matches the ENA MD5 checksum. Every local R1 sequence and quality line matches the complete, checksum-verified ENA R1, and all local R1/R2 read identifiers match in order. Commands and checks are recorded in [recovery_checks.json](recovery_checks.json) and the [sample list](run_manifest.md).
 
-Final successful MultiQC input IDs: `3, 48, 50, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 97, 99, 101, 103, 105, 114, 116, 118, 120, 140, 146, 162, 163`. Report 153 is an independent check of the same R2 represented by 163 and is excluded to avoid double counting. Empty FastQC collections 160/161 (submitted before SRA collection population) and 177/178 (mapped from that empty output) contain no results and are also excluded. No empty collection is counted as a successful quality check.
+## Galaxy records
 
-## What the FastQC flags mean
+These numbers refer to datasets in the original Galaxy history.
 
-Base-composition Fail measures unequal A/T or G/C proportions at read positions, not base-call accuracy. Library preparation, including RNA-seq priming bias, can cause this pattern. It does not by itself justify cutting a fixed number of bases. The specific cause is not proven by a module label.
+| Work | Inputs | Outputs |
+| --- | --- | --- |
+| FastQC for KRAS P3/P4 | 112, 111, 110, 106 | 113–120 |
+| Control M1 pilots | 13/15 | 121–126 |
+| KRAS P1 pilots | 7/8 | 131–136 |
+| Initial P5/P5_v2 imports | SRR24828471/472 | 127–130 |
+| FastQC for those imports | 127–130 | 139–146 |
+| Paused MultiQC | Initial report selection | 147–149 |
+| Successful MultiQC | 32 Galaxy reports and local reports 162/163 | 164–166 |
+| SRA recovery | SRR24828471 | Mates 175/176 in collection 156; log 159 |
+| Recovery FastQC | 175/176 | Web reports 181/183; raw reports 182/184 |
 
-Sequence-duplication Fail measures repeated read sequences within a file. Highly expressed transcripts naturally produce repeated sequences; PCR amplification can also contribute. Raw FastQC cannot separate these causes. Do not remove duplicate RNA-seq reads automatically or confuse this flag with duplicate uploads or repeated experimental samples.
+FastQC used version 0.12.1 with Galaxy wrapper 0.74+galaxy1. MultiQC used 1.35+galaxy4. The successful MultiQC job ID is `bbd44e69cb8906b5a3cfd869f45c6d15`.
 
-All 34 reviewed files pass the adapter and base/read-quality modules. This supports progressing to mapping for complete valid pairs, but it does not prove transcript-level accuracy or differential expression. The older MultiQC 108 duplication range of 57.0%–65.2% covers only its 22 entries; the complete 34-file result is 57.0%–67.3%.
+Its input reports were:
 
-The restored R2 GC plot shows a broad, approximately bell-shaped distribution with a high-GC shoulder rather than an isolated sharp secondary peak. Its cause is unresolved. FastQC Warn indicates deviation from the fitted distribution; it is not a species-contamination test. Compare the mate's result and alignment evidence before deciding whether further contamination checks are needed.
+```text
+3, 48, 50, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78,
+80, 82, 84, 86, 88, 97, 99, 101, 103, 105, 114, 116, 118, 120,
+140, 146, 162, 163
+```
 
-Sources: [FastQC base composition](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/4%20Per%20Base%20Sequence%20Content.html), [FastQC duplication](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/8%20Duplicate%20Sequences.html), [GC distribution](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/5%20Per%20Sequence%20GC%20Content.html), [study design and methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC11301402/).
+Failed or paused reports 142, 144 and 155 were excluded. Reports 137/138 came from an accidental FastQC run on a pilot BAM file. Report 153 and recovery reports 181–184 check mates already represented in MultiQC. Empty collections 160/161 and 177/178 were also excluded. Local R1 upload 185 is a backup without a separate completeness check.
 
-## Next checks
+Existing datasets were retained. The [sample list](run_manifest.md) identifies the inputs used for analysis, and the [full alignment record](full_alignment/README.md) covers the later runs.
 
-1. Use restored pair 175/176 for subsequent Galaxy analysis; its independent FastQC results match the complete local checks.
-2. Use successful MultiQC 165, not paused MultiQC 148; its 34 distinct file entries have been checked.
-3. Keep the completed pilot summaries separate from later full-run alignment results.
-4. Confirm library strand specificity from protocol information or annotated alignments. Do not infer it from the largest mapping percentage alone.
-5. Remove the pilot limit for full alignments after validating inputs and settings.
-6. Use the checked report dated 22 September; retain the older interim report as a historical snapshot. Keep raw reads and BAM files outside Git.
+## Check the saved summaries
 
-Auxiliary local R1 upload **185** is excluded from the sample count and the final MultiQC inputs. The history displays 2.8 GB and a FASTQ preview, but this backup has not received a separate post-upload completeness check. Use the independently validated SRA pair **175/176** for subsequent work.
+From the repository root:
+
+```sh
+python3 analysis/2026-09-22/validate_summaries.py
+```
+
+This checks pilot arithmetic, coverage of the 34 files, MultiQC entries and the saved local report hashes. It does not inspect the original reads.
+
+For help interpreting the quality flags, see the FastQC documentation on [base composition](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/4%20Per%20Base%20Sequence%20Content.html), [duplication](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/8%20Duplicate%20Sequences.html) and [GC distribution](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/5%20Per%20Sequence%20GC%20Content.html).

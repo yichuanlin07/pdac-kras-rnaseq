@@ -1,43 +1,93 @@
-# Full HISAT2 alignment review
+# Full HISAT2 alignment results
 
-Evidence cutoff: 22 September 2026. All 17 full-run summaries are present, with 727,731,715 input pairs and overall read alignment of 95.79%–97.72%. Completion does not mean every alignment is suitable for downstream analysis.
+All 17 sequencing runs have full alignment summaries as of **22 September 2026**. Together, they contain 727,731,715 read pairs aligned against the human hg38 reference.
 
-## Sources
+**KRAS M1 needs further checks before gene counting.** Most of its reads align individually, but very few align as expected pairs. The cause is still unknown.
 
-- Fourteen files in `raw/` are byte-for-byte copies of the user's downloaded `HISAT2 on collection 253: Mapping summary` directory. Input collection 253 produced summary collection 255. Filenames identify its elements; `results.json` records SHA-256 hashes.
-- `Control_siRNA_M1.txt` transcribes summary 195, checked against live Galaxy job details on 22 September. Inputs 13/15; BAM 194.
-- `KRAS_siRNA_P1.txt` transcribes the complete user-supplied summary, previously checked against Galaxy summary 193. Inputs 7/8; BAM 192.
-- `KRAS_siRNA_P5.txt` transcribes the complete user-supplied summary for input collection 156, previously checked against summary collection 285. Recovered mates 175/176 identify SRR24828471, not SRR24828472.
-- Accession mappings follow `../run_manifest.md`. Labels do not prove correct read-by-read pairing. Control P1 in the batch uses replacement inputs 251/252 rather than original 21/22; direction was checked, byte identity was not.
-- Historical pilot datasets 121–136 are excluded. Older reports remain historical snapshots.
+## Results
 
-Recreate `results.json` from the repository root:
+The table below uses three measures:
+
+- **Overall alignment:** the percentage of individual reads that align, including reads aligned separately from their mate.
+- **Concordant unique pairs:** the percentage of input pairs that align to one location with the expected orientation and spacing.
+- **Discordant pairs:** the percentage of input pairs whose mates align uniquely but do not meet those pairing requirements.
+
+| Run | Input pairs | Overall alignment | Concordant unique pairs | Discordant pairs |
+| --- | ---: | ---: | ---: | ---: |
+| Control M1 | 40,237,116 | 96.75% | 86.11% | 0.61% |
+| Control M2 | 45,764,716 | 96.78% | 85.19% | 0.58% |
+| Control M3 | 38,181,985 | 96.67% | 87.14% | 0.64% |
+| Control P1 | 45,946,458 | 96.73% | 87.25% | 0.57% |
+| Control P2 | 39,989,452 | 95.79% | 86.47% | 1.15% |
+| Control P3 | 47,840,900 | 96.41% | 87.03% | 0.54% |
+| Control P4 | 46,287,075 | 96.20% | 87.22% | 0.65% |
+| Control P5 | 45,023,981 | 96.75% | 88.32% | 0.57% |
+| **KRAS M1** | 45,292,678 | 96.51% | 0.0030% | 75.56% |
+| KRAS M2 | 44,032,049 | 96.74% | 85.25% | 0.62% |
+| KRAS M3 | 42,961,283 | 96.64% | 86.95% | 0.60% |
+| KRAS P1 | 39,963,282 | 96.52% | 87.11% | 0.62% |
+| KRAS P2 | 42,632,214 | 96.49% | 87.50% | 0.69% |
+| KRAS P3 | 42,073,244 | 96.57% | 86.11% | 0.56% |
+| KRAS P4 | 40,452,536 | 96.77% | 88.32% | 0.52% |
+| KRAS P5 | 37,886,040 | 96.53% | 87.55% | 0.64% |
+| KRAS P5_v2 | 43,166,706 | 97.72% | 88.09% | 0.32% |
+
+KRAS M1 has only 1,371 concordant unique pairs out of 45,292,678 input pairs. Another 85,829 pairs align concordantly to multiple locations, while 34,222,895 pairs align discordantly. Its 96.51% overall alignment rate therefore does not show that pairing is correct.
+
+Before counting genes for this run, check the R1/R2 identities, read order and paired-end settings. The Galaxy job finished successfully with no read limit and default paired-end settings. Different file compression alone does not explain the result.
+
+Gene counts and differential expression results are not yet available. Treatment comparisons should use control and KRAS runs from the same cell line. The two MiaPaca-2 KRAS runs remain separate until their repeat type is clear; see the [sample and run list](../run_manifest.md).
+
+## Parameters and strand inference
+
+| Setting | Value |
+| --- | --- |
+| Galaxy HISAT2 version | 2.2.3+galaxy0 |
+| Reference | Built-in human hg38 |
+| Reads | Paired-end, Phred+33 quality scores |
+| Strand setting | Unstranded |
+| Read limit | None: skip 0, align-first-N 0 |
+| End trimming | 0 bases from either end |
+| Output | Machine-friendly summary and summary file enabled |
+| Other settings | Defaults |
+
+RSeQC Infer Experiment was used to check strand specificity on two pilot alignments. It sampled 200,000 reads with a minimum mapping quality of 30 and an hg38 BED12 annotation. The supplied results were:
+
+| Pilot alignment | Undetermined | 1++,1--,2+-,2-+ | 1+-,1-+,2++,2-- |
+| --- | ---: | ---: | ---: |
+| Control M1 | 0.0637 | 0.4690 | 0.4673 |
+| KRAS P1 | 0.0851 | 0.4580 | 0.4569 |
+
+The two orientation groups have nearly equal fractions, supporting an unstranded setting for these inputs. The other runs used that setting without individual confirmation. Strand specificity describes the relationship between reads and transcript direction; it is a separate setting from paired-read orientation and spacing.
+
+## Files and sources
+
+| File | Contents |
+| --- | --- |
+| [raw/](raw/) | 17 HISAT2 text summaries |
+| [results.json](results.json) | Counts, calculated percentages, run accessions and source-file SHA-256 checksums |
+| [validate_full_alignment.py](validate_full_alignment.py) | Script that checks the summaries and rebuilds `results.json` |
+
+Fourteen text files were copied unchanged from the downloaded Galaxy mapping-summary collection 255, produced from input collection 253. The other three were transcribed from individual summaries:
+
+| Run | Summary | Inputs | Source check |
+| --- | --- | --- | --- |
+| Control M1 | 195 | 13/15 | Checked against Galaxy job details on 22 September; alignment file 194 |
+| KRAS P1 | 193 | 7/8 | Complete supplied summary, previously checked against Galaxy; alignment file 192 |
+| KRAS P5 | Collection 285 | Collection 156, mates 175/176 | Complete supplied summary, previously checked against Galaxy; recovered run SRR24828471 |
+
+Control P1 used replacement inputs 251/252 instead of 21/22. Their read direction was checked, but file identity was not. Run labels follow the [sample list](../run_manifest.md); labels alone cannot confirm that reads are paired in the correct order. Galaxy numbers refer to the original history.
+
+Pilot datasets 121–136 are excluded from these full-run results. Earlier reports remain snapshots of previous work. Raw-read quality checks are in [fastqc_review.json](../fastqc_review.json) and [multiqc_summary.json](../multiqc_summary.json).
+
+## Check the summaries
+
+From the repository root, run:
 
 ```sh
 python3 analysis/2026-09-22/full_alignment/validate_full_alignment.py
 ```
 
-The parser verifies category sums, the two-mates relationship and all reported percentages. It does not validate BAM contents, read-header correspondence or biological suitability.
+The script checks that counts add up, each unaligned pair accounts for two separately considered reads, and reported percentages agree with the counts. It then replaces `results.json` with the calculated results.
 
-## Parameters and strand inference
-
-HISAT2 2.2.3+galaxy0; built-in hg38; paired-end; unstranded; Phred+33; skip 0; align-first-N 0 (unlimited in this wrapper); trim both ends 0; machine-friendly summary and summary-file enabled; other settings default. KRAS M1's live details confirm state `ok`, exit code 0, no `-u`/`--upto` restriction and default paired-end settings. Different compression of its two inputs does not itself establish a pairing defect.
-
-RSeQC Infer Experiment used hg38 BED12 annotation, 200,000 sampled reads and MAPQ 30. User-supplied results:
-
-| Pilot BAM | Undetermined | 1++,1--,2+-,2-+ | 1+-,1-+,2++,2-- |
-| --- | ---: | ---: | ---: |
-| Control M1 | 0.0637 | 0.4690 | 0.4673 |
-| KRAS P1 | 0.0851 | 0.4580 | 0.4569 |
-
-Near-equal orientation fractions support unstranded libraries for these two inputs. Other runs used the same setting without individual confirmation. RNA strand specificity and mate geometry are different settings.
-
-## KRAS M1 remains flagged
-
-Summary 269 (batch element 7) contains 45,292,678 pairs: 1,371 concordantly unique (0.0030%, displayed as 0.00%), 85,829 concordant multi-mapping (0.19%), and 34,222,895 discordant (75.56%). Overall individual-read alignment is 96.51%.
-
-The other 16 runs have 85.19%–88.32% concordant unique-pair alignment and 0.32%–1.15% discordant pairs. KRAS M1 is an outlier; its cause remains unresolved. Check mate identities/accessions, read-header order, accidental same-end inputs and pair geometry before quantification. Do not diagnose a specific cause from aggregate numbers alone. Retain current data and hold this run from downstream counting until resolved. This report task did not rerun or delete Galaxy jobs or inputs.
-
-Overall alignment includes discordant pairs and separately aligned mates; it is not the fraction of properly paired reads. See the [HISAT2 manual](https://daehwankimlab.github.io/hisat2/manual/).
-
-No gene-count matrix, differential-expression result or treatment effect is reported. Compare treatments within cell line. Keep both MiaPaca-2 KRAS accessions distinct until their repeat type is resolved. Raw-read QC remains documented in `../fastqc_review.json` and `../multiqc_summary.json`.
+These checks cover the text summaries. They do not inspect read names, pairing order or BAM alignment files, and cannot resolve the KRAS M1 issue.
