@@ -8,7 +8,9 @@ The local backup contains 164 checked files, totalling 102.28 GB, including copi
 
 All 17 full alignment BAM files remain in Galaxy. The 168 dataset entries are marked **Purged** and can only be restored from the local backups.
 
-Galaxy still has 26 older deleted references to the same backed-up files. These references account for 76.98 GB and were outside the confirmed 168-entry list. They are listed in [remaining deleted references](00_manifests/remaining_deleted_references.tsv). The history currently shows 162 GB, down from about 188 GB; the account quota dashboard has not yet updated. No full 102.25 GB quota reduction is claimed.
+The 26 older references to the same files have also been permanently cleared after approval. Before doing so, all 26 local backups were read again and their sizes and SHA-256 checksums matched Galaxy's original records. See the [old-reference list](00_manifests/purged_old_references.tsv) and [verification results](00_manifests/alias_restore_verification.json).
+
+The history now shows **85.3 GB**, down from about **188 GB**. The underlying files removed total **102.25 GB**. The account quota dashboard still shows its older value and may update later. The other 24 dataset entries that were already deleted before this work were left unchanged.
 
 ## File lists
 
@@ -56,6 +58,6 @@ KRAS M1 needs further work: its summary reports only 1,371 concordant unique pai
 
 ## Restore a file
 
-The purged entries cannot be undeleted in Galaxy. To restore a file from the local backup, find its path in the inventory, check its SHA-256 checksum, and upload it to Galaxy. Keep both mates of a paired read set together.
+The purged entries cannot be undeleted in Galaxy. To restore a file from the local backup, find its path in the inventory, check its SHA-256 checksum, and upload it to Galaxy. This restores the file content under a new Galaxy entry; it does not recreate the old history number or job links. Keep both mates of a paired read set together.
 
 The full-history TGZ export was requested separately and was still being prepared during cleanup. It is not counted as a completed backup here.

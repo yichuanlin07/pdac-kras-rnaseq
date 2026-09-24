@@ -1,0 +1,262 @@
+[
+  {
+    "hid": 196,
+    "dataset_id": "f9cad7b01a47213555b2bc4dae68b27f",
+    "physical_dataset_id": "f9cad7b01a4721358193c251c2c84966",
+    "bytes": 3408881418,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H016_Control_siRNA_M2_1.gz.fastq.gz",
+    "sha256": "87272fa237d08c92e9bc68b6088b5110748d624cc19154010d5d8d4ff734a1c9",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:11.674312+00:00"
+  },
+  {
+    "hid": 197,
+    "dataset_id": "f9cad7b01a4721357ad469bb31e4540b",
+    "physical_dataset_id": "f9cad7b01a472135df0b5aa5daccb3b5",
+    "bytes": 3418012567,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H017_Control_siRNA_M2_2.gz.fastq.gz",
+    "sha256": "bfb663cc1abef5f9ad62ac3da68e8453d32aae4e0b5534b42777dbf6da88d087",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:12.125434+00:00"
+  },
+  {
+    "hid": 198,
+    "dataset_id": "f9cad7b01a472135602f6b0f12e30705",
+    "physical_dataset_id": "f9cad7b01a472135e8ef3a6a5b8eefdf",
+    "bytes": 2852031710,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H018_Control_siRNA_M3_1.gz.fastq.gz",
+    "sha256": "92e4684d915b9175c2991114185e2659eed28772300d512531dab7174725780f",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:14.075792+00:00"
+  },
+  {
+    "hid": 199,
+    "dataset_id": "f9cad7b01a4721357cf35d39309424f3",
+    "physical_dataset_id": "f9cad7b01a472135855514a4eea2ba65",
+    "bytes": 2877924540,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H019_Control_siRNA_M3_2.gz.fastq.gz",
+    "sha256": "486e03b4bc7d3b9ce22311b40d09480148afdf765f37637ab1e2f92342518e29",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:14.612349+00:00"
+  },
+  {
+    "hid": 200,
+    "dataset_id": "f9cad7b01a472135baa1fb97cbc73798",
+    "physical_dataset_id": "f9cad7b01a4721351ac15bbba38b5efa",
+    "bytes": 2721951088,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H031_Control_siRNA_P2_1.fastq.gz",
+    "sha256": "03a955480cb40cfef280caa25dfc836d85e14b7484fddba871d206a02a5147f6",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:16.475394+00:00"
+  },
+  {
+    "hid": 201,
+    "dataset_id": "f9cad7b01a472135f320bf52475d4a85",
+    "physical_dataset_id": "f9cad7b01a47213523bf004357e5e592",
+    "bytes": 2746718364,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H033_Control_siRNA_P2_2.fastq.gz",
+    "sha256": "b8a7e2299eff589c605a78650e597c661d0f1d4f183b1aed8f8fb88fa1d48057",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:16.997012+00:00"
+  },
+  {
+    "hid": 202,
+    "dataset_id": "f9cad7b01a47213514ec92f5c3902ca1",
+    "physical_dataset_id": "f9cad7b01a472135a554b865c8ea5dc9",
+    "bytes": 2747540365,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H231_Control_siRNA_P3_1.fastq.gz",
+    "sha256": "7e7d44edae92687d3278f431d5a84717f02f9890a6560e73238b7432d9d9a33e",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:18.765505+00:00"
+  },
+  {
+    "hid": 203,
+    "dataset_id": "f9cad7b01a4721356dee25f04bccda1d",
+    "physical_dataset_id": "f9cad7b01a4721357af495d5591696d6",
+    "bytes": 2747665323,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H232_Control_siRNA_P3_2.fastq.gz",
+    "sha256": "5c3d72a58f13c9b61e190ec101316f326103f043705ccf92629c9251876e7b07",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:19.270307+00:00"
+  },
+  {
+    "hid": 204,
+    "dataset_id": "f9cad7b01a472135295a71c316952c5c",
+    "physical_dataset_id": "f9cad7b01a472135cca1f2878013c825",
+    "bytes": 2659779425,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H233_Control_siRNA_P4_1.fastq.gz",
+    "sha256": "2a7e62340c2c720ee3eaf0ea1cf861ffc276175813ad34ce279e902cc765abe2",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:20.974694+00:00"
+  },
+  {
+    "hid": 205,
+    "dataset_id": "f9cad7b01a472135306fe5cf13f3b4ce",
+    "physical_dataset_id": "f9cad7b01a4721356aa9662c2d1dd61f",
+    "bytes": 2659888962,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H092_Control_siRNA_P4_2.fastq.gz",
+    "sha256": "ff6b85fb7ad92e0bdd8c70453f86953fbe978caec1919925f8a61ee1602be6d2",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:21.512635+00:00"
+  },
+  {
+    "hid": 206,
+    "dataset_id": "f9cad7b01a472135188ff31713d5602f",
+    "physical_dataset_id": "f9cad7b01a4721353be6bec0680d18ed",
+    "bytes": 3330133169,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H235_Control_siRNA_P5_1.gz.fastq.gz",
+    "sha256": "7f8f7feb5d4dca3b40c4b00533260a5ac34ae04d203c17b334d603191fb0f103",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:23.818938+00:00"
+  },
+  {
+    "hid": 207,
+    "dataset_id": "f9cad7b01a4721356bb6fa2e04503f74",
+    "physical_dataset_id": "f9cad7b01a47213568a32547b0e6f44a",
+    "bytes": 3392607581,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H236_Control_siRNA_P5_2.gz.fastq.gz",
+    "sha256": "2d5d6259a3c98896b61164a627d0c840feac88364c902438979b60c5f3dbf2ef",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:24.411238+00:00"
+  },
+  {
+    "hid": 210,
+    "dataset_id": "f9cad7b01a472135c0bd10534561e06e",
+    "physical_dataset_id": "f9cad7b01a472135cc9cfe1f3aef50ee",
+    "bytes": 3283298979,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H239_KRAS_siRNA_M2_1.fastq.gz",
+    "sha256": "d5bd006748c3180b4700530a09ed22b2d8038e4b6b5a9e9ec9c36931ef728efa",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:26.678716+00:00"
+  },
+  {
+    "hid": 211,
+    "dataset_id": "f9cad7b01a4721351a7aa904e0922e22",
+    "physical_dataset_id": "f9cad7b01a472135feb4309b080c546f",
+    "bytes": 3299851492,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H240_KRAS_siRNA_M2_2.fastq.gz",
+    "sha256": "57599fad648514dd07a50a7b2a38c488b2d4e2602fab2f667bbccabaf7766ace",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:27.342602+00:00"
+  },
+  {
+    "hid": 212,
+    "dataset_id": "f9cad7b01a472135c67fd06d377c3dd9",
+    "physical_dataset_id": "f9cad7b01a47213523198f18525ae220",
+    "bytes": 3199608327,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H241_KRAS_siRNA_M3_1.fastq.gz",
+    "sha256": "b9a8eca97f4a006be8beac2c1b7acfe693f3d95f41aefffb5af1ddfa1dce5b16",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:29.431150+00:00"
+  },
+  {
+    "hid": 213,
+    "dataset_id": "f9cad7b01a472135276765737915854d",
+    "physical_dataset_id": "f9cad7b01a47213592d3a89c2d264949",
+    "bytes": 3255261596,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H242_KRAS_siRNA_M3_2.fastq.gz",
+    "sha256": "e967506914a7ca3e4aca0286fc2fa7fc3cb588bb54bf8c0f11b32c5b95f30e46",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:30.138101+00:00"
+  },
+  {
+    "hid": 214,
+    "dataset_id": "f9cad7b01a472135f870e3978491a1d9",
+    "physical_dataset_id": "f9cad7b01a472135a4a1552874c6ffaa",
+    "bytes": 3176074214,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H009_KRAS_siRNA_P2_1.fastq.gz",
+    "sha256": "a96ea5faf25d7b707d7dd24ce676bfad4945e3d429d0a9501041ec3f3ac1ea89",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:32.193261+00:00"
+  },
+  {
+    "hid": 215,
+    "dataset_id": "f9cad7b01a472135639eeda2c7e03f6c",
+    "physical_dataset_id": "f9cad7b01a47213542d492ea88e97225",
+    "bytes": 3195275935,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H244_KRAS_siRNA_P2_2.fastq.gz",
+    "sha256": "bbf1008b0e41976b30d990e95965559b3ce141245c3874de9fa812fa992c0357",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:32.875986+00:00"
+  },
+  {
+    "hid": 216,
+    "dataset_id": "f9cad7b01a472135a14e44ef39664699",
+    "physical_dataset_id": "f9cad7b01a472135b2f93ecb59840f13",
+    "bytes": 2414940122,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H245_KRAS_siRNA_P3_1.fastq.gz",
+    "sha256": "24441f0c908d2b9be0949af76bbfe0ad33e75125fa39607311e29c32d4b2f129",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:34.165036+00:00"
+  },
+  {
+    "hid": 217,
+    "dataset_id": "f9cad7b01a472135553c404437601588",
+    "physical_dataset_id": "f9cad7b01a472135e549357fd7105675",
+    "bytes": 2415090102,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H110_KRAS_siRNA_P3_2.fastq.gz",
+    "sha256": "8700056d6465c1d97afed109f58312e380dd846c8f4a1d9d6bd2b0e39d38239f",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:34.849099+00:00"
+  },
+  {
+    "hid": 220,
+    "dataset_id": "f9cad7b01a47213567cb6a6af5c26bba",
+    "physical_dataset_id": "f9cad7b01a472135d5a73274f42d4a61",
+    "bytes": 2321734291,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H247_KRAS_siRNA_P4_1.fastq.gz",
+    "sha256": "7e26b5b7498d135f253797c611b09cf6cefdab8fe69ae4a26548193eaaef3697",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:36.080866+00:00"
+  },
+  {
+    "hid": 221,
+    "dataset_id": "f9cad7b01a472135b2178754526552df",
+    "physical_dataset_id": "f9cad7b01a47213560600395fbe32a1b",
+    "bytes": 2321928729,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H248_KRAS_siRNA_P4_2.fastq.gz",
+    "sha256": "27d3f389af39ad70649d547cb4be5afd20189dec29961a4606c3c12e7d77dbdb",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:36.771561+00:00"
+  },
+  {
+    "hid": 224,
+    "dataset_id": "f9cad7b01a47213511c344ece0b51cc3",
+    "physical_dataset_id": "f9cad7b01a4721355e3ecf0d48089ba7",
+    "bytes": 2930283917,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H129_SRR24828472_1.fastq.gz",
+    "sha256": "1227647c02a290f6d0ac2f5fb035ca3bb3546b50ec0384e5da87a1c1db7cfc70",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:38.046376+00:00"
+  },
+  {
+    "hid": 225,
+    "dataset_id": "f9cad7b01a4721351d26efda9a147099",
+    "physical_dataset_id": "f9cad7b01a4721354cd00a1388c79df4",
+    "bytes": 3001011805,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H130_SRR24828472_2.fastq.gz",
+    "sha256": "0befc21810127c07445ffb28b2b9a6e36871959845298f7fead457e35f0c61cb",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:38.804985+00:00"
+  },
+  {
+    "hid": 228,
+    "dataset_id": "f9cad7b01a472135bae3a7ad12320940",
+    "physical_dataset_id": "f9cad7b01a4721359290f4e791a578dd",
+    "bytes": 3421523547,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H251_Control_siRNA_P1_1.gz.fastq.gz",
+    "sha256": "f3a804fb018a172e34127267f88e8d587f53a3667ec6c6827fb5aece03d801e1",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:40.909693+00:00"
+  },
+  {
+    "hid": 229,
+    "dataset_id": "f9cad7b01a47213536e44add48ad7983",
+    "physical_dataset_id": "f9cad7b01a472135dbb942d52d454c08",
+    "bytes": 3177189282,
+    "backup_path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/01_raw/galaxy_files/H252_Control_siRNA_P1_2.fastq.gz",
+    "sha256": "3dd4c17cd4fa3dd55b5501df7dee6a305698110fe30577f006b9f0e541b8a577",
+    "matches_galaxy_sha256": true,
+    "checked_at_utc": "2026-09-24T01:18:41.451507+00:00"
+  }
+]

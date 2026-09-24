@@ -1,7 +1,8 @@
 {
   "retained": 94,
   "deleted_permanently": 168,
-  "already_deleted_before_cleanup": 50,
+  "already_deleted_before_cleanup": 24,
+  "previously_deleted_reference_purged": 26,
   "verified_backup_physical_files": 164,
   "verified_backup_bytes": 102284965845,
   "deleted_physical_files": 142,

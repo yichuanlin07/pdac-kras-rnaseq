@@ -426,5 +426,38 @@
       100
     ],
     "collection_hids": []
+  },
+  {
+    "action": "purge_old_references",
+    "dataset_hids": [
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      220,
+      221,
+      224,
+      225,
+      228,
+      229
+    ],
+    "collection_hids": [],
+    "authorization": "User confirmed permanent removal after file restoration checks; all26 backup hashes independently re-read and matched Galaxy SHA256"
   }
 ]
