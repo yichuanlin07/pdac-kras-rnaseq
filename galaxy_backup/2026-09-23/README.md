@@ -2,14 +2,18 @@
 
 History: **Datasets**, on [Main Galaxy](https://galaxy-main.usegalaxy.org/histories/view?id=bbd44e69cb8906b5123b15e2f796dd1c).
 
-Cleanup is in progress. Files are removed only after their backups have been checked. Ordinary deletion can be reversed in Galaxy; permanent deletion has not been performed.
+The backup and ordinary cleanup are complete. We removed 168 dataset entries and nine old collections. The dataset entries refer to 133 non-empty files and nine jobs with no output bytes, including 36 FASTQ files. Their combined file size is 102.25 GB.
+
+The local backup contains 164 checked files, totalling 102.28 GB, including copies of retained small results. This repository holds 122 of those files, totalling 85.59 MB. Large FASTQ and pilot BAM files are stored locally.
+
+All 17 full alignment BAM files remain in Galaxy. Ordinary deletion can be reversed; permanent deletion has not been performed, so no quota reduction is claimed.
 
 ## File lists
 
 - [Removed in this cleanup](00_manifests/deleted_this_cleanup.tsv)
 - [Retained in Galaxy](00_manifests/retained.tsv)
 - [Already deleted before this cleanup](00_manifests/previously_deleted.tsv)
-- [Items still waiting for cleanup](00_manifests/pending.tsv)
+- [Remaining cleanup items (none after verification)](00_manifests/pending.tsv)
 - [All dataset records](00_manifests/all_datasets.tsv)
 - [Checksums](00_manifests/SHA256SUMS.txt)
 

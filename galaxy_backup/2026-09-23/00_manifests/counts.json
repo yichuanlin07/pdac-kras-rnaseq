@@ -1,10 +1,9 @@
 {
   "retained": 94,
-  "deleted_recoverable": 106,
-  "not_yet_verified_deleted": 62,
+  "deleted_recoverable": 168,
   "already_deleted_before_cleanup": 50,
-  "verified_backup_physical_files": 158,
-  "verified_backup_bytes": 83618538623,
-  "deleted_physical_files": 106,
-  "deleted_physical_bytes": 675249202
+  "verified_backup_physical_files": 164,
+  "verified_backup_bytes": 102284965845,
+  "deleted_physical_files": 142,
+  "deleted_physical_bytes": 102251491062
 }
