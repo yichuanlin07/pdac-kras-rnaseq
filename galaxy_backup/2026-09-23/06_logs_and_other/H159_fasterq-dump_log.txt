@@ -1,0 +1,3 @@
+spots read      : 37,886,040
+reads read      : 75,772,080
+reads written   : 75,772,080

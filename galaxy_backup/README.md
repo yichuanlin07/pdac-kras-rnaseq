@@ -1,7 +1,11 @@
 # Galaxy backups
 
-This folder is for Galaxy history exports, dataset lists, workflows and small result files. No exports have been added yet.
+[23 September 2026 backup and cleanup](2026-09-23/README.md)
 
-Save each backup in a folder named for its date, such as `2026-09-23`. Record the history name, export date and dataset IDs alongside the files.
+This folder holds small Galaxy outputs and file inventories. Full FASTQ and pilot BAM backups are stored locally at:
 
-The repository excludes large FASTQ and BAM files. Back them up in separate storage and record their location here before deleting them from Galaxy. An exported file list records what was present; it does not contain the data itself.
+```text
+/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-23/
+```
+
+The dated inventory records each file's Galaxy number, backup path and SHA-256 checksum. Large files are not stored in GitHub. The retained full alignment BAM files remain in Galaxy.

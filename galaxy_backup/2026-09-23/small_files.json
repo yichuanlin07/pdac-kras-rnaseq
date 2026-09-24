@@ -1,0 +1,734 @@
+[
+  {
+    "hid": 2,
+    "path": "02_fastqc/H002_FastQC_on_dataset_1_Webpage.html",
+    "bytes": 603390,
+    "sha256": "d6d2dff6fb5a200e34753d066c9f53bf3e2f78b82af1ce6bb22a770fe59f6cf8"
+  },
+  {
+    "hid": 145,
+    "path": "02_fastqc/H145_FastQC_on_dataset_130_Webpage.html",
+    "bytes": 614500,
+    "sha256": "ff12d47894478e2916c0029f4c37fb005a98e5f8a831c2834b9fc6ba9f14313f"
+  },
+  {
+    "hid": 54,
+    "path": "02_fastqc/H054_FastQC_on_dataset_6_RawData.txt",
+    "bytes": 855868,
+    "sha256": "9cc5f7023d4dcdc97a065ab1226a7f499fd05f336c9ef9ad1a6e223696536f12"
+  },
+  {
+    "hid": 88,
+    "path": "02_fastqc/H088_FastQC_on_dataset_46_RawData.txt",
+    "bytes": 405673,
+    "sha256": "5b8717ae4b58788b7421f5b445f44f80cac84ec161edd52854a3384dd81d5eaa"
+  },
+  {
+    "hid": 23,
+    "path": "02_fastqc/H023_Compute_quality_statistics_on_dataset_15.txt",
+    "bytes": 14687,
+    "sha256": "a1901fc7d1f4423fe7de49f02559368ae41137125a556aec1d72e96c768af5c4"
+  },
+  {
+    "hid": 117,
+    "path": "02_fastqc/H117_FastQC_on_dataset_110_Webpage.html",
+    "bytes": 555170,
+    "sha256": "9c2baa4e011ff9d9584b88593a5bc302534b5531935c3e1e30c652ff31dad6fa"
+  },
+  {
+    "hid": 30,
+    "path": "02_fastqc/H030_Compute_quality_statistics_on_dataset_22.txt",
+    "bytes": 14965,
+    "sha256": "41f28dd7a32a43136c541217560bdec497a252c47bdcaa959e3fcb13031402db"
+  },
+  {
+    "hid": 321,
+    "path": "05_retained_results/H321_HISAT2_on_dataset_13_and_15_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "64b141e453ecd0ad35226301091b9987f0e164b45122fe0b3df3eecfd8a12ce1"
+  },
+  {
+    "hid": 61,
+    "path": "02_fastqc/H061_FastQC_on_dataset_10_Webpage.html",
+    "bytes": 604647,
+    "sha256": "f7ae98a3aaf9d64f6cf6303feddce09433179a479ecbaebf312712441018f549"
+  },
+  {
+    "hid": 99,
+    "path": "02_fastqc/H099_FastQC_on_dataset_90_RawData.txt",
+    "bytes": 852448,
+    "sha256": "f72b601eef0980b9a707c83f35b43cbe94dc596b3f446cab380dcc0863a3c9a9"
+  },
+  {
+    "hid": 98,
+    "path": "02_fastqc/H098_FastQC_on_dataset_90_Webpage.html",
+    "bytes": 604385,
+    "sha256": "2dd8072201fd80bf2e9fb6f0a9894421a832a4946d556c13b6a47b13e0bcd1d7"
+  },
+  {
+    "hid": 55,
+    "path": "02_fastqc/H055_FastQC_on_dataset_7_Webpage.html",
+    "bytes": 602411,
+    "sha256": "5fd301a7dc708d28ce895704c7458f80e05d77aacb7b3af9dd5e871b407e2c6e"
+  },
+  {
+    "hid": 275,
+    "path": "05_retained_results/H275_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "f7dfd6912671bce72181b1f8b981796bd4d6eaf4cf06a5e6f1f336614c005467"
+  },
+  {
+    "hid": 283,
+    "path": "05_retained_results/H283_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "16d04c51c9f81e7056ef3e27be1d548889afe1896169a3d63b020ffdf9c42dea"
+  },
+  {
+    "hid": 168,
+    "path": "03_multiqc/H168_fastqc_per_base_n_content_plot.tabular",
+    "bytes": 26275,
+    "sha256": "92ba4e9149353a39c7f1a37f4f69f9454eb3f42873cd5728650dd2c7322c8ed8"
+  },
+  {
+    "hid": 174,
+    "path": "03_multiqc/H174_fastqc_sequence_duplication_levels_plot.tabular",
+    "bytes": 15102,
+    "sha256": "829274f9aebc120f6536d60628c495330dfef6582cad923e5f147ce2810b0b0f"
+  },
+  {
+    "hid": 79,
+    "path": "02_fastqc/H079_FastQC_on_dataset_21_Webpage.html",
+    "bytes": 600833,
+    "sha256": "d2ccefaa2154379dc413c52c7cb775a010cdd4b919d76127950b693a29e12a07"
+  },
+  {
+    "hid": 152,
+    "path": "02_fastqc/H152_FastQC_on_dataset_151_Webpage.html",
+    "bytes": 605066,
+    "sha256": "826dd62781d59526c19438a08c3fc33da019f949d81f3e996bdfc3c633830b0d"
+  },
+  {
+    "hid": 49,
+    "path": "02_fastqc/H049_FastQC_on_dataset_5_Webpage.html",
+    "bytes": 604191,
+    "sha256": "30699ebd7605f53b74649ef050094680058db4ba1c59b719a93f140302a24fdb"
+  },
+  {
+    "hid": 103,
+    "path": "02_fastqc/H103_FastQC_on_dataset_92_RawData.txt",
+    "bytes": 405837,
+    "sha256": "c9d0e0fe6aa26b1a3d0e0ab4c4ed6f8f56fcfee60a5a49f5cff2bbec3f90f111"
+  },
+  {
+    "hid": 261,
+    "path": "05_retained_results/H261_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "c67fbf0bd14ded2e54a8273059f7acc3c6881ab138106b51b99d64eb281b4ed2"
+  },
+  {
+    "hid": 60,
+    "path": "02_fastqc/H060_FastQC_on_dataset_9_RawData.txt",
+    "bytes": 854517,
+    "sha256": "324507b10d8ff7d6b5db3b8e8140a0143b3e1d6f48cd9c36dce2496a18bf5498"
+  },
+  {
+    "hid": 162,
+    "path": "02_fastqc/H162_SRR24828471_R1_local_fastqc_data.txt",
+    "bytes": 853021,
+    "sha256": "588252df5c659d64548e29edd7366334f350f29ece191394b6c7fc9104e0e225"
+  },
+  {
+    "hid": 70,
+    "path": "02_fastqc/H070_FastQC_on_dataset_15_RawData.txt",
+    "bytes": 854909,
+    "sha256": "53763ff88982e068d82d309ef0df25ea16e69bc4911d26016d4ea88d6bb0cf1d"
+  },
+  {
+    "hid": 153,
+    "path": "02_fastqc/H153_FastQC_on_dataset_151_RawData.txt",
+    "bytes": 855578,
+    "sha256": "b241f00d09c149f36d10336dc65a22068271c56c37b44c9e96a41132f5565eb3"
+  },
+  {
+    "hid": 326,
+    "path": "05_retained_results/H326_Infer_Experiment_on_dataset_121_and_186_RNA-seq_experiment_configuration.txt",
+    "bytes": 183,
+    "sha256": "b3586b349686ed6a4fa4df851f967f6df49c0a443f9e171c66b55467f4f978cd"
+  },
+  {
+    "hid": 183,
+    "path": "02_fastqc/H183_FastQC_on_dataset_176_Webpage.html",
+    "bytes": 604512,
+    "sha256": "4d0d53cd727928212f520de7a112c14c752f0b411b82d777a60a1ced406ec668"
+  },
+  {
+    "hid": 122,
+    "path": "04_pilot_alignments/H122_HISAT2_on_dataset_13_and_15_Mapping_summary.txt",
+    "bytes": 404,
+    "sha256": "d351fcebfa00d867e2fff8ec863b64c188ec586d02564bdfe1edd180184e9dd9"
+  },
+  {
+    "hid": 172,
+    "path": "03_multiqc/H172_fastqc_per_sequence_quality_scores_plot.tabular",
+    "bytes": 12590,
+    "sha256": "9ac086bdbbd899cea15d8dd39359ca2b9645bccdfffff77473ee64743625e8d6"
+  },
+  {
+    "hid": 29,
+    "path": "02_fastqc/H029_Compute_quality_statistics_on_dataset_21.txt",
+    "bytes": 14966,
+    "sha256": "51900c1e62925a06a4cc143da275d6dd02bc7a93e0bb677a0135ca399628b7fb"
+  },
+  {
+    "hid": 73,
+    "path": "02_fastqc/H073_FastQC_on_dataset_17_Webpage.html",
+    "bytes": 604533,
+    "sha256": "3ae6804a3cf2b940a5eb25486acdcbe8335121111cd9690796808cbfa663c842"
+  },
+  {
+    "hid": 109,
+    "path": "03_multiqc/H109_MultiQC_on_dataset_56_58_and_others_Stats.tabular",
+    "bytes": 2031,
+    "sha256": "0a2ed41f9c69cb3f3c3175feff60ca6d5e81f117afde5872ea7ef2e42ea14010"
+  },
+  {
+    "hid": 25,
+    "path": "02_fastqc/H025_Compute_quality_statistics_on_dataset_17.txt",
+    "bytes": 14967,
+    "sha256": "0dfe9e2cd33c545823252afdd58223a33f21c91bae25101c45ef481bcf904492"
+  },
+  {
+    "hid": 259,
+    "path": "05_retained_results/H259_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "66f722a106b7fd3f27fc50634dde332ee1c959ea45902810bdf5c0ef016ee1a4"
+  },
+  {
+    "hid": 138,
+    "path": "02_fastqc/H138_FastQC_on_dataset_131_RawData.txt",
+    "bytes": 16352,
+    "sha256": "f0248fce69b7a3508c79f106b56356bce688592db8301fe5b9c66a0eb5a45bce"
+  },
+  {
+    "hid": 65,
+    "path": "02_fastqc/H065_FastQC_on_dataset_12_Webpage.html",
+    "bytes": 603399,
+    "sha256": "a83615607d423a84f8ec532735e9a90f06b97bbdea13ed187b2982e024d76c7f"
+  },
+  {
+    "hid": 47,
+    "path": "02_fastqc/H047_FastQC_on_dataset_4_Webpage.html",
+    "bytes": 601963,
+    "sha256": "0e020dc477db3934e72a4f4ef6f12f051a1f4e72cc630789f8548d76b3c279ad"
+  },
+  {
+    "hid": 26,
+    "path": "02_fastqc/H026_Compute_quality_statistics_on_dataset_18.txt",
+    "bytes": 14404,
+    "sha256": "0ac38e6b5237963d24ec052d7a361260a5284c11f257cca1bedf6db259149ad7"
+  },
+  {
+    "hid": 48,
+    "path": "02_fastqc/H048_FastQC_on_dataset_4_RawData.txt",
+    "bytes": 852966,
+    "sha256": "7331af3c2c437cb24abd167f1565ee0c9aa86b03cd93e021f906d9a182546611"
+  },
+  {
+    "hid": 118,
+    "path": "02_fastqc/H118_FastQC_on_dataset_110_RawData.txt",
+    "bytes": 405867,
+    "sha256": "ada0879c780bd109d0a46b65de2daa01c892150d79efa44cb32a24d7467342eb"
+  },
+  {
+    "hid": 159,
+    "path": "06_logs_and_other/H159_fasterq-dump_log.txt",
+    "bytes": 87,
+    "sha256": "c2a7bb144e8195b69ca7f52ed9a9b471e5f1393867c62917249b5c0836a9b869"
+  },
+  {
+    "hid": 86,
+    "path": "02_fastqc/H086_FastQC_on_dataset_33_RawData.txt",
+    "bytes": 855498,
+    "sha256": "98d66d0952040eaedc893161d8632ce7ca88841a354933a634021329678cd217"
+  },
+  {
+    "hid": 83,
+    "path": "02_fastqc/H083_FastQC_on_dataset_31_Webpage.html",
+    "bytes": 600603,
+    "sha256": "c15b4f32ab7f1fdc059a7d6958868c00fff5b83cdf4f27729b019ac1310457ba"
+  },
+  {
+    "hid": 96,
+    "path": "02_fastqc/H096_FastQC_on_dataset_89_Webpage.html",
+    "bytes": 553135,
+    "sha256": "4341dad82b0312a10be8af1135b7cb4c103e28c377c8483a552511855083658a"
+  },
+  {
+    "hid": 108,
+    "path": "03_multiqc/H108_MultiQC_on_dataset_56_58_and_others_Webpage.html",
+    "bytes": 2642987,
+    "sha256": "6b560d6e9fb07a84d1f0ce6995b9da76193978c264d601165e50149c691ca2d0"
+  },
+  {
+    "hid": 322,
+    "path": "05_retained_results/H322_HISAT2_on_dataset_7_and_8_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "70bed0aed708599c52da4d2b18df23eb292492f0d2d04eb65ff0a8f40ece2876"
+  },
+  {
+    "hid": 126,
+    "path": "04_pilot_alignments/H126_HISAT2_on_dataset_13_and_15_Mapping_summary.txt",
+    "bytes": 404,
+    "sha256": "67c3c9c40adc6c204e1d8ac0d7deeaa683f130e34900c657e08f9f3cf451b061"
+  },
+  {
+    "hid": 62,
+    "path": "02_fastqc/H062_FastQC_on_dataset_10_RawData.txt",
+    "bytes": 855399,
+    "sha256": "3e34ec2e33f6465ed748777028b55860876a561228f127139529d92bd60f8443"
+  },
+  {
+    "hid": 287,
+    "path": "05_retained_results/H287_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "03da6750ce4d6122cc89b3d89fc05fbc78f058ab48e82369e2d76d8e88f17034"
+  },
+  {
+    "hid": 14,
+    "path": "02_fastqc/H014_Compute_quality_statistics_on_dataset_13.txt",
+    "bytes": 14689,
+    "sha256": "31c4f1a2f36da8159b268acc5cfe3177f8b6f7dfba8930f34b3b619673cb914c"
+  },
+  {
+    "hid": 59,
+    "path": "02_fastqc/H059_FastQC_on_dataset_9_Webpage.html",
+    "bytes": 604187,
+    "sha256": "5eaf6397c04ac201e9bf7808b4c773d50b6e4ddbe11e42acc928de9229d788ea"
+  },
+  {
+    "hid": 134,
+    "path": "04_pilot_alignments/H134_HISAT2_on_dataset_7_and_8_Mapping_summary.txt",
+    "bytes": 404,
+    "sha256": "7e66a1fecb80a7355721e5e63a0fb94c900345dc41e8a7c0ec583a17e30fa5fd"
+  },
+  {
+    "hid": 100,
+    "path": "02_fastqc/H100_FastQC_on_dataset_91_Webpage.html",
+    "bytes": 552343,
+    "sha256": "1cac71914c7c939abe01d603a834d62eae6d595993a5a428f1b36351780e7422"
+  },
+  {
+    "hid": 78,
+    "path": "02_fastqc/H078_FastQC_on_dataset_19_RawData.txt",
+    "bytes": 854580,
+    "sha256": "5318e0ed0215e4f2e34df954728272f2e204f2cc5fbd0f6c9323279612acc3d0"
+  },
+  {
+    "hid": 97,
+    "path": "02_fastqc/H097_FastQC_on_dataset_89_RawData.txt",
+    "bytes": 405828,
+    "sha256": "0b44fac2b8f5fa45938df06c1fcf5cc4ed4574dc5d9c7c47c16ebecdcdc6742a"
+  },
+  {
+    "hid": 139,
+    "path": "02_fastqc/H139_FastQC_on_dataset_129_Webpage.html",
+    "bytes": 604452,
+    "sha256": "e80c227b6e033a8811beb4dd5f8e861f1b2b22843c872505113e170593aefee4"
+  },
+  {
+    "hid": 169,
+    "path": "03_multiqc/H169_fastqc_per_base_sequence_quality_plot.tabular",
+    "bytes": 28171,
+    "sha256": "f903dd160dc80bb1ec31a833d4d7a5cb0535449d73fd7e0b52587501ca2b3b94"
+  },
+  {
+    "hid": 136,
+    "path": "04_pilot_alignments/H136_HISAT2_on_dataset_7_and_8_Mapping_summary.txt",
+    "bytes": 404,
+    "sha256": "7e66a1fecb80a7355721e5e63a0fb94c900345dc41e8a7c0ec583a17e30fa5fd"
+  },
+  {
+    "hid": 80,
+    "path": "02_fastqc/H080_FastQC_on_dataset_21_RawData.txt",
+    "bytes": 853224,
+    "sha256": "234ae9f2da6b5b87afdaba45b895127ab16a066540da5ba01b97ac4dd180b8a5"
+  },
+  {
+    "hid": 104,
+    "path": "02_fastqc/H104_FastQC_on_dataset_93_Webpage.html",
+    "bytes": 609893,
+    "sha256": "c9ab22dd1fdb7a67137c310e04c7be440f7b0e54df2a15e6670bc32853096694"
+  },
+  {
+    "hid": 115,
+    "path": "02_fastqc/H115_FastQC_on_dataset_111_Webpage.html",
+    "bytes": 553192,
+    "sha256": "e26eaf1db69eccf187d9e35242e2a17ad4fd5fc76ab7baa4784370aad2f7dfca"
+  },
+  {
+    "hid": 277,
+    "path": "05_retained_results/H277_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "308016c2555db86fd75c043f5bf501558f617adb42166297a0ce65b22608f1a2"
+  },
+  {
+    "hid": 267,
+    "path": "05_retained_results/H267_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "4c0b1a665016610b439441a1efb041bcdda9ffd58a937a3433495dda0095fa31"
+  },
+  {
+    "hid": 3,
+    "path": "02_fastqc/H003_FastQC_on_dataset_1_RawData.txt",
+    "bytes": 856593,
+    "sha256": "03f8318b4c3d47c6101a2fe300c838b8f01e1bd07ca7b1fdbf41b41f26afc948"
+  },
+  {
+    "hid": 101,
+    "path": "02_fastqc/H101_FastQC_on_dataset_91_RawData.txt",
+    "bytes": 405585,
+    "sha256": "d99165fc504e3e857ed342a7705509afb5d9c64c3af9e3ab8a2a0572c75c74d6"
+  },
+  {
+    "hid": 263,
+    "path": "05_retained_results/H263_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "7a33114568627023ac21a836b393ea71563b3b74b9b31fa7093b45d87bfe2aa6"
+  },
+  {
+    "hid": 137,
+    "path": "02_fastqc/H137_FastQC_on_dataset_131_Webpage.html",
+    "bytes": 579220,
+    "sha256": "2dcaf976be4f2f5aaa216fe5c0f4d17e881c69c5fe633c23676575becb69b670"
+  },
+  {
+    "hid": 114,
+    "path": "02_fastqc/H114_FastQC_on_dataset_112_RawData.txt",
+    "bytes": 405877,
+    "sha256": "de0e9929a1ccbff382a75d6a1107f94a81ced97f46e2be89bf829cc3be91d5dd"
+  },
+  {
+    "hid": 181,
+    "path": "02_fastqc/H181_FastQC_on_dataset_175_Webpage.html",
+    "bytes": 603136,
+    "sha256": "670efee40c502a8171f3a2750e77155301087d07ed058c6a9d06835fb1afbac1"
+  },
+  {
+    "hid": 146,
+    "path": "02_fastqc/H146_FastQC_on_dataset_130_RawData.txt",
+    "bytes": 854111,
+    "sha256": "922511265d240445d823d74c2a9d71d7d67951b6575ba01ee38f44c04c513ece"
+  },
+  {
+    "hid": 184,
+    "path": "02_fastqc/H184_FastQC_on_dataset_176_RawData.txt",
+    "bytes": 855552,
+    "sha256": "3ff85c67347e16881bef81f3ddbf3a9fdefb471db0348441fd32510923b9ed17"
+  },
+  {
+    "hid": 57,
+    "path": "02_fastqc/H057_FastQC_on_dataset_8_Webpage.html",
+    "bytes": 603887,
+    "sha256": "557395d3f585861544ecd421975bdcf72420c148bca10f97ed35b366d40c0b37"
+  },
+  {
+    "hid": 27,
+    "path": "02_fastqc/H027_Compute_quality_statistics_on_dataset_19.txt",
+    "bytes": 14410,
+    "sha256": "b0f8cf10b042c40595d6b62076210582d42ba9124167dfefdcba6e072e7df340"
+  },
+  {
+    "hid": 105,
+    "path": "02_fastqc/H105_FastQC_on_dataset_93_RawData.txt",
+    "bytes": 845574,
+    "sha256": "a7939b21cd63999626b1bdace522a8d21cd89321343191348199480a49343b68"
+  },
+  {
+    "hid": 166,
+    "path": "03_multiqc/H166_MultiQC_on_dataset_3_48_and_others_Stats.tabular",
+    "bytes": 3080,
+    "sha256": "d057861b9c006757238a1eb25cf54b4fa2be10065828a06b94f9a02c1bfdce9a"
+  },
+  {
+    "hid": 64,
+    "path": "02_fastqc/H064_FastQC_on_dataset_11_RawData.txt",
+    "bytes": 853166,
+    "sha256": "8d28270589590bd684400d5df9519b504eb782509d60fde4f2df483a30ea1bf7"
+  },
+  {
+    "hid": 273,
+    "path": "05_retained_results/H273_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "8de84ba6558e14f6a53fbb612013ef5b810c1c9700ccc896d59a1edddece1cc2"
+  },
+  {
+    "hid": 53,
+    "path": "02_fastqc/H053_FastQC_on_dataset_6_Webpage.html",
+    "bytes": 604423,
+    "sha256": "54eede5d87125462f582664c4cbf7fc27171f1802cd86bff1ac840f35f69aefa"
+  },
+  {
+    "hid": 77,
+    "path": "02_fastqc/H077_FastQC_on_dataset_19_Webpage.html",
+    "bytes": 601741,
+    "sha256": "032be02a13dd3411a452d6fa0084f002f6c3ebb191ad16d7a0c70424ba7a2b2b"
+  },
+  {
+    "hid": 71,
+    "path": "02_fastqc/H071_FastQC_on_dataset_16_Webpage.html",
+    "bytes": 599329,
+    "sha256": "36bb6a2582b17a1caf4fac66dae534a8358c3168c67290c9e9f8fc1b7d73f816"
+  },
+  {
+    "hid": 81,
+    "path": "02_fastqc/H081_FastQC_on_dataset_22_Webpage.html",
+    "bytes": 602227,
+    "sha256": "fa5e11db48bd2a8ea3e8f5aa96c3daaa305f1a5b875f609a7f48cedc3e6db2c7"
+  },
+  {
+    "hid": 281,
+    "path": "05_retained_results/H281_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "89ef70228434df6e85dc03c08982db142561de317eb22c325d35cc7331ef6419"
+  },
+  {
+    "hid": 171,
+    "path": "03_multiqc/H171_fastqc_per_sequence_gc_content_plot_Percentages.tabular",
+    "bytes": 95864,
+    "sha256": "2c8949fd1e1adc7f3e170f127d9a472da7e9faa3af4bfebb01268913e9bd39bf"
+  },
+  {
+    "hid": 163,
+    "path": "02_fastqc/H163_SRR24828471_R2_local_fastqc_data.txt",
+    "bytes": 855566,
+    "sha256": "76360671b93b6d150303425a39bebdd6a1f64b1938f3e5a0d5f76b03221cad45"
+  },
+  {
+    "hid": 324,
+    "path": "05_retained_results/H324_hg38_RefSeq.bed.bed12",
+    "bytes": 30192592,
+    "sha256": "0950156c7d1ceac58c76bea224687bc9f1eb59fc56bd5a8daf2ffbb6eacfe123"
+  },
+  {
+    "hid": 107,
+    "path": "02_fastqc/H107_FASTQE_on_dataset_1.html",
+    "bytes": 2554,
+    "sha256": "667d1272772e28a90367cd066a4128dca074ffa92bc3cf10cb121e672477f86e"
+  },
+  {
+    "hid": 74,
+    "path": "02_fastqc/H074_FastQC_on_dataset_17_RawData.txt",
+    "bytes": 855732,
+    "sha256": "9106325e911b2e601fe4ad9539f151beaec61a7cb1a0878d869097ca1b1cbb01"
+  },
+  {
+    "hid": 76,
+    "path": "02_fastqc/H076_FastQC_on_dataset_18_RawData.txt",
+    "bytes": 853108,
+    "sha256": "f4451a77ed89069092a73051f71b7bd0633cc9c5bdfa656383b9186b67d1ef61"
+  },
+  {
+    "hid": 50,
+    "path": "02_fastqc/H050_FastQC_on_dataset_5_RawData.txt",
+    "bytes": 853692,
+    "sha256": "4ce9c449d4a2c666e65423c3f4a3aa20bfaf36cc06fbfccc6df116e7be19ac4a"
+  },
+  {
+    "hid": 269,
+    "path": "05_retained_results/H269_HISAT2_on_Mapping_summary.txt",
+    "bytes": 422,
+    "sha256": "b9773e5ee3b62809a7678d1dbc2bf84923f09853893464456ada41b63279aed1"
+  },
+  {
+    "hid": 182,
+    "path": "02_fastqc/H182_FastQC_on_dataset_175_RawData.txt",
+    "bytes": 853007,
+    "sha256": "fac364dbfcdf41377070ac52be59b7c3200710bb7fc5e90b1911f4400a449cb1"
+  },
+  {
+    "hid": 85,
+    "path": "02_fastqc/H085_FastQC_on_dataset_33_Webpage.html",
+    "bytes": 604079,
+    "sha256": "3d9dfc863558f75a5284d639139874745eaae0beb033f4c05697d6ad9407b86e"
+  },
+  {
+    "hid": 113,
+    "path": "02_fastqc/H113_FastQC_on_dataset_112_Webpage.html",
+    "bytes": 554100,
+    "sha256": "32751471de5b0d72f6bcda8fb569bac293b02e7f912dcf7d66a10532893043ab"
+  },
+  {
+    "hid": 119,
+    "path": "02_fastqc/H119_FastQC_on_dataset_106_Webpage.html",
+    "bytes": 553650,
+    "sha256": "f37844c37f4d2468b8c9783dfe20f9dd82c55ac0b813d04c495210736a89ede7"
+  },
+  {
+    "hid": 325,
+    "path": "05_retained_results/H325_Infer_Experiment_on_dataset_131_and_186_RNA-seq_experiment_configuration.txt",
+    "bytes": 183,
+    "sha256": "787ed439803fa72b6f5129265dc526099033c3579e07c89383658c9cf91f8014"
+  },
+  {
+    "hid": 66,
+    "path": "02_fastqc/H066_FastQC_on_dataset_12_RawData.txt",
+    "bytes": 856596,
+    "sha256": "98878ee1223c3e37bc49ea051ebf7074e8af5a06cb26ee601235f8cc266b35ab"
+  },
+  {
+    "hid": 56,
+    "path": "02_fastqc/H056_FastQC_on_dataset_7_RawData.txt",
+    "bytes": 852903,
+    "sha256": "91b3908ebf1d3b4eb837f2988c9f1c4fd80d633eb467dff734cc3800eacac40f"
+  },
+  {
+    "hid": 279,
+    "path": "05_retained_results/H279_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "b4fec468a65db9fe4f08f06233599bb9969331d0ccf544bd31040e9d15ac011e"
+  },
+  {
+    "hid": 69,
+    "path": "02_fastqc/H069_FastQC_on_dataset_15_Webpage.html",
+    "bytes": 603615,
+    "sha256": "764bba4ef109ddf45fb621127ce94effefafefed53051f749371b1ae5158e1fa"
+  },
+  {
+    "hid": 87,
+    "path": "02_fastqc/H087_FastQC_on_dataset_46_Webpage.html",
+    "bytes": 553127,
+    "sha256": "46073e88a2ea3992ea7e2c45363c3e478c365007863c32aeafc3ee1f324ad24e"
+  },
+  {
+    "hid": 82,
+    "path": "02_fastqc/H082_FastQC_on_dataset_22_RawData.txt",
+    "bytes": 855396,
+    "sha256": "c08d32b884f82e43ad4f0518873fab1dfc41e3622265da3a58bdf7662c11d1d6"
+  },
+  {
+    "hid": 140,
+    "path": "02_fastqc/H140_FastQC_on_dataset_129_RawData.txt",
+    "bytes": 857406,
+    "sha256": "65ddd5875cff3582eedfbeb6dff1e14a2f4bbfec84662a7fca1ca381bc410c2f"
+  },
+  {
+    "hid": 72,
+    "path": "02_fastqc/H072_FastQC_on_dataset_16_RawData.txt",
+    "bytes": 853014,
+    "sha256": "4e98d637359d4f94431e8a1619c21b29bd049ede811c159de9903f107f42e947"
+  },
+  {
+    "hid": 58,
+    "path": "02_fastqc/H058_FastQC_on_dataset_8_RawData.txt",
+    "bytes": 854534,
+    "sha256": "0614a38bf07f31bd2d42539610d4feff74323a04baef8f3d4a7e59224e2b1324"
+  },
+  {
+    "hid": 84,
+    "path": "02_fastqc/H084_FastQC_on_dataset_31_RawData.txt",
+    "bytes": 853624,
+    "sha256": "a4e463302cee6b0e691809d913752759d33c508e3d649b93ffd13f04f4c9cf63"
+  },
+  {
+    "hid": 170,
+    "path": "03_multiqc/H170_fastqc_per_sequence_gc_content_plot_Counts.tabular",
+    "bytes": 56896,
+    "sha256": "0f3b4aaedc8f1a441bbb01a378ea888fe31a40beceb3596396fd530985d96a97"
+  },
+  {
+    "hid": 63,
+    "path": "02_fastqc/H063_FastQC_on_dataset_11_Webpage.html",
+    "bytes": 601571,
+    "sha256": "0f2012ea040491ec722a85e89d8c7c430a1a65b7df07ae2185725ef0399af469"
+  },
+  {
+    "hid": 271,
+    "path": "05_retained_results/H271_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "74db3829f9892707b0c036199291ddddced84ba82d67cb5df4f5d1de6bb2d42b"
+  },
+  {
+    "hid": 124,
+    "path": "04_pilot_alignments/H124_HISAT2_on_dataset_13_and_15_Mapping_summary.txt",
+    "bytes": 404,
+    "sha256": "67c3c9c40adc6c204e1d8ac0d7deeaa683f130e34900c657e08f9f3cf451b061"
+  },
+  {
+    "hid": 265,
+    "path": "05_retained_results/H265_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "b0236203d9ce0361e96c801883070e80dbb304a72af530130a132819b42515f5"
+  },
+  {
+    "hid": 116,
+    "path": "02_fastqc/H116_FastQC_on_dataset_111_RawData.txt",
+    "bytes": 405586,
+    "sha256": "5dadbd47a6f3e2d112017f47a30367e3ca26651aa78bf055d81ccca5357339eb"
+  },
+  {
+    "hid": 68,
+    "path": "02_fastqc/H068_FastQC_on_dataset_13_RawData.txt",
+    "bytes": 853172,
+    "sha256": "aba0b4a03b10bff1c9a692bb96159a72d499fe70f0e60e873a1fa1d9a1e4bdd3"
+  },
+  {
+    "hid": 102,
+    "path": "02_fastqc/H102_FastQC_on_dataset_92_Webpage.html",
+    "bytes": 556439,
+    "sha256": "0b47b60ea40d0b8200493ba9c76763794d08307af6a5022ecf4ba46e75b62cd7"
+  },
+  {
+    "hid": 75,
+    "path": "02_fastqc/H075_FastQC_on_dataset_18_Webpage.html",
+    "bytes": 603741,
+    "sha256": "a2e5f60d26482a793ac60bc5c559c53d2697a10743be2ef26036116c8e6fb1e2"
+  },
+  {
+    "hid": 132,
+    "path": "04_pilot_alignments/H132_HISAT2_on_dataset_7_and_8_Mapping_summary.txt",
+    "bytes": 404,
+    "sha256": "7e66a1fecb80a7355721e5e63a0fb94c900345dc41e8a7c0ec583a17e30fa5fd"
+  },
+  {
+    "hid": 165,
+    "path": "03_multiqc/H165_MultiQC_on_dataset_3_48_and_others_Webpage.html",
+    "bytes": 2836096,
+    "sha256": "af02560d0c6b37562cc3852ebc4db2cbb4476d484034b739409aa3e9fbf782c7"
+  },
+  {
+    "hid": 120,
+    "path": "02_fastqc/H120_FastQC_on_dataset_106_RawData.txt",
+    "bytes": 405625,
+    "sha256": "136ce9e0e8747334d85f2e72db553a1649a5f7aaa9ff429ead4f65808db6ec1c"
+  },
+  {
+    "hid": 257,
+    "path": "05_retained_results/H257_HISAT2_on_Mapping_summary.txt",
+    "bytes": 420,
+    "sha256": "e119f09feb8c90855e5c37a3a17dac1ebe56149a7b7dd4fd11320e5dffa6e1f3"
+  },
+  {
+    "hid": 167,
+    "path": "03_multiqc/H167_fastqc_adapter_content_plot.tabular",
+    "bytes": 199006,
+    "sha256": "79e5c41a8672308dfc38b940b13e0a12623e1c35517242391562f1e0408218b1"
+  },
+  {
+    "hid": 67,
+    "path": "02_fastqc/H067_FastQC_on_dataset_13_Webpage.html",
+    "bytes": 600039,
+    "sha256": "1c539f96c592d4f9766d8e5fce807eecf792f5f11e62607d5c7edd3d8924a6c1"
+  },
+  {
+    "hid": 24,
+    "path": "02_fastqc/H024_Compute_quality_statistics_on_dataset_16.txt",
+    "bytes": 14968,
+    "sha256": "8cc27ad631917c8ead145ce32970ba3391f694a4436c9ff4cfe8666517782079"
+  },
+  {
+    "hid": 173,
+    "path": "03_multiqc/H173_fastqc_sequence_counts_plot.tabular",
+    "bytes": 1516,
+    "sha256": "eeb62867c610fc72ff40cd1bb53cbf16dcb022f7120a2277fff8f0dfac369342"
+  }
+]

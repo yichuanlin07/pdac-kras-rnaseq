@@ -1,0 +1,147 @@
+[
+  {
+    "hid": 305,
+    "id": "4d66fd4089b15b14",
+    "name": "01_Aligned_BAM_17_runs",
+    "member_hids": [
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304
+    ],
+    "sample_order": [
+      "KRAS_siRNA_P5_SRR24828471",
+      "Control_siRNA_P1",
+      "KRAS_siRNA_P5_v2_SRR24828472",
+      "KRAS_siRNA_P4",
+      "KRAS_siRNA_P3",
+      "KRAS_siRNA_P2",
+      "KRAS_siRNA_M3",
+      "KRAS_siRNA_M2",
+      "KRAS_siRNA_M1_REVIEW",
+      "Control_siRNA_P5",
+      "Control_siRNA_P4",
+      "Control_siRNA_P3",
+      "Control_siRNA_P2",
+      "Control_siRNA_M3",
+      "Control_siRNA_M2",
+      "Control_siRNA_M1",
+      "KRAS_siRNA_P1"
+    ]
+  },
+  {
+    "hid": 323,
+    "id": "5aa3f23f33a26921",
+    "name": "02_Alignment_Summaries_17_runs",
+    "member_hids": [
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322
+    ],
+    "sample_order": [
+      "KRAS_siRNA_P5_SRR24828471",
+      "Control_siRNA_P1",
+      "KRAS_siRNA_P5_v2_SRR24828472",
+      "KRAS_siRNA_P4",
+      "KRAS_siRNA_P3",
+      "KRAS_siRNA_P2",
+      "KRAS_siRNA_M3",
+      "KRAS_siRNA_M2",
+      "KRAS_siRNA_M1_REVIEW",
+      "Control_siRNA_P5",
+      "Control_siRNA_P4",
+      "Control_siRNA_P3",
+      "Control_siRNA_P2",
+      "Control_siRNA_M3",
+      "Control_siRNA_M2",
+      "Control_siRNA_M1",
+      "KRAS_siRNA_P1"
+    ]
+  },
+  {
+    "hid": 327,
+    "id": "58e8c3f678bf2321",
+    "name": "03_Reference_and_Strand_Checks",
+    "member_hids": [
+      324,
+      325,
+      326
+    ],
+    "sample_order": [
+      "hg38_RefSeq",
+      "KRAS_siRNA_P1_strand_check_188",
+      "Control_siRNA_M1_strand_check_187"
+    ]
+  },
+  {
+    "hid": 330,
+    "id": "e9ce8468431d00a3",
+    "name": "04_KRAS_M1_Raw_Pair_REVIEW",
+    "member_hids": [
+      328,
+      329
+    ],
+    "sample_order": [
+      "KRAS_siRNA_M1_R2",
+      "KRAS_siRNA_M1_R1"
+    ]
+  },
+  {
+    "hid": 334,
+    "id": "b40416d92b9002da",
+    "name": "05_QC_Reports_and_Recovery",
+    "member_hids": [
+      331,
+      332,
+      333
+    ],
+    "sample_order": [
+      "MultiQC_report",
+      "MultiQC_statistics",
+      "fasterq_dump_log"
+    ]
+  },
+  {
+    "hid": 164,
+    "id": "5237937e5a0635fc",
+    "name": "06_QC_Plots",
+    "member_hids": [
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174
+    ],
+    "sample_order": []
+  }
+]
