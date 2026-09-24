@@ -1,6 +1,6 @@
 {
   "retained": 94,
-  "deleted_recoverable": 168,
+  "deleted_permanently": 168,
   "already_deleted_before_cleanup": 50,
   "verified_backup_physical_files": 164,
   "verified_backup_bytes": 102284965845,
