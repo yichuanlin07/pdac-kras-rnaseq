@@ -1,0 +1,221 @@
+{
+  "runs": [
+    {
+      "Local label": "Control M1",
+      "Run accession": "SRR24828468",
+      "ENA sample alias": "Pa01_SC",
+      "Galaxy R1": "13",
+      "Galaxy R2": "15"
+    },
+    {
+      "Local label": "Control M2",
+      "Run accession": "SRR24828466",
+      "ENA sample alias": "Pa02_SC",
+      "Galaxy R1": "16",
+      "Galaxy R2": "17"
+    },
+    {
+      "Local label": "Control M3",
+      "Run accession": "SRR24828479",
+      "ENA sample alias": "Pa04_SC",
+      "Galaxy R1": "18",
+      "Galaxy R2": "19"
+    },
+    {
+      "Local label": "Control P1",
+      "Run accession": "SRR24828475",
+      "ENA sample alias": "Pa16_SC",
+      "Galaxy R1": "21",
+      "Galaxy R2": "22"
+    },
+    {
+      "Local label": "Control P2",
+      "Run accession": "SRR24828473",
+      "ENA sample alias": "Panc1_SC",
+      "Galaxy R1": "31",
+      "Galaxy R2": "33"
+    },
+    {
+      "Local label": "Control P3",
+      "Run accession": "SRR24828477",
+      "ENA sample alias": "Pa14_SC",
+      "Galaxy R1": "46",
+      "Galaxy R2": "89"
+    },
+    {
+      "Local label": "Control P4",
+      "Run accession": "SRR24828480",
+      "ENA sample alias": "HPAC_SC",
+      "Galaxy R1": "91",
+      "Galaxy R2": "92"
+    },
+    {
+      "Local label": "Control P5",
+      "Run accession": "SRR24828470",
+      "ENA sample alias": "MP2_SC",
+      "Galaxy R1": "90",
+      "Galaxy R2": "93"
+    },
+    {
+      "Local label": "KRAS M1",
+      "Run accession": "SRR24828469",
+      "ENA sample alias": "Pa01_K2",
+      "Galaxy R1": "1",
+      "Galaxy R2": "12"
+    },
+    {
+      "Local label": "KRAS M2",
+      "Run accession": "SRR24828467",
+      "ENA sample alias": "Pa02_K2",
+      "Galaxy R1": "11",
+      "Galaxy R2": "10"
+    },
+    {
+      "Local label": "KRAS M3",
+      "Run accession": "SRR24828465",
+      "ENA sample alias": "Pa04_K2",
+      "Galaxy R1": "4",
+      "Galaxy R2": "5"
+    },
+    {
+      "Local label": "KRAS P1",
+      "Run accession": "SRR24828476",
+      "ENA sample alias": "Pa16_K2",
+      "Galaxy R1": "7",
+      "Galaxy R2": "8"
+    },
+    {
+      "Local label": "KRAS P2",
+      "Run accession": "SRR24828474",
+      "ENA sample alias": "Panc1_K2",
+      "Galaxy R1": "9",
+      "Galaxy R2": "6"
+    },
+    {
+      "Local label": "KRAS P3",
+      "Run accession": "SRR24828478",
+      "ENA sample alias": "Pa14_K2",
+      "Galaxy R1": "106",
+      "Galaxy R2": "110"
+    },
+    {
+      "Local label": "KRAS P4",
+      "Run accession": "SRR24828481",
+      "ENA sample alias": "HPAC_K2",
+      "Galaxy R1": "111",
+      "Galaxy R2": "112"
+    },
+    {
+      "Local label": "KRAS P5",
+      "Run accession": "SRR24828471",
+      "ENA sample alias": "MP2_K2v2",
+      "Galaxy R1": "175 (collection 156)",
+      "Galaxy R2": "176 (collection 156)"
+    },
+    {
+      "Local label": "KRAS P5_v2",
+      "Run accession": "SRR24828472",
+      "ENA sample alias": "MP2_K2",
+      "Galaxy R1": "129",
+      "Galaxy R2": "130"
+    }
+  ],
+  "cell_lines": [
+    {
+      "Local number": "M1",
+      "Cell line": "Pa01C",
+      "ENA source classification": "Metastatic",
+      "Control BioSample": "SAMN35622213",
+      "KRAS BioSample": "SAMN35622212"
+    },
+    {
+      "Local number": "M2",
+      "Cell line": "Pa02C",
+      "ENA source classification": "Metastatic",
+      "Control BioSample": "SAMN35622215",
+      "KRAS BioSample": "SAMN35622214"
+    },
+    {
+      "Local number": "M3",
+      "Cell line": "Pa04C",
+      "ENA source classification": "Metastatic",
+      "Control BioSample": "SAMN35622217",
+      "KRAS BioSample": "SAMN35622216"
+    },
+    {
+      "Local number": "P1",
+      "Cell line": "Pa16C",
+      "ENA source classification": "Primary",
+      "Control BioSample": "SAMN35622221",
+      "KRAS BioSample": "SAMN35622220"
+    },
+    {
+      "Local number": "P2",
+      "Cell line": "PANC-1",
+      "ENA source classification": "Primary",
+      "Control BioSample": "SAMN35622223",
+      "KRAS BioSample": "SAMN35622222"
+    },
+    {
+      "Local number": "P3",
+      "Cell line": "Pa14C",
+      "ENA source classification": "Primary",
+      "Control BioSample": "SAMN35622219",
+      "KRAS BioSample": "SAMN35622218"
+    },
+    {
+      "Local number": "P4",
+      "Cell line": "HPAC",
+      "ENA source classification": "Primary",
+      "Control BioSample": "SAMN35622208",
+      "KRAS BioSample": "SAMN35622207"
+    },
+    {
+      "Local number": "P5",
+      "Cell line": "MiaPaca-2",
+      "ENA source classification": "Primary",
+      "Control BioSample": "SAMN35622211",
+      "KRAS BioSample": "SAMN35622210 and SAMN35622209"
+    }
+  ],
+  "p5_runs": [
+    {
+      "Local name": "KRAS P5",
+      "Run": "SRR24828471",
+      "Experiment": "SRX20593397",
+      "BioSample": "[SAMN35622210](https://www.ebi.ac.uk/ena/browser/api/xml/SAMN35622210)",
+      "Public alias": "MP2_K2v2",
+      "Repeat field": "replicate=TRUE"
+    },
+    {
+      "Local name": "KRAS P5_v2",
+      "Run": "SRR24828472",
+      "Experiment": "SRX20593396",
+      "BioSample": "[SAMN35622209](https://www.ebi.ac.uk/ena/browser/api/xml/SAMN35622209)",
+      "Public alias": "MP2_K2",
+      "Repeat field": "replicate=FALSE"
+    }
+  ],
+  "ena_checksums": [
+    {
+      "Filename": "SRR24828471_1.fastq.gz",
+      "Expected bytes": "2582199279",
+      "ENA MD5": "80a6ee296d0fffe29a6b335e79546778"
+    },
+    {
+      "Filename": "SRR24828471_2.fastq.gz",
+      "Expected bytes": "2603110042",
+      "ENA MD5": "f56e4529719292d8c8bd01af9b24b6b8"
+    },
+    {
+      "Filename": "SRR24828472_1.fastq.gz",
+      "Expected bytes": "2930283917",
+      "ENA MD5": "1aaf3ff07a635d3cdf82754272c73233"
+    },
+    {
+      "Filename": "SRR24828472_2.fastq.gz",
+      "Expected bytes": "3001011805",
+      "ENA MD5": "34cdbf3cd3a08a5fcb738b22f963dba7"
+    }
+  ]
+}
