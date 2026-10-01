@@ -1,0 +1,28 @@
+{
+  "gene_rows": 28395,
+  "runs": 17,
+  "unchanged_columns": [
+    "Control_siRNA_M1",
+    "Control_siRNA_M2",
+    "Control_siRNA_M3",
+    "Control_siRNA_P1",
+    "Control_siRNA_P2",
+    "Control_siRNA_P3",
+    "Control_siRNA_P4",
+    "Control_siRNA_P5",
+    "KRAS_siRNA_M2",
+    "KRAS_siRNA_M3",
+    "KRAS_siRNA_P1",
+    "KRAS_siRNA_P2",
+    "KRAS_siRNA_P3",
+    "KRAS_siRNA_P4",
+    "KRAS_siRNA_P5_SRR24828471",
+    "KRAS_siRNA_P5_v2_SRR24828472"
+  ],
+  "unchanged_integer_cells_verified": 454320,
+  "corrected_m1_cells_verified": 28395,
+  "m1_assigned_before": 509,
+  "m1_assigned_after": 37657740,
+  "m1_detected_after": 18871,
+  "passed": true
+}

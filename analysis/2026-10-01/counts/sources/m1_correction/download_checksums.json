@@ -1,0 +1,16 @@
+[
+  {
+    "path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-30_m1_corrected/SRR24828469_1.fastq.gz",
+    "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR248/069/SRR24828469/SRR24828469_1.fastq.gz",
+    "bytes": 2601596779,
+    "md5": "d605b0983a96de4c2084327d9b2ec48a",
+    "sha256": "ef57071d533f1478cc48cbe0302d9494edd41eb4937171616378bb3e38dcb675"
+  },
+  {
+    "path": "/home/ylin/Documents/TRNTLabArchives/galaxy_backup/2026-09-30_m1_corrected/SRR24828469_2.fastq.gz",
+    "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR248/069/SRR24828469/SRR24828469_2.fastq.gz",
+    "bytes": 2601830327,
+    "md5": "b8b7b8909288a78e75c28594281a09c3",
+    "sha256": "5fce7074c67c161a488d79d8ec0640f0f9d023d38caae88596dbadc7bfbbf4a5"
+  }
+]

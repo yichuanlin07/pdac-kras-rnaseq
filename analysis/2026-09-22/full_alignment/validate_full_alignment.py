@@ -1,4 +1,3 @@
-"""Check HISAT2 summary counts and percentages, then rebuild results.json."""
 from pathlib import Path
 import hashlib
 import json

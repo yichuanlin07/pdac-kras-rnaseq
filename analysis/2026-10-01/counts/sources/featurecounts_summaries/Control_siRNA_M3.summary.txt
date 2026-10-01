@@ -1,0 +1,15 @@
+Status	Control_siRNA_M3
+Assigned	32084267
+Unassigned_Unmapped	617626
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	195356
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	9108217
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	1807514
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	817264

@@ -1,0 +1,4 @@
+全部 17 个测序 run 均保留。KRAS M1 使用 ENA SRR24828469 的正确配对文件重新比对和计数。
+其余 16 列沿用原结果。旧版结果保存在 pdac_featurecounts_2026-09-30。
+运行 Rscript prepare_data.R 可重建表格。counts_raw.txt 是未归一化整数计数。
+P5 的两个 KRAS run 仍分开保留，重复类型尚未确认。

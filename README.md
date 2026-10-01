@@ -6,9 +6,9 @@ The data come from [PRJNA980201](https://www.ebi.ac.uk/ena/browser/view/PRJNA980
 
 ## Progress
 
-The saved results cover work completed on 22 September 2026: quality checks for 34 FASTQ files and full HISAT2 alignments for 17 runs. Overall read alignment ranges from 95.79% to 97.72%.
+The [updated counts and figures](analysis/2026-10-01/README.md) include all 17 runs. KRAS M1 has been corrected using verified paired files from ENA: 37,657,740 assigned counts, a 68.94% assignment rate and 85.54% concordant unique alignment. The other 16 count columns are unchanged. Differential expression has not been run.
 
-KRAS M1 needs a pairing review: only 0.0030% of its read pairs align concordantly to a unique location. It needs further checks before gene counting. Gene counts and differential expression results are not yet available.
+[R source](analysis/2026-10-01/counts/prepare_data.R) · [Plot source](analysis/2026-10-01/build_figures.py) · [Four figures](analysis/2026-10-01/plots/PDAC_featureCounts_M1_corrected.pdf) · [Download the complete package](packages/PDAC_M1_corrected_2026-10-01.zip)
 
 ## Data and methods
 
@@ -28,7 +28,7 @@ The coursework workflow uses [Galaxy](https://galaxy-main.usegalaxy.org/), with 
 | [Sample list](analysis/2026-09-22/run_manifest.md) | Cell lines, run accessions and input files |
 | [中文说明](analysis/2026-09-22/interpretation_zh.md) | 分析进度、样本关系和结果说明 |
 
-[galaxy_backup/](galaxy_backup/README.md) is reserved for Galaxy exports and dataset lists. No exports have been added yet.
+[galaxy_backup/](galaxy_backup/README.md) contains Galaxy exports and dataset lists from the September cleanup.
 
 The PDFs in `reports/` describe successive stages of the work. Their wording was revised on 23 September; each keeps its original data cutoff. Raw FASTQ and BAM alignment files are stored outside Git.
 

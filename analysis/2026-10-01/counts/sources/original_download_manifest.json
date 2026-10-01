@@ -1,0 +1,138 @@
+[
+  {
+    "sample_name": "KRAS_siRNA_P5_SRR24828471",
+    "dataset_id": "f9cad7b01a472135bed0f826c5a56c3f",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135bed0f826c5a56c3f/display",
+    "file": "raw_counts/KRAS_siRNA_P5_SRR24828471.tabular",
+    "sha256": "453f49b36bd2617e24c31fc41a3f31a2ceaa094857e285902e66652a2b2599c9",
+    "bytes": 281857
+  },
+  {
+    "sample_name": "Control_siRNA_P1",
+    "dataset_id": "f9cad7b01a472135761dd4e29c1eefa2",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135761dd4e29c1eefa2/display",
+    "file": "raw_counts/Control_siRNA_P1.tabular",
+    "sha256": "76d805a50634b10b089658f676f40ee09cbd7157a8a33b23f4a11500d2083231",
+    "bytes": 282658
+  },
+  {
+    "sample_name": "KRAS_siRNA_P5_v2_SRR24828472",
+    "dataset_id": "f9cad7b01a472135794bd864999a83d4",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135794bd864999a83d4/display",
+    "file": "raw_counts/KRAS_siRNA_P5_v2_SRR24828472.tabular",
+    "sha256": "ae6bb0f5cb4bc4bec301dcfcbe6ce93fea1bbf47b47350c2f08d7ebb384709ed",
+    "bytes": 283028
+  },
+  {
+    "sample_name": "KRAS_siRNA_P4",
+    "dataset_id": "f9cad7b01a472135adc59816d23ec5ac",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135adc59816d23ec5ac/display",
+    "file": "raw_counts/KRAS_siRNA_P4.tabular",
+    "sha256": "e60c20e27468e86d33d2c9a2869308800b8063da3cd32d84bad0e69993c0361f",
+    "bytes": 281953
+  },
+  {
+    "sample_name": "KRAS_siRNA_P3",
+    "dataset_id": "f9cad7b01a4721357b0182cfb4d92d8c",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a4721357b0182cfb4d92d8c/display",
+    "file": "raw_counts/KRAS_siRNA_P3.tabular",
+    "sha256": "393909dca0678455ab4241ee3cd3fa96414a3c528207d913ac232576774d73eb",
+    "bytes": 282308
+  },
+  {
+    "sample_name": "KRAS_siRNA_P2",
+    "dataset_id": "f9cad7b01a472135cc850cb808adc774",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135cc850cb808adc774/display",
+    "file": "raw_counts/KRAS_siRNA_P2.tabular",
+    "sha256": "bfb841ce1131f64d8f18d002b5e0f71e06b0782fe6ab78f92ac7c8ae4997d024",
+    "bytes": 283102
+  },
+  {
+    "sample_name": "KRAS_siRNA_M3",
+    "dataset_id": "f9cad7b01a472135e9615ac98ecd07fb",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135e9615ac98ecd07fb/display",
+    "file": "raw_counts/KRAS_siRNA_M3.tabular",
+    "sha256": "9c72880b83117f1125b34ab0ce4262edcaa318aea89bbad5f5ee5cb1a7eb0150",
+    "bytes": 283909
+  },
+  {
+    "sample_name": "KRAS_siRNA_M2",
+    "dataset_id": "f9cad7b01a4721351566afa9e4ae19b2",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a4721351566afa9e4ae19b2/display",
+    "file": "raw_counts/KRAS_siRNA_M2.tabular",
+    "sha256": "61cf477fbec1a1c2dc6c5305bb0fd482f0211441631ec1f6d219f47d2fff4cbe",
+    "bytes": 284326
+  },
+  {
+    "sample_name": "KRAS_siRNA_M1_REVIEW",
+    "dataset_id": "f9cad7b01a472135a47e5eac2d9a0403",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135a47e5eac2d9a0403/display",
+    "file": "raw_counts/KRAS_siRNA_M1_REVIEW.tabular",
+    "sha256": "4bd046e21697b779e201ce6a9bac0f52b86c679db9cac43d52bbacb0b7a37cd1",
+    "bytes": 250579
+  },
+  {
+    "sample_name": "Control_siRNA_P5",
+    "dataset_id": "f9cad7b01a4721357edca1b0b6a176f1",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a4721357edca1b0b6a176f1/display",
+    "file": "raw_counts/Control_siRNA_P5.tabular",
+    "sha256": "b338ad527952beeef478576fdb72e6e00b82f2516d3e19fee773c8dbaee4b266",
+    "bytes": 283306
+  },
+  {
+    "sample_name": "Control_siRNA_P4",
+    "dataset_id": "f9cad7b01a47213537aa0ba554655d3c",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a47213537aa0ba554655d3c/display",
+    "file": "raw_counts/Control_siRNA_P4.tabular",
+    "sha256": "d16da8bf6ff978d69286e0570594265921cc6dceea2efde23e1aab534f03187e",
+    "bytes": 282392
+  },
+  {
+    "sample_name": "Control_siRNA_P3",
+    "dataset_id": "f9cad7b01a4721351ad5e66ac4c43d35",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a4721351ad5e66ac4c43d35/display",
+    "file": "raw_counts/Control_siRNA_P3.tabular",
+    "sha256": "4097f9a08b3aa16594e723d373442c2c1d2658772300a583a828cbee2497c461",
+    "bytes": 282913
+  },
+  {
+    "sample_name": "Control_siRNA_P2",
+    "dataset_id": "f9cad7b01a4721355abd359c4fa4d8b9",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a4721355abd359c4fa4d8b9/display",
+    "file": "raw_counts/Control_siRNA_P2.tabular",
+    "sha256": "a320ac9bec3a3269a59f1e3df9726ca80a87f3d3b1787341f584151652341985",
+    "bytes": 282868
+  },
+  {
+    "sample_name": "Control_siRNA_M3",
+    "dataset_id": "f9cad7b01a472135334424b2e248e3cb",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135334424b2e248e3cb/display",
+    "file": "raw_counts/Control_siRNA_M3.tabular",
+    "sha256": "06bc50165f85360c0cbc59be8f243f64a904b61b2e1b60eb13406889a6ca6d5a",
+    "bytes": 282582
+  },
+  {
+    "sample_name": "Control_siRNA_M2",
+    "dataset_id": "f9cad7b01a47213547c85f77ecd0e5ff",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a47213547c85f77ecd0e5ff/display",
+    "file": "raw_counts/Control_siRNA_M2.tabular",
+    "sha256": "78c7e42ca9781faab9fa695d549fd5aa4ea2f9a5a2ed87c7e7c0e70739c3c9e3",
+    "bytes": 284562
+  },
+  {
+    "sample_name": "Control_siRNA_M1",
+    "dataset_id": "f9cad7b01a4721350081e36621e27e04",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a4721350081e36621e27e04/display",
+    "file": "raw_counts/Control_siRNA_M1.tabular",
+    "sha256": "2d22ec11b6e7e4bb80349e7e116102118da5503cf1de23a89113efc3945e3216",
+    "bytes": 283055
+  },
+  {
+    "sample_name": "KRAS_siRNA_P1",
+    "dataset_id": "f9cad7b01a472135f26a6b9359ac3b70",
+    "source": "https://galaxy-main.usegalaxy.org/api/histories/bbd44e69cb8906b5123b15e2f796dd1c/contents/f9cad7b01a472135f26a6b9359ac3b70/display",
+    "file": "raw_counts/KRAS_siRNA_P1.tabular",
+    "sha256": "6658247443d4934d36415b15cf2d8dd574d11e88ec3ad623c01091e394cdd3a5",
+    "bytes": 282077
+  }
+]

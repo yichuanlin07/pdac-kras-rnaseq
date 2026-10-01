@@ -1,0 +1,19 @@
+{
+  "job_id": "bbd44e69cb8906b59bb72b58b8e6efdb",
+  "tool": "HISAT2 2.2.3+galaxy0",
+  "reference": "hg38",
+  "library": "paired",
+  "strand": "Unstranded",
+  "R1_hid": 393,
+  "R1_uuid": "ff560fbd-f40c-453f-be70-daf4075e65a8",
+  "R2_hid": 392,
+  "R2_uuid": "7e909e85-e3ba-4599-a676-3f0a125001f1",
+  "all_reads": true,
+  "trim5": 0,
+  "trim3": 0,
+  "phred": 33,
+  "new_summary": true,
+  "summary_file": true,
+  "other_options": "defaults",
+  "verified_from": "live Galaxy dataset 394 details: Tool Parameters and Command Line"
+}

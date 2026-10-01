@@ -1,0 +1,27 @@
+{
+  "genes": 28395,
+  "samples": 17,
+  "active_genes": 23940,
+  "m1_detected": 18871,
+  "m1_top10_percent": 6.012163767661044,
+  "pca_variance_explained": [
+    0.392925083284574,
+    0.19798295650731684
+  ],
+  "correlation_m1_range": [
+    0.8532788660609452,
+    0.994412225380381
+  ],
+  "m1_control_correlation": 0.994412225380381,
+  "m1_assigned": 37657740,
+  "m1_assigned_percent": 68.94043650153483,
+  "m1_chimera_percent": 0.4209317044497333,
+  "other_assigned_percent_range": [
+    65.60901513160769,
+    76.45247497367669
+  ],
+  "other_detected_range": [
+    17609,
+    19070
+  ]
+}

@@ -1,0 +1,15 @@
+Status	KRAS_siRNA_P5_SRR24828471
+Assigned	32018066
+Unassigned_Unmapped	609794
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	217696
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	7690468
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	1694632
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	986048

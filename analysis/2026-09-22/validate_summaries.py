@@ -1,4 +1,3 @@
-"""Check pilot counts, quality-report coverage and local FastQC files."""
 import json
 from hashlib import sha256
 from pathlib import Path

@@ -1,0 +1,11 @@
+PASS: downloaded counts match exported counts after matching by gene ID
+PASS: every sample count sum equals featureCounts Summary Assigned
+PASS: all gene IDs match the supplied classroom annotation
+PASS: sample annotation order matches count columns
+PASS: all 17 runs included; 8 Control and 9 KRAS
+PASS: KRAS M1 replaced using verified corrected inputs; see source summary for assigned counts
+PASS: P5 KRAS runs retained separately
+Gene rows: 28395
+Missing SYMBOL: 617
+Genes with multiple ENSEMBL mappings: 1808
+No normalization, gene filtering, differential expression or batch correction performed.

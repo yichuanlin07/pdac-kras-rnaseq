@@ -1,0 +1,15 @@
+Status	KRAS_siRNA_P3
+Assigned	35073406
+Unassigned_Unmapped	692376
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	159701
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	12656993
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	1668170
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	1066893

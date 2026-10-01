@@ -1,0 +1,2 @@
+run_accession	sample_accession	library_layout	read_count	base_count	fastq_ftp	fastq_md5	fastq_bytes
+SRR24828469	SAMN35622212	PAIRED	45292678	13587803400	ftp.sra.ebi.ac.uk/vol1/fastq/SRR248/069/SRR24828469/SRR24828469_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR248/069/SRR24828469/SRR24828469_2.fastq.gz	d605b0983a96de4c2084327d9b2ec48a;b8b7b8909288a78e75c28594281a09c3	2601596779;2601830327
