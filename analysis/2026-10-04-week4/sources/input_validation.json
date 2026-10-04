@@ -1,0 +1,59 @@
+{
+  "input_commit": "462867100fa1628d716cb7722a574da5f90577df",
+  "gene_rows": 28395,
+  "runs": 17,
+  "all_integer_nonnegative": true,
+  "metadata_columns_exact_match": true,
+  "raw_run_tables_exact_match": true,
+  "assigned_sums_exact_match": true,
+  "ena_sample_alias_exact_match": true,
+  "p5_public_identity": [
+    {
+      "sample_name": "KRAS_siRNA_P5_SRR24828471",
+      "condition": "KRAS",
+      "cell_line": "MiaPaca-2",
+      "local_label": "KRAS P5",
+      "run_accession": "SRR24828471",
+      "ena_alias": "MP2_K2v2",
+      "included_in_count_table": "TRUE",
+      "qc_flag": "NO_EXTREME_COUNTING_FAILURE_DETECTED",
+      "repeat_status": "UNRESOLVED_KEEP_RUNS_SEPARATE",
+      "assigned_counts": "32018066",
+      "assigned_percent": "74.0872464498912",
+      "sample_accession": "SAMN35622210",
+      "sample_alias": "MP2_K2v2",
+      "experiment_alias": "MP2_K2v2",
+      "library_name": "MP2_K2v2",
+      "library_strategy": "RNA-Seq",
+      "library_layout": "PAIRED",
+      "fastq_md5": "80a6ee296d0fffe29a6b335e79546778;f56e4529719292d8c8bd01af9b24b6b8"
+    },
+    {
+      "sample_name": "KRAS_siRNA_P5_v2_SRR24828472",
+      "condition": "KRAS",
+      "cell_line": "MiaPaca-2",
+      "local_label": "KRAS P5_v2",
+      "run_accession": "SRR24828472",
+      "ena_alias": "MP2_K2",
+      "included_in_count_table": "TRUE",
+      "qc_flag": "NO_EXTREME_COUNTING_FAILURE_DETECTED",
+      "repeat_status": "UNRESOLVED_KEEP_RUNS_SEPARATE",
+      "assigned_counts": "36106124",
+      "assigned_percent": "69.3336187627273",
+      "sample_accession": "SAMN35622209",
+      "sample_alias": "MP2_K2",
+      "experiment_alias": "MP2_K2",
+      "library_name": "MP2_K2",
+      "library_strategy": "RNA-Seq",
+      "library_layout": "PAIRED",
+      "fastq_md5": "1aaf3ff07a635d3cdf82754272c73233;34cdbf3cd3a08a5fcb738b22f963dba7"
+    }
+  ],
+  "p5_repeat_type": "unresolved; no independence assumption",
+  "sha256": {
+    "analysis/2026-10-01/counts/counts_raw.txt": "da09d6b5dda4801382a73d664408acb37647bc6c7a18f1f4700171e94c223b68",
+    "analysis/2026-10-01/counts/sample_annotation.txt": "4371f8a062dd2e5eacd0e963593541935df0f6f88ef12b0575eafbf29a1a9b6e",
+    "analysis/2026-10-01/counts/annotate_geneID.txt": "485ab66058a9392e86dc54b3a8f95b3e003ada56908c765425405945936933be",
+    "analysis/2026-10-04-week4/sources/ena_runs_2026-10-04.tsv": "07692ba9cefbf2572c8bf00cbfbdf7e384a810162b8c883cb4e26f27a52ed382"
+  }
+}

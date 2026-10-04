@@ -14,3 +14,5 @@ __pycache__/
 *.key
 *.pem
 tmp/
+# Week 4 isolated dependencies are rebuilt from the lockfile.
+analysis/2026-10-04-week4/runtime/

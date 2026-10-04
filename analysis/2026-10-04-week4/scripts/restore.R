@@ -1,0 +1,12 @@
+# Run from the analysis directory. Installs into the supplied isolated library.
+args<-commandArgs(TRUE)
+if(length(args)!=1) stop('Usage: Rscript scripts/restore.R /absolute/path/to/new/R-library')
+if(as.character(getRversion())!='4.5.2') stop('Use R 4.5.2, as recorded in renv.lock.')
+lib<-args[1];dir.create(lib,recursive=TRUE,showWarnings=FALSE);.libPaths(c(lib,.libPaths()))
+Sys.setenv(RENV_PATHS_ROOT=file.path(normalizePath('.'),'runtime','renv'),RENV_CONFIG_CACHE_ENABLED='FALSE')
+options(repos=c(CRAN='https://cloud.r-project.org'))
+if(!requireNamespace('renv',quietly=TRUE)) install.packages('https://cloud.r-project.org/src/contrib/renv_1.3.0.tar.gz',repos=NULL,type='source',lib=lib)
+renv::restore(lockfile='renv.lock',library=lib,prompt=FALSE)
+required<-c(DESeq2='1.50.2',edgeR='4.8.2',apeglm='1.32.0',jsonlite='2.0.0')
+for(n in names(required)) stopifnot(as.character(packageVersion(n))==required[n])
+message('Version-locked analysis library ready: ',lib)

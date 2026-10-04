@@ -1,0 +1,10 @@
+{
+  "contrast": "Treatment (KRAS siRNA) / Control",
+  "reverse_contrast_LFC_negation_and_pvalue_identity": true,
+  "model": "~condition+cell_line",
+  "alpha": 0.050000000000000003,
+  "DESeq2_independent_filter_threshold": 17.525734748966158,
+  "DESeq2_filter_theta": 0.15510204081632653,
+  "edgeR_common_dispersion": 0.024665763163526748,
+  "P5_assumption": "Tutorial sum-count assumption; repeat type unresolved; exploratory"
+}

@@ -1,0 +1,10 @@
+{
+  "contrast": "Treatment (KRAS siRNA) / Control",
+  "reverse_contrast_LFC_negation_and_pvalue_identity": true,
+  "model": "~condition+cell_line",
+  "alpha": 0.050000000000000003,
+  "DESeq2_independent_filter_threshold": 14.320988748148654,
+  "DESeq2_filter_theta": 0.1357142857142857,
+  "edgeR_common_dispersion": 0.026114525441409082,
+  "P5_assumption": "One library retained; not a biological-repeat claim"
+}

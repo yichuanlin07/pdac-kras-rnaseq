@@ -1,0 +1,45 @@
+{
+  "scenarios": [
+    {
+      "scenario": "merge_p5",
+      "genes": 28395,
+      "low_count": 10576,
+      "independent_filtered": 2764,
+      "DESeq2_unavailable_p": 0,
+      "count_intersection_union_Jaccard_correlation_verified": true
+    },
+    {
+      "scenario": "retain_SRR24828472",
+      "genes": 28395,
+      "low_count": 10661,
+      "independent_filtered": 2407,
+      "DESeq2_unavailable_p": 0,
+      "count_intersection_union_Jaccard_correlation_verified": true
+    },
+    {
+      "scenario": "retain_SRR24828471",
+      "genes": 28395,
+      "low_count": 10690,
+      "independent_filtered": 2746,
+      "DESeq2_unavailable_p": 0,
+      "count_intersection_union_Jaccard_correlation_verified": true
+    }
+  ],
+  "robust_same_direction_all_six": 5084,
+  "QC_distances": [
+    {
+      "method": "DESeq2",
+      "median_within_cell_line_distance": 32.28271558053345,
+      "median_between_cell_line_distance": 118.330599939582
+    },
+    {
+      "method": "edgeR",
+      "median_within_cell_line_distance": 81.68743086213544,
+      "median_between_cell_line_distance": 304.152806984902
+    }
+  ],
+  "paper_common_unique_genes": 14200,
+  "paper_Jaccard_denominators_verified": true,
+  "correlations_use_all_shared_finite_estimates": true,
+  "scientific_scope": "Exploratory common treatment effect; six fits share data and are not independent replication."
+}

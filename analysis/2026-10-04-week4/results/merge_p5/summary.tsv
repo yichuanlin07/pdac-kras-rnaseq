@@ -1,0 +1,2 @@
+scenario	input_genes	prefilter_pass	observations	design_rank	residual_df	DESeq2_finite_p	DESeq2_finite_padj	DESeq2_sig	DESeq2_down	DESeq2_up	edgeR_sig	edgeR_down	edgeR_up	overlap	union	jaccard	LFC_pearson	LFC_spearman	shared_finite_p	DESeq2_common_BH_sig	edgeR_common_BH_sig	DESeq2_alpha01_sig
+merge_p5	28395	17819	16	9	7	17819	15055	5943	2912	3031	6431	2923	3508	5442	6932	0.785054818234276	0.883917448370433	0.91005924633078	17819	5797	6431	5905

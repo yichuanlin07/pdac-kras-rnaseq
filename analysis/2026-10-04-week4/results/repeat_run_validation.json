@@ -1,0 +1,333 @@
+{
+  "independent_fresh_R_runs": 2,
+  "seed": 20261004,
+  "byte_identical_numeric_TSV_and_method_JSON_count": 81,
+  "all_passed": true,
+  "files": [
+    {
+      "file": "merge_p5/DESeq2_PCA.tsv",
+      "sha256": "904a105e82fd4410ba2411c610948d4fce6f4f23d7e28bda5a4d64d40928d60a"
+    },
+    {
+      "file": "merge_p5/DESeq2_PCA_genes.tsv",
+      "sha256": "3b6f35d2c648e9c180fcd5981f0541b6407c3bdbb07b48dfbe80379a23f6d2f2"
+    },
+    {
+      "file": "merge_p5/DESeq2_PCA_variance.tsv",
+      "sha256": "4e83ce48c0033b27026a4ce8e6bc0d30e357d67c36ce35360f02d22a22c942cf"
+    },
+    {
+      "file": "merge_p5/DESeq2_full.tsv",
+      "sha256": "24462621f85b423d935a3e1b01c841ba38887ebebbc3fbc6b18e918bd98e54ad"
+    },
+    {
+      "file": "merge_p5/DESeq2_log_normalized_mean_SD.tsv",
+      "sha256": "ea91dc5a2719cd7884fe6df93ee493b61b0c8ac70c33ac433c732a61c63d243c"
+    },
+    {
+      "file": "merge_p5/DESeq2_mean_SD.tsv",
+      "sha256": "589a8fb7eb946a7f13f451bc081465b653aa32fde1094a77d182ff77ccdabb9f"
+    },
+    {
+      "file": "merge_p5/DESeq2_normalized_counts.tsv",
+      "sha256": "0cddb4b4efe89d1b713dabbfcd5d6ad3566f2fbcec669d3e76a95e47bd94ef20"
+    },
+    {
+      "file": "merge_p5/DESeq2_sample_distance.tsv",
+      "sha256": "761e2b01e6cd0eeebaed21810e6357a14ba947bffb150f882d75b75d7c04fb7d"
+    },
+    {
+      "file": "merge_p5/DESeq2_transformed.tsv",
+      "sha256": "d707988432b3745f83b67c20184c12b5ec92f10656b534f4a8e690abbd3f04f1"
+    },
+    {
+      "file": "merge_p5/analysis_counts.tsv",
+      "sha256": "8dc704cbd7707905ea0d24f337e7cbd2b3b6c551f95b084eacfba04b34b2982e"
+    },
+    {
+      "file": "merge_p5/design.tsv",
+      "sha256": "4950e9996abcf4c3ab1bb16e10d39e9209cbd1c843354d58ed70bc3a9efb5d1b"
+    },
+    {
+      "file": "merge_p5/dispersion.tsv",
+      "sha256": "82fbc9e6e2c4fe8b6c6bfd75f1ebfb95beff26467d808391a4a181a5a8e6cbc4"
+    },
+    {
+      "file": "merge_p5/edgeR_PCA.tsv",
+      "sha256": "662bad4504d294df915d9ab1b4a461cbb9becb4164af425c2a59b35b04408ef0"
+    },
+    {
+      "file": "merge_p5/edgeR_PCA_genes.tsv",
+      "sha256": "53438aa68e2dabb79ca22eaf005be71db52e7d0f919d7cf750c6bd9fdb0f7f5e"
+    },
+    {
+      "file": "merge_p5/edgeR_PCA_variance.tsv",
+      "sha256": "637b36e00102f90eaba6869a2beb2a39a73fd6ebb5897f5bd17d3eee4242b1ed"
+    },
+    {
+      "file": "merge_p5/edgeR_full.tsv",
+      "sha256": "9396910c222f93746d6a73d3a2db2a93911d7ca3c355769bcff41a045f84a19d"
+    },
+    {
+      "file": "merge_p5/edgeR_mean_SD.tsv",
+      "sha256": "ba88c4d8b1080fe2f57e5b0a00f3e6b20ed1cd71c39431c444983491498c479a"
+    },
+    {
+      "file": "merge_p5/edgeR_sample_distance.tsv",
+      "sha256": "61e9117e69087e062a561563de8694e09157d3a0622f559e9645819d4fad6fa9"
+    },
+    {
+      "file": "merge_p5/edgeR_transformed.tsv",
+      "sha256": "6ea48827f0caf5d1cbf7f45656a9a6e1c1c2b8a5c8759eca9db79e0428464ff1"
+    },
+    {
+      "file": "merge_p5/filter.tsv",
+      "sha256": "4484bcf92a587592e0796b09598611d1a8a0f6fecb3ca7ad5a48bfa3c0481957"
+    },
+    {
+      "file": "merge_p5/method_comparison.tsv",
+      "sha256": "5f9934ef35159caa2064ed6d32b180352eff205f3e348119a4091988e91db985"
+    },
+    {
+      "file": "merge_p5/method_metadata.json",
+      "sha256": "d9af38e43ea0c3716da4c60a1779cedc4472db0f8dbfe4228a106b143bd8043c"
+    },
+    {
+      "file": "merge_p5/normalization.tsv",
+      "sha256": "99a033dbae70e31f5f080b128c3d4039f72fec9c0eabaa09aaf631a589e9ced6"
+    },
+    {
+      "file": "merge_p5/samples.tsv",
+      "sha256": "507df4127ed9836bdf4175964e4acf6009f7fd2ad89c429c8206b6950fb8230f"
+    },
+    {
+      "file": "merge_p5/summary.tsv",
+      "sha256": "5884b6444810c66234988a13d39642301dafa677df126b64153b437c695d7cd1"
+    },
+    {
+      "file": "p5_library_correlation.tsv",
+      "sha256": "e6ad31f34db54c7aef45c51d5d8945453674c1fabc07c9d708c4f9a10029abca"
+    },
+    {
+      "file": "package_versions.tsv",
+      "sha256": "8303baf00086fb28e4ff923d36c9a198910a67c48ba5cb677bc279e2a5975ff7"
+    },
+    {
+      "file": "paper_comparison_common_unique.tsv",
+      "sha256": "f3791254277e886d6795a5aa998addbc26cd0c288821e5f07ed9551114ea3ad1"
+    },
+    {
+      "file": "paper_comparison_summary.tsv",
+      "sha256": "277c4fd6934aacafe60ee226a57f0f8c890c776df3d70d4af3f79b4de64a622f"
+    },
+    {
+      "file": "paper_excluded_mapping_rows.tsv",
+      "sha256": "70a93af70fb3cb0b4bf38b996d98cc5aa1d1414057e0405140e80d17698cf7eb"
+    },
+    {
+      "file": "paper_input_audit.tsv",
+      "sha256": "16da2aa5cf6b6a90023c02e80d1a629abcb3379a1dfd09b3b19bc24626c3ffdb"
+    },
+    {
+      "file": "raw17_logCPM.tsv",
+      "sha256": "a6e7c52d6423ab82d5ee28c6e6e8e66fcf8c986d5ab3434ba4df686643f9761f"
+    },
+    {
+      "file": "raw17_samples.tsv",
+      "sha256": "4371f8a062dd2e5eacd0e963593541935df0f6f88ef12b0575eafbf29a1a9b6e"
+    },
+    {
+      "file": "retain_SRR24828471/DESeq2_PCA.tsv",
+      "sha256": "5e75b993fb1945e5c866ea814ce5e220c649ee671807a8425e9f47774e8aee73"
+    },
+    {
+      "file": "retain_SRR24828471/DESeq2_PCA_genes.tsv",
+      "sha256": "1360bf39c654828341e2e8dfb8e7d972404b59742326156deb2410860374de7d"
+    },
+    {
+      "file": "retain_SRR24828471/DESeq2_PCA_variance.tsv",
+      "sha256": "0f7ddc4ad7563d2cfaef8aca6a0b4dfa04cea6e743aeb98d51004ec693e4b57b"
+    },
+    {
+      "file": "retain_SRR24828471/DESeq2_full.tsv",
+      "sha256": "a17f0f7736b3d5252944feebedee75d447e89a9dbf25115f421e7967e3355893"
+    },
+    {
+      "file": "retain_SRR24828471/DESeq2_log_normalized_mean_SD.tsv",
+      "sha256": "beedc8221a0c992aa2d8a6907ea24be6592d10e72b9e179d45b5119e6a56257f"
+    },
+    {
+      "file": "retain_SRR24828471/DESeq2_mean_SD.tsv",
+      "sha256": "e022929410e9a65126a7bc08ef9dfc7d750d165735327fc78f7ea300daa7bf14"
+    },
+    {
+      "file": "retain_SRR24828471/DESeq2_normalized_counts.tsv",
+      "sha256": "d61dd1dd38433157fd7a32390af117c47d498718ec22de457e1ae0a4a70d83cd"
+    },
+    {
+      "file": "retain_SRR24828471/DESeq2_sample_distance.tsv",
+      "sha256": "99084fa4418193aacbf282a08aaba18d4535f484ef3a9009693bd33c65d7bd7f"
+    },
+    {
+      "file": "retain_SRR24828471/analysis_counts.tsv",
+      "sha256": "0bdfa1d3ffb16cbf9d3162627eabe21afd64f9c773091da8fbe44d1cf8117984"
+    },
+    {
+      "file": "retain_SRR24828471/design.tsv",
+      "sha256": "4950e9996abcf4c3ab1bb16e10d39e9209cbd1c843354d58ed70bc3a9efb5d1b"
+    },
+    {
+      "file": "retain_SRR24828471/dispersion.tsv",
+      "sha256": "ec1662c9c6cf84e839c68ef4314173eb65507b16349bd33360e59f6da9060512"
+    },
+    {
+      "file": "retain_SRR24828471/edgeR_PCA.tsv",
+      "sha256": "ef3d2a9abbf886060275c18bfe5599cba0551c4d307ccc7ece7ea29413baa400"
+    },
+    {
+      "file": "retain_SRR24828471/edgeR_PCA_genes.tsv",
+      "sha256": "99bc95ab911cf56e6df94121ce579476c1436ad44d10f7624ca3fe16556ee4f0"
+    },
+    {
+      "file": "retain_SRR24828471/edgeR_PCA_variance.tsv",
+      "sha256": "7d52708f3abda2bd4026dd3d6bb28b9a7b4cb57c109448d69dcefce9f82ea764"
+    },
+    {
+      "file": "retain_SRR24828471/edgeR_full.tsv",
+      "sha256": "a7f3c58879ecc6d5dd6709b44cbffd9d33023894c0bf8ac1dfeec25da3a55a33"
+    },
+    {
+      "file": "retain_SRR24828471/edgeR_mean_SD.tsv",
+      "sha256": "15358c9854fd814972bc8b33065f9de104c230dbb3088643253811dbd5170bf2"
+    },
+    {
+      "file": "retain_SRR24828471/edgeR_sample_distance.tsv",
+      "sha256": "b1fa205f966e3f0aea140c979f241a7a99c124c8d1b85703fdf4a327ea228d8b"
+    },
+    {
+      "file": "retain_SRR24828471/filter.tsv",
+      "sha256": "15324d9bcb59a3eb529be813b1b7c848ad5995ebb0b7b5e84589957819f89dc7"
+    },
+    {
+      "file": "retain_SRR24828471/method_comparison.tsv",
+      "sha256": "ff752a305201809b572d925e6a71a3339af945bcdadc6f36474270515b3edfca"
+    },
+    {
+      "file": "retain_SRR24828471/method_metadata.json",
+      "sha256": "041c5532ddafebd7fedc77bea60d95df64de535d630cfb6c84080258ee6307c2"
+    },
+    {
+      "file": "retain_SRR24828471/normalization.tsv",
+      "sha256": "84f41447775e3857171096b1d9261819ca3f76253a12f994e119acfe542ee132"
+    },
+    {
+      "file": "retain_SRR24828471/samples.tsv",
+      "sha256": "2a37179777999c62ee8fe6e30a2e36e8f068c2b89d867206e6c0206e42008bf9"
+    },
+    {
+      "file": "retain_SRR24828471/summary.tsv",
+      "sha256": "e180e0ab7a891d3668d29541d9303c54072cd4054d485e099ec350066676568c"
+    },
+    {
+      "file": "retain_SRR24828472/DESeq2_PCA.tsv",
+      "sha256": "e8a629107eb6df83ed53e6b181566774ab08520c7a1d8809522b1e73ffa34b0b"
+    },
+    {
+      "file": "retain_SRR24828472/DESeq2_PCA_genes.tsv",
+      "sha256": "4353cc3d2718a9bf3ca4fa1aa338a3308fa353b5607de453c3d965b737954885"
+    },
+    {
+      "file": "retain_SRR24828472/DESeq2_PCA_variance.tsv",
+      "sha256": "1b7b4d0a736244ddb3f9bebb2d4f3b1375ec666f8f4a147338d72eef38ce6060"
+    },
+    {
+      "file": "retain_SRR24828472/DESeq2_full.tsv",
+      "sha256": "f077854fde2a44d3591677e779ebc1299964ca80792be95b98c12073e8613803"
+    },
+    {
+      "file": "retain_SRR24828472/DESeq2_log_normalized_mean_SD.tsv",
+      "sha256": "6992691483b8b771646073a502bf29849f7c00723dee52dd72c23a65faf6f4ff"
+    },
+    {
+      "file": "retain_SRR24828472/DESeq2_mean_SD.tsv",
+      "sha256": "5aab11c95fb1d56f0cd9d31d7beba07893e30a57a4673b56b5fa4192a66fa367"
+    },
+    {
+      "file": "retain_SRR24828472/DESeq2_normalized_counts.tsv",
+      "sha256": "b134f8da62f07d84a880fd612dd6f3323005aac5bb3a641a611e58de7f2c0b19"
+    },
+    {
+      "file": "retain_SRR24828472/DESeq2_sample_distance.tsv",
+      "sha256": "55186da3ae9899cbd16173c1260f36bdd218949fe315bbcf2ebc01d0a24639cb"
+    },
+    {
+      "file": "retain_SRR24828472/analysis_counts.tsv",
+      "sha256": "9b1d14559144d2cde2a6c3b3f396db6c8d0d41e0a8e60eff2ec37a9026777ae0"
+    },
+    {
+      "file": "retain_SRR24828472/design.tsv",
+      "sha256": "4950e9996abcf4c3ab1bb16e10d39e9209cbd1c843354d58ed70bc3a9efb5d1b"
+    },
+    {
+      "file": "retain_SRR24828472/dispersion.tsv",
+      "sha256": "660189baab27c594a5a75e17c888d333639289d608190d9678a500420666aa50"
+    },
+    {
+      "file": "retain_SRR24828472/edgeR_PCA.tsv",
+      "sha256": "1d94663ebbd331c0aaf3c0fea395adefeb9ba7024b326247fb0058d7c997bca0"
+    },
+    {
+      "file": "retain_SRR24828472/edgeR_PCA_genes.tsv",
+      "sha256": "839d3fcde5723c2fb2b18f566c8d61fb709ca16054e6b9d35c21a35a6e227021"
+    },
+    {
+      "file": "retain_SRR24828472/edgeR_PCA_variance.tsv",
+      "sha256": "4febb3efd336df6e090d7c8a7ff7c0ad0e8a11a6ca6243852452f0e5b2c431f2"
+    },
+    {
+      "file": "retain_SRR24828472/edgeR_full.tsv",
+      "sha256": "d214cb1d1c9b1c7c016671f2c762aa1eb3c54e740e49d7bc972b5e600b95f1b1"
+    },
+    {
+      "file": "retain_SRR24828472/edgeR_mean_SD.tsv",
+      "sha256": "841df700544e5fb933cac89d03fd589513651d6bac869853bdcaace04df411ac"
+    },
+    {
+      "file": "retain_SRR24828472/edgeR_sample_distance.tsv",
+      "sha256": "9491b5472c9e39d652f1f185b8d05e77d8a509c4f6fb37f9e37327f6a8f45c0f"
+    },
+    {
+      "file": "retain_SRR24828472/filter.tsv",
+      "sha256": "ea43f581376e3d16044f5829c80c782b6455db3824d911e295e5da42b40ce730"
+    },
+    {
+      "file": "retain_SRR24828472/method_comparison.tsv",
+      "sha256": "186e2f00543ec6691174e2f6350f4cd79385e11dd22252555acd51f5ead1bc71"
+    },
+    {
+      "file": "retain_SRR24828472/method_metadata.json",
+      "sha256": "63eb73ac9878db8e908e9bab278c85627246f01d9be1826177754495ea52feaa"
+    },
+    {
+      "file": "retain_SRR24828472/normalization.tsv",
+      "sha256": "3eba093f06bab2e0d3a5734d89ad885b1e9d5e03ae70070e0db7cb14146c90fb"
+    },
+    {
+      "file": "retain_SRR24828472/samples.tsv",
+      "sha256": "b72f0e61f3d77a3c23f6cdfa813ff059766bf603307cc04e7ac0f0385bca7fd7"
+    },
+    {
+      "file": "retain_SRR24828472/summary.tsv",
+      "sha256": "9cc133d7b8192e7584fe97e94228e4a77d58ca9e6f897d0722c11d19f8ab6765"
+    },
+    {
+      "file": "scenario_summary.tsv",
+      "sha256": "ae65ce25ed64a28c43d1d97c073e7ab271d77dd47c18295395d72874ca2edaaa"
+    },
+    {
+      "file": "sensitivity_full.tsv",
+      "sha256": "b96a2c4b71afd75df95605e1a63056b651b991f52597744c02fc09fa78cc49cb"
+    }
+  ],
+  "excluded_from_byte_comparison": "PDF creation metadata and sessionInfo; rendered figures inspected separately"
+}

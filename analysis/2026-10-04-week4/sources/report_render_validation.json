@@ -1,0 +1,15 @@
+{
+  "pages": 7,
+  "all_final_pages_visually_inspected": true,
+  "no_clipping_overlap_or_orphan_review_page": true,
+  "embedded_pdf_fonts": "Times New Roman regular/bold only",
+  "figures": 9,
+  "tables": 4,
+  "white_tables_black_text": true,
+  "superscript_8pt_citation_runs": 10,
+  "template_preservation_passed": true,
+  "report_sha256": {
+    "PDAC_KRAS_Week4_2026-10-04_v1.docx": "45ed212bcbe45a5c1257acb308574ffb21c71b48aa6c7f2cdce72ef9e8e0b3cb",
+    "PDAC_KRAS_Week4_2026-10-04_v1.pdf": "7086706c672ec4ebda02c91ad1a426d7087a1827c5637b236a925106eca42a3c"
+  }
+}

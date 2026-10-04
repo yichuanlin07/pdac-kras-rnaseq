@@ -1,0 +1,17 @@
+{
+  "template_sha256": "8dfd5629650a6aae15e354527ee06d91dccb3849e8ca2d67aab72a550d7e93dd",
+  "preserved_opaque_parts": 18,
+  "all_preserved_byte_for_byte": true,
+  "section_geometry_exact": true,
+  "body_font": "Times New Roman",
+  "true_superscript_citations": true,
+  "figures": 9,
+  "tables": 4,
+  "body_sections": [
+    "1 Overview",
+    "2 Work completed",
+    "3 Next steps",
+    "4 Summary"
+  ],
+  "source_results": "2026-10-04-week4"
+}

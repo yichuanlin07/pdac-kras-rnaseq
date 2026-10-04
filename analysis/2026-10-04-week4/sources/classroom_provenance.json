@@ -1,0 +1,50 @@
+[
+  {
+    "name": "DESeq2_Tutorial_KRAS.Rmd",
+    "drive_id": "1CyOvvDWEuDH-So5A1AfbDUvNWnzOQwtN",
+    "size": 13853,
+    "sha256": "89a6ff06a4902b9da5945020c6b90d80de1539cd95ffdbf4e9b2108d155cbc3f",
+    "acquired_utc": "2026-10-04",
+    "distribution": "local reference only; source files excluded from publication"
+  },
+  {
+    "name": "edgeR_Tutorial_KRAS.Rmd",
+    "drive_id": "11CPFw-bdtvhftxdYJ3JVs0Vd1C5GpjZv",
+    "size": 14413,
+    "sha256": "fb14549dfc83b1113e88e7007cdcd1d65fd37bd24395de0655cb5b7735c093a6",
+    "acquired_utc": "2026-10-04",
+    "distribution": "local reference only; source files excluded from publication"
+  },
+  {
+    "name": "sim_LOO.R",
+    "drive_id": "1O6cHsuAKSl6tgkyAyLa5ynO1b99T4_Nr",
+    "size": 6403,
+    "sha256": "ac2eed31e4af34b69825a2f9c23adb5b09c4b849803cf132796c5d838f30fd89",
+    "acquired_utc": "2026-10-04",
+    "distribution": "local reference only; source files excluded from publication"
+  },
+  {
+    "name": "sim_dat.txt",
+    "drive_id": "1qS85rcOD5CnxCP3u3qQ6QQjDmSY0mLt_",
+    "size": 132868,
+    "sha256": "6fb1bf007fa05aef737c2ec5228d3094feb898a179eb07058674df26c68a7923",
+    "acquired_utc": "2026-10-04",
+    "distribution": "local reference only; source files excluded from publication"
+  },
+  {
+    "name": "sim_gene_ID.txt",
+    "drive_id": "1cU6ef4bPi4OtVhi2RsVuMWw9jzsCsmnf",
+    "size": 37996,
+    "sha256": "2ce2f2e1425863b029fcfb45442399db3f6a39878b7e12f9b56d2e6820c26b00",
+    "acquired_utc": "2026-10-04",
+    "distribution": "local reference only; source files excluded from publication"
+  },
+  {
+    "name": "science.adk0775_data_s1.csv",
+    "drive_id": "1pxECYbpf2g--ysGe4t20SIE-K7k96Bzz",
+    "size": 1701678,
+    "sha256": "af1a47ab705e3a91c580674879b6d68c02278a040ca819d9d327ef85cd5c36fb",
+    "acquired_utc": "2026-10-04",
+    "distribution": "local reference only; source files excluded from publication"
+  }
+]
