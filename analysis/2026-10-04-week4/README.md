@@ -1,14 +1,16 @@
 # Week 4: KRAS siRNA differential expression
 
-The real 28,395-gene, 17-run matrix from [October 1](../2026-10-01/README.md) was analysed with DESeq2 and edgeR. The main result follows the classroom assumption of summing the two MiaPaca-2 KRAS libraries. Their repeat type remains unresolved, so the analysis is exploratory. Neither summing nor the sensitivity analyses establishes biological replication.
+The real 28,395-gene, 17-run matrix from [October 1](../2026-10-01/README.md) was analysed with DESeq2 and edgeR. Following the meeting tutorial, the exploratory main analysis sums SRR24828471 (public MP2_K2v2) and SRR24828472 (public MP2_K2) into one MiaPaca-2 KRAS observation. Two comparisons retain each library separately. This processing is complete; the remaining uncertainty is whether the original libraries represent technical or biological repeats, which the tutorial says the paper did not specify.
+
+The October 6 report revision clarifies these choices and edits the English text for readability. Numerical results and figure files are unchanged. The current report is version 2; version 1 and its source package are retained.
 
 At FDR < 0.05, DESeq2 identified 5,943 genes (2,912 down; 3,031 up) and edgeR identified 6,431 (2,923 down; 3,508 up). The overlap is 5,442, union 6,932 and Jaccard 0.785. Unshrunk log2FC estimates correlate at Pearson 0.884 and Spearman 0.910 across all 17,819 shared finite estimates. Positive log2FC means higher expression after KRAS siRNA.
 
 | P5 handling | Retained genes | DESeq2 DE | edgeR DE | Shared DE |
 | --- | ---: | ---: | ---: | ---: |
-| Sum both libraries | 17,819 | 5,943 | 6,431 | 5,442 |
-| Retain SRR24828472 | 17,734 | 5,724 | 6,131 | 5,269 |
-| Retain SRR24828471 | 17,705 | 6,004 | 6,535 | 5,568 |
+| Sum SRR24828471 + SRR24828472 (main) | 17,819 | 5,943 | 6,431 | 5,442 |
+| Retain SRR24828472 only | 17,734 | 5,724 | 6,131 | 5,269 |
+| Retain SRR24828471 only | 17,705 | 6,004 | 6,535 | 5,568 |
 
 There are 5,084 genes with FDR < 0.05 and the same direction in both methods under all three choices. The fits share observations; they are sensitivity checks, not six independent confirmations. Main-versus-single-library DE-list Jaccard values range from 0.920 to 0.945. DPM3 loses edgeR significance when only SRR24828472 is used. EGR1 differs between methods. KRAS, DUSP6, SPRY4, MYC and CCND1 remain downward candidates; EMP2 remains upward. MYC decreases in seven of eight normalized sample pairs. Gene expression does not establish direct regulation or protein effects.
 
@@ -18,7 +20,8 @@ There are 5,084 genes with FDR < 0.05 and the same direction in both methods und
 - [Scenario summary](results/scenario_summary.tsv), [full sensitivity table](results/sensitivity_full.tsv), [sensitivity metrics](results/sensitivity_metrics.tsv), and [candidate review](results/candidate_review.tsv).
 - [Method comparison](results/merge_p5/method_comparison.tsv), [paper benchmark](results/paper_comparison_summary.tsv), [conservative mapping exclusions](results/paper_excluded_mapping_rows.tsv), and [paper input audit](results/paper_input_audit.tsv).
 - [Figures](figures): PCA, sample distances, adjusted-p volcanoes, DE counts, method agreement, P5 sensitivity, paper comparison, paired candidate counts, mean/SD and dispersion. Additional raw-run QC and MA/MD plots are provided. Each scenario also has a three-page native R dispersion diagnostic PDF.
-- [Formal English report](../../reports/PDAC_KRAS_Week4_2026-10-04_v1.docx) and [PDF](../../reports/PDAC_KRAS_Week4_2026-10-04_v1.pdf).
+- [Current English report](../../reports/PDAC_KRAS_Week4_2026-10-06_v2.docx) and [PDF](../../reports/PDAC_KRAS_Week4_2026-10-06_v2.pdf). [Version 1](../../reports/PDAC_KRAS_Week4_2026-10-04_v1.pdf) is retained.
+- [Version 2 document validation](sources/report_render_validation_2026-10-06_v2.json) records the wording revision, unchanged results and figures, and rendered layout checks.
 - [Input audit](sources/input_validation.json), [classroom file identities](sources/classroom_provenance.json), [independent numerical validation](results/independent_numerical_validation.json), [repeat-run verification](results/repeat_run_validation.json), and [dependency lockfile](renv.lock).
 
 ## Methods and departures from demonstration code
@@ -72,9 +75,11 @@ python3 analysis/2026-10-04-week4/scripts/fontconfig.py "$FONT_DIR" /absolute/pa
 export FONTCONFIG_FILE=/absolute/path/fontconfig.xml
 analysis/2026-10-04-week4/runtime/python/bin/python analysis/2026-10-04-week4/scripts/figures.py analysis/2026-10-04-week4 "$FONT_DIR"
 analysis/2026-10-04-week4/runtime/python/bin/python analysis/2026-10-04-week4/scripts/report.py analysis/2026-10-04-week4 analysis/2026-10-04-week4/sources/report-template.docx /absolute/path/Week4.docx
+libreoffice --headless --convert-to pdf --outdir /absolute/path/render /absolute/path/Week4.docx
+analysis/2026-10-04-week4/runtime/python/bin/python analysis/2026-10-04-week4/scripts/finalize_pdf.py /absolute/path/render/Week4.pdf /absolute/path/Week4_final.pdf
 ```
 
-Render DOCX to PDF using LibreOffice or the Codex document renderer and inspect every page before delivery. The report builder preserves template styles, numbering, theme, footer and section geometry byte-for-byte; figures and editable body text are replaced. The included template is the author's retained report template, not a classroom tutorial. The checked final report has seven pages, nine composite figures and four tables, with Times New Roman, true superscript citations, white tables and the requested blue/red/lapis palette.
+Render DOCX to PDF using LibreOffice or the Codex document renderer and inspect every page before delivery. The report builder preserves template styles, numbering, theme, footer and section geometry byte-for-byte; it updates the report text, figures and current document metadata. Version 2 adds the immutable analysis reference and numbers citations by first appearance. Remove automatically exported PDF outlines to retain the template's plain-heading format. The included template is the author's retained report template, not a classroom tutorial. The checked final report has seven pages, nine composite figures and four tables, with Times New Roman, true superscript citations, white tables and the requested blue/red/lapis palette.
 
 ## Verification and sources
 
