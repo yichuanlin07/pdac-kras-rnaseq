@@ -28,6 +28,20 @@ def para(text='',pattern=4,cite=None):
     body.insert(len(body)-1,el);p=Paragraph(el,doc._body)
     r=p.add_run(text)
     if rp is not None:r._r.insert(0,rp)
+    # The author requested wider paragraph gaps; retain the template type sizes.
+    spacing=p.paragraph_format
+    if pattern==4:spacing.space_after=Pt(16)
+    elif pattern==18:spacing.space_after=Pt(18)
+    elif pattern in (3,15):
+        spacing.space_before=Pt(16);spacing.space_after=Pt(8)
+    elif pattern==17:spacing.space_before=Pt(4);spacing.space_after=Pt(8)
+    elif pattern==16:spacing.space_before=Pt(4);spacing.space_after=Pt(8)
+    elif pattern==34:
+        spacing.space_after=Pt(8)
+        contextual=p._p.get_or_add_pPr().find(qn('w:contextualSpacing'))
+        if contextual is None:
+            contextual=OxmlElement('w:contextualSpacing');p._p.get_or_add_pPr().append(contextual)
+        contextual.set(qn('w:val'),'0')
     if cite:
         r=p.add_run(str(cite));r.font.name='Times New Roman';r.font.size=Pt(8);r.font.superscript=True
     return p
@@ -45,14 +59,20 @@ def table(headers,rows,widths=None):
     for row in rows:
         cells=t.add_row().cells
         for i,s in enumerate(row):cells[i].text=str(s)
-    for row in t.rows:
+    for row_number,row in enumerate(t.rows):
         pr=row._tr.get_or_add_trPr();pr.append(OxmlElement('w:cantSplit'))
         for i,c in enumerate(row.cells):
             if widths:c.width=Inches(widths[i])
             c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
             tcpr=c._tc.get_or_add_tcPr();shade=OxmlElement('w:shd');shade.set(qn('w:fill'),'FFFFFF');tcpr.append(shade)
+            margins=OxmlElement('w:tcMar')
+            for edge in ('top','bottom','left','right'):
+                margin=OxmlElement('w:'+edge);margin.set(qn('w:w'),'120');margin.set(qn('w:type'),'dxa');margins.append(margin)
+            tcpr.append(margins)
             for p in c.paragraphs:
-                p.paragraph_format.space_before=Pt(0);p.paragraph_format.space_after=Pt(3);p.paragraph_format.line_spacing=1.05
+                p.paragraph_format.space_before=Pt(0);p.paragraph_format.space_after=Pt(0);p.paragraph_format.line_spacing=1.05
+                # Keep each short table together; captions already keep with next.
+                p.paragraph_format.keep_with_next=(row_number<len(t.rows)-1)
                 if re.fullmatch(r'[+-]?[\d,]+(?:[.]\d+)?(?:e[+-]?\d+)?',c.text):p.alignment=WD_ALIGN_PARAGRAPH.RIGHT
                 for r in p.runs:r.font.name='Times New Roman';r.font.size=Pt(9);r.font.color.rgb=RGBColor(0,0,0)
     for c in t.rows[0].cells:
@@ -62,14 +82,14 @@ def table(headers,rows,widths=None):
     for edge in ['top','bottom','insideH','insideV','left','right']:
         e=OxmlElement('w:'+edge);e.set(qn('w:val'),'single');e.set(qn('w:sz'),'4');e.set(qn('w:color'),'000000');borders.append(e)
     t._tbl.tblPr.append(borders)
-    para('',18).paragraph_format.space_after=Pt(3)
+    para('',18).paragraph_format.space_after=Pt(8)
     return t
 def sci(x):return f'{x:.2g}'
 num=lambda x:f'{int(x):,}'
 
 para('KRAS suppression in pancreatic cancer cells',0)
-para('RNA-SEQ WEEKLY PROGRESS REPORT | WEEK 4',1)
-para('Yichuan Lin | University of Ottawa, Faculty of Science | 2026-10-06 | Version 2',2)
+para('WEEK4 PROGRESS REPORT',1)
+para('Yichuan Lin',2)
 heading('1 Overview')
 para('I compared DESeq2 and edgeR using the real RNA-seq counts from eight pancreatic cancer cell lines treated with KRAS or control siRNA. Both methods recovered a shared expression response, with differences in the genes passing the significance threshold. The published study provides the biological context.',cite=1)
 heading('2 Work completed')
@@ -103,6 +123,7 @@ para('The main analysis combines SRR24828471 (public MP2_K2v2) and SRR24828472 (
 para('The tutorial states that the paper did not distinguish technical from biological repeats. The runs have different sample accessions and FASTQ MD5 values, and logCPM correlation is 0.993. These observations do not identify how the libraries were generated. The three P5 choices therefore assess processing sensitivity under the tutorial’s assumptions.',18,3)
 picture('C1_P5_sensitivity')
 cap('Figure C1  Effect-size sensitivity to P5 handling','Comparing the merged result with SRR24828472 alone and SRR24828471 alone, DESeq2 DE-list Jaccard values are 0.936 and 0.945; edgeR values are 0.932 and 0.920. Unshrunk log2FC correlations range from 0.992 to 0.996. Axes are cropped to +/-6; correlations use all finite paired estimates. Global agreement remains high, while some genes cross the FDR threshold.')
+heading('Appendix C continued',True)
 para('Table C2  Examples requiring cautious interpretation',17)
 rows=[]
 for sy in ['DPM3','EGR1','TGFBR3']:
@@ -131,15 +152,14 @@ for sy in ['KRAS','DUSP6','SPRY4','MYC','CCND1','EMP2']:
 table(['Gene','DESeq2 LFC','edgeR LFC','DESeq2 FDR','edgeR FDR','Paired direction'],rows,[.85,1.1,1.1,1.2,1.2,1.2])
 para('All six genes remain significant with the same direction in both methods under all three P5 choices. I selected them for discussion of KRAS/ERK and cell-cycle responses, adding EMP2 as a strong upward example. KRAS checks the knockdown; DUSP6/SPRY4 and MYC/CCND1 connect the estimates to the published study. EMP2 merits follow-up because of its increase, although the present analysis does not explain its mechanism.',18,1)
 para('This is a selected gene review, with no enrichment analysis. The full DE tables retain all input genes and their filter status. The DE tests assess a zero-effect null; effect size and consistency across paired cell lines need separate consideration.',18)
-para('Software: R 4.5.2; DESeq2 1.50.2; edgeR 4.8.2; apeglm 1.32.0. Package versions and the dependency lockfile accompany the reproducible source package.',18)
 
 heading('Appendix F Transformation and dispersion diagnostics',True)
 picture('F1_mean_SD',6.0)
 cap('Figure F1  Mean and standard deviation after transformation','Across-sample standard deviation (SD) is plotted against mean expression for log2 normalized counts, VST and TMM logCPM. Cell-line differences remain in the SD. VST and logCPM provide the inputs for sample distances and PCA; differential expression is fitted to counts.')
 picture('F2_dispersion_summary',6.0)
 cap('Figure F2  Dispersion estimates','The panels show DESeq2 final negative-binomial (NB) dispersions and the fitted trend, edgeR biological coefficient of variation (square root of NB dispersion), and moderated quasi-likelihood (QL) posterior variance with its prior trend. The main scenario’s three-page dispersion_diagnostics.pdf provides the native R plots.',cite='4,5')
-doc.paragraphs[-1].paragraph_format.space_after=Pt(6)
-heading('References')
+para('Software: R 4.5.2; DESeq2 1.50.2; edgeR 4.8.2; apeglm 1.32.0. Package versions and the dependency lockfile accompany the reproducible source package.',18)
+heading('References',True)
 references=[
 'Klomp JA, Klomp JE, Stalnecker CA, Bryant KL, Edwards AC, Drizyte-Miller K, et al. Defining the KRAS- and ERK-dependent transcriptome in KRAS-mutant cancers. Science. 2024;384(6700):eadk0775. doi:10.1126/science.adk0775. Data S1.',
 'European Nucleotide Archive. PRJNA980201 run metadata [Internet]. [cited 2026 Oct 4]. Available from: https://www.ebi.ac.uk/ena/browser/view/PRJNA980201.',
@@ -155,7 +175,7 @@ para('Review: ____________________    Date: ____________________',37)
 # Retain layout parts and update the document metadata for this revision.
 doc.core_properties.title='KRAS suppression in pancreatic cancer cells'
 doc.core_properties.subject='RNA-seq Week 4 progress report; analysis completed 4 October 2026; revised 6 October 2026'
-doc.core_properties.revision=2
+doc.core_properties.revision=4
 from datetime import datetime,timezone
 doc.core_properties.modified=datetime(2026,10,6,tzinfo=timezone.utc)
 settings=doc.settings.element
@@ -176,5 +196,5 @@ with zipfile.ZipFile(template) as old,zipfile.ZipFile(target) as final:
     assert etree.tostring(a.find('.//'+qn('w:sectPr')))==etree.tostring(b.find('.//'+qn('w:sectPr')))
     text=final.read('word/document.xml').decode();assert 'TOC' not in text and 'bookmarkStart' not in text
 temp.unlink()
-qa=dict(template_sha256=hashlib.sha256(template.read_bytes()).hexdigest(),preserved_opaque_parts=len(same),all_preserved_byte_for_byte=True,section_geometry_exact=True,body_font='Times New Roman',true_superscript_citations=True,figures=len(doc.inline_shapes),tables=len(doc.tables),body_sections=['1 Overview','2 Work completed','3 Next steps','4 Summary'],source_results='2026-10-04-week4',report_revision=2,intentional_metadata_update=True,analysis_not_rerun=True)
+qa=dict(template_sha256=hashlib.sha256(template.read_bytes()).hexdigest(),preserved_opaque_parts=len(same),all_preserved_byte_for_byte=True,section_geometry_exact=True,body_font='Times New Roman',true_superscript_citations=True,figures=len(doc.inline_shapes),tables=len(doc.tables),body_sections=['1 Overview','2 Work completed','3 Next steps','4 Summary'],source_results='2026-10-04-week4',report_revision=4,intentional_metadata_update=True,requested_title_and_author_line=True,body_paragraph_after_pt=16,appendix_paragraph_after_pt=18,table_cell_margin_pt=6,horizontal_guides_in=['B2_counts_and_agreement','E1_candidate_paired_expression'],analysis_not_rerun=True)
 (target.parent/(target.stem+'_structure_validation.json')).write_text(json.dumps(qa,indent=2));print(target)

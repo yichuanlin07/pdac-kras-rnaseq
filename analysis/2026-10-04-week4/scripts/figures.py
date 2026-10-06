@@ -79,6 +79,7 @@ r=sc.iloc[0];ax=axs[0];x=np.arange(2);ax.bar(x-.17,[r.DESeq2_down,r.edgeR_down],
 for pos,vals in [(x-.17,[r.DESeq2_down,r.edgeR_down]),(x+.17,[r.DESeq2_up,r.edgeR_up])]:
     for p,v in zip(pos,vals):ax.text(p,v+45,num(int(v)),ha='center',fontsize=9)
 ax.set_xticks(x,['DESeq2','edgeR']);ax.set_ylim(0,4200);ax.set_ylabel('Genes (FDR < 0.05)');ax.legend(frameon=False,ncol=2,loc='upper left');panel(ax,'Treatment response')
+ax.set_axisbelow(True);ax.grid(axis='y',color='#D9D9D9',linewidth=.5,alpha=.75)
 ax=axs[1];both=(cmp.DESeq2_padj<.05)&(cmp.edgeR_FDR<.05);ax.scatter(cmp.DESeq2_log2FC,cmp.edgeR_log2FC,c=np.where(both,LAPIS,GRAY),s=4,alpha=.4,rasterized=True);lim=8;ax.plot([-lim,lim],[-lim,lim],c='black',lw=.7);ax.set(xlim=(-lim,lim),ylim=(-lim,lim),xlabel='DESeq2 log2FC (unshrunk)',ylabel='edgeR log2FC');panel(ax,'Method agreement')
 ax.text(.04,.96,f'r = {r.LFC_pearson:.3f}; n = {int(r.shared_finite_p):,}\nShared DE = {int(r.overlap):,}; J = {r.jaccard:.3f}',transform=ax.transAxes,va='top',fontsize=9,bbox=dict(facecolor='white',alpha=.8,edgecolor='none'))
 save(fig,'B2_counts_and_agreement')
@@ -112,6 +113,7 @@ for ax,sy in zip(axs.flat,selected):
         g=meta[meta.cell_line==cell];cs=g.loc[g.condition=='Control','sample'].iloc[0];ks=g.loc[g.condition=='Treatment','sample'].iloc[0];v=[ys[cs],ys[ks]];downs+=v[1]<v[0]
         ax.plot([0,1],v,color=palette[j],lw=.8,alpha=.8);ax.scatter([0,1],v,c=[BLUE,RED],s=12,zorder=3)
     ax.set_xticks([0,1],['Control','KRAS']);ax.set_ylabel('log2(normalized count + 1)',fontsize=8);panel(ax,sy);gene_stats.append(dict(ENTREZID=gene,SYMBOL=sy,paired_lines_down=downs,paired_lines_up=8-downs))
+    ax.set_axisbelow(True);ax.grid(axis='y',color='#D9D9D9',linewidth=.5,alpha=.75)
 save(fig,'E1_candidate_paired_expression')
 pd.DataFrame(gene_stats).to_csv(res/'candidate_pair_directions.tsv',sep='\t',index=False)
 candidate=sen[sen.SYMBOL.isin(selected+['EGR1','DPM3','TGFBR3','WNT5A','SFRP1'])].copy();candidate.to_csv(res/'candidate_review.tsv',sep='\t',index=False)

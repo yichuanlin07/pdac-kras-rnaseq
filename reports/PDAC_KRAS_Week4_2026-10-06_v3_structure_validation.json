@@ -1,0 +1,24 @@
+{
+  "template_sha256": "8dfd5629650a6aae15e354527ee06d91dccb3849e8ca2d67aab72a550d7e93dd",
+  "preserved_opaque_parts": 17,
+  "all_preserved_byte_for_byte": true,
+  "section_geometry_exact": true,
+  "body_font": "Times New Roman",
+  "true_superscript_citations": true,
+  "figures": 9,
+  "tables": 4,
+  "body_sections": [
+    "1 Overview",
+    "2 Work completed",
+    "3 Next steps",
+    "4 Summary"
+  ],
+  "source_results": "2026-10-04-week4",
+  "report_revision": 3,
+  "intentional_metadata_update": true,
+  "requested_title_and_author_line": true,
+  "body_paragraph_after_pt": 16,
+  "appendix_paragraph_after_pt": 18,
+  "table_cell_margin_pt": 6,
+  "analysis_not_rerun": true
+}
