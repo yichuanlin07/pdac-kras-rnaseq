@@ -45,7 +45,7 @@ for p in sorted(set(paths)):
     entries[name] = data
     records.append(dict(file=name, size=len(data), sha256=hashlib.sha256(data).hexdigest()))
 entries["README.md"] = (
-    b"# PDAC KRAS Week 4 source snapshot version 5\n\nStart with analysis/2026-10-04-week4/README.md. The current report is reports/PDAC_KRAS_Week4_2026-10-06_v4.pdf and its DOCX. This snapshot contains input counts, original run tables, analysis and report code, dependency versions, full results and figures. Version 5 removes code comments and docstrings and formats the scripts. Analysis logic, numerical results and reports are unchanged. See MANIFEST.json for checksums. Raw reads, recordings, credentials, fonts, installed runtimes and private course attachments are excluded. To rerun the paper comparison, supply the Data S1 CSV identified in classroom_provenance.json.\n"
+    b"# PDAC KRAS Week 4 source snapshot version 6\n\nStart with analysis/2026-10-04-week4/README.md. The current report is reports/PDAC_KRAS_Week4_2026-10-06_v4.pdf and its DOCX. This snapshot contains input counts, original run tables, analysis and report code, dependency versions, full results and figures. The code comments and docstrings have been removed and the scripts formatted. Version 6 also updates the count-source checksum lists. Analysis logic, numerical results and reports are unchanged. See MANIFEST.json for checksums. Raw reads, recordings, credentials, fonts, installed runtimes and private course attachments are excluded. To rerun the paper comparison, supply the Data S1 CSV identified in classroom_provenance.json.\n"
 )
 records.append(
     dict(
@@ -59,7 +59,7 @@ manifest = dict(
     analysis_commit="6f34d7fe90474f61d3519574ecccfa22d4880e41",
     source_base_commit="eaa5930a0515531b80007f4dc86ee9176986fb96",
     snapshot_date="2026-10-07",
-    source_revision=5,
+    source_revision=6,
     report_revision=4,
     file_count=len(entries),
     archive_entry_count=len(entries) + 1,

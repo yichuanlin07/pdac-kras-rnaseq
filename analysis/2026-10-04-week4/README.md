@@ -2,7 +2,7 @@
 
 The real 28,395-gene, 17-run matrix from [October 1](../2026-10-01/README.md) was analysed with DESeq2 and edgeR. Following the meeting tutorial, the exploratory main analysis sums SRR24828471 (public MP2_K2v2) and SRR24828472 (public MP2_K2) into one MiaPaca-2 KRAS observation. Two comparisons retain each library separately. This processing is complete; the remaining uncertainty is whether the original libraries represent technical or biological repeats, which the tutorial says the paper did not specify.
 
-The current report explains these choices, uses the title WEEK4 PROGRESS REPORT and places only the author's name beneath it. Paragraph gaps and padded table cells leave more space for reading. Light horizontal guides help read the DE-count and paired-expression plots. Source package version 5 removes code comments and docstrings and formats the scripts; analysis logic, results and reports are unchanged. Earlier reports and source packages are retained.
+The current report explains these choices, uses the title WEEK4 PROGRESS REPORT and places only the author's name beneath it. Paragraph gaps and padded table cells leave more space for reading. Light horizontal guides help read the DE-count and paired-expression plots. Source package version 6 contains formatted scripts without comments or docstrings, with matching checksum lists; analysis logic, results and reports are unchanged. Earlier reports and source packages are retained.
 
 At FDR < 0.05, DESeq2 identified 5,943 genes (2,912 down; 3,031 up) and edgeR identified 6,431 (2,923 down; 3,508 up). The overlap is 5,442, union 6,932 and Jaccard 0.785. Unshrunk log2FC estimates correlate at Pearson 0.884 and Spearman 0.910 across all 17,819 shared finite estimates. Positive log2FC means higher expression after KRAS siRNA.
 
@@ -23,7 +23,7 @@ There are 5,084 genes with FDR < 0.05 and the same direction in both methods und
 - [Current English report](../../reports/PDAC_KRAS_Week4_2026-10-06_v4.docx) and [PDF](../../reports/PDAC_KRAS_Week4_2026-10-06_v4.pdf). [Version 1](../../reports/PDAC_KRAS_Week4_2026-10-04_v1.pdf), [version 2](../../reports/PDAC_KRAS_Week4_2026-10-06_v2.pdf) and [version 3](../../reports/PDAC_KRAS_Week4_2026-10-06_v3.pdf) are retained.
 - [Version 4 document validation](sources/report_render_validation_2026-10-06_v4.json) records the chart-guide changes, unchanged scientific text and numerical results, and rendered layout checks. [Version 3 validation](sources/report_render_validation_2026-10-06_v3.json) and [version 2 validation](sources/report_render_validation_2026-10-06_v2.json) retain the preceding checks.
 - [Input audit](sources/input_validation.json), [classroom file identities](sources/classroom_provenance.json), [independent numerical validation](results/independent_numerical_validation.json), [repeat-run verification](results/repeat_run_validation.json), and [dependency lockfile](renv.lock).
-- [Source revision validation](sources/source_revision_validation_2026-10-07_v5.json): comment checks, code-structure comparisons and unchanged input, result and report checksums.
+- [Source revision validation](sources/source_revision_validation_2026-10-07_v6.json): comment checks, code-structure comparisons and unchanged input, result and report checksums.
 
 ## Methods and departures from demonstration code
 
