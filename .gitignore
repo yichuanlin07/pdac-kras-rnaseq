@@ -12,5 +12,6 @@ __pycache__/
 .env
 *.key
 *.pem
+*.zip
 tmp/
 analysis/2026-10-04-week4/runtime/

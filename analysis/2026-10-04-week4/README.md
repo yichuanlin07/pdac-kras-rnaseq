@@ -42,8 +42,8 @@ The paper used STAR/Gencode v30, Salmon/tximport, coding/non-Y/non-mitochondrial
 - [Scenario summary](results/scenario_summary.tsv), [P5 sensitivity](results/sensitivity_full.tsv), [sensitivity metrics](results/sensitivity_metrics.tsv) and [candidate review](results/candidate_review.tsv).
 - [Method comparison](results/merge_p5/method_comparison.tsv), [paper comparison](results/paper_comparison_summary.tsv), [mapping exclusions](results/paper_excluded_mapping_rows.tsv) and [paper input checks](results/paper_input_audit.tsv).
 - [Figures](figures): PCA, sample distances, volcanoes, DE counts, method agreement, P5 sensitivity, paper comparison, paired expression, mean/SD, dispersion, raw-run QC and MA/MD plots. Native R dispersion diagnostics are in each scenario's results folder.
-- [Report DOCX](../../reports/PDAC_KRAS_Week4_2026-10-06_v4.docx) and [PDF](../../reports/PDAC_KRAS_Week4_2026-10-06_v4.pdf).
-- [Input checks](sources/input_validation.json), [numerical checks](results/independent_numerical_validation.json), [repeat-run results](results/repeat_run_validation.json), [document checks](sources/report_render_validation_2026-10-06_v4.json) and [source review](sources/source_review_2026-10-06_v7.json).
+- [Source code](scripts/), [report DOCX](../../reports/PDAC_KRAS_Week4_2026-10-06.docx) and [PDF](../../reports/PDAC_KRAS_Week4_2026-10-06.pdf).
+- [Input checks](sources/input_validation.json), [numerical checks](results/independent_numerical_validation.json), [repeat-run results](results/repeat_run_validation.json) and [document checks](sources/report_validation.json).
 
 ## Run the analysis
 
@@ -82,7 +82,7 @@ libreoffice --headless --convert-to pdf --outdir /absolute/path/render /absolute
 analysis/2026-10-04-week4/runtime/python/bin/python analysis/2026-10-04-week4/scripts/finalize_pdf.py /absolute/path/render/Week4.pdf /absolute/path/Week4_final.pdf
 ```
 
-The report builder reuses the included DOCX template. Inspect every PDF page for clipping, table breaks and figure labels. Fonts, installed libraries, FASTQ, BAM and recordings are not included in the package.
+The report builder reuses the included DOCX template. Inspect every PDF page for clipping, table breaks and figure labels. Fonts, installed libraries, FASTQ, BAM and recordings are stored separately.
 
 ## Sources and next work
 

@@ -374,10 +374,10 @@ for ref in references:
     para(ref, 34)
 para("Review: ____________________    Date: ____________________", 37)
 doc.core_properties.title = "KRAS suppression in pancreatic cancer cells"
-doc.core_properties.subject = (
-    "RNA-seq Week 4 progress report; analysis completed 4 October 2026; revised 6 October 2026"
-)
-doc.core_properties.revision = 4
+doc.core_properties.subject = "RNA-seq Week 4 progress report"
+revision = doc.core_properties._element.find(qn("cp:revision"))
+if revision is not None:
+    doc.core_properties._element.remove(revision)
 from datetime import datetime, timezone
 
 doc.core_properties.modified = datetime(2026, 10, 6, tzinfo=timezone.utc)
@@ -432,14 +432,10 @@ qa = dict(
     tables=len(doc.tables),
     body_sections=["1 Overview", "2 Work completed", "3 Next steps", "4 Summary"],
     source_results="2026-10-04-week4",
-    report_revision=4,
-    intentional_metadata_update=True,
-    requested_title_and_author_line=True,
     body_paragraph_after_pt=16,
     appendix_paragraph_after_pt=18,
     table_cell_margin_pt=6,
     horizontal_guides_in=["B2_counts_and_agreement", "E1_candidate_paired_expression"],
-    analysis_not_rerun=True,
 )
 (target.parent / (target.stem + "_structure_validation.json")).write_text(json.dumps(qa, indent=2))
 print(target)

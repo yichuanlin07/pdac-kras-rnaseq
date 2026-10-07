@@ -1,0 +1,21 @@
+{
+  "report_date": "2026-10-06",
+  "pages": 9,
+  "figures": 9,
+  "tables": 4,
+  "body_font": "Times New Roman",
+  "body_paragraph_after_pt": 16,
+  "appendix_paragraph_after_pt": 18,
+  "table_cell_margin_pt": 6,
+  "white_tables_black_text": true,
+  "true_superscript_citations": true,
+  "no_PDF_outline_bookmarks": true,
+  "DOCX_layout_and_content_preserved": true,
+  "PDF_page_streams_and_text_preserved": true,
+  "report_sha256": {
+    "PDAC_KRAS_Week4_2026-10-06.docx": "4391d6ddec4e12e20d151666f55d8e3dca2b339306301360143d7c9ba650d9d1",
+    "PDAC_KRAS_Week4_2026-10-06.pdf": "17903cb2c58b0ad68960110a10e61e5b6ff2eb9c848b7ea78d12c5de3537565c"
+  },
+  "all_pages_rendered_and_checked": true,
+  "no_clipping_overlap_or_orphan_review_page": true
+}
