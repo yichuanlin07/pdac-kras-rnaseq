@@ -45,7 +45,13 @@ for p in sorted(set(paths)):
     entries[name] = data
     records.append(dict(file=name, size=len(data), sha256=hashlib.sha256(data).hexdigest()))
 entries["README.md"] = (
-    b"# PDAC KRAS Week 4 source snapshot version 6\n\nStart with analysis/2026-10-04-week4/README.md. The current report is reports/PDAC_KRAS_Week4_2026-10-06_v4.pdf and its DOCX. This snapshot contains input counts, original run tables, analysis and report code, dependency versions, full results and figures. The code comments and docstrings have been removed and the scripts formatted. Version 6 also updates the count-source checksum lists. Analysis logic, numerical results and reports are unchanged. See MANIFEST.json for checksums. Raw reads, recordings, credentials, fonts, installed runtimes and private course attachments are excluded. To rerun the paper comparison, supply the Data S1 CSV identified in classroom_provenance.json.\n"
+    b"# KRAS siRNA analysis\n\n"
+    b"Results and run instructions: [Week 4](analysis/2026-10-04-week4/README.md).\n\n"
+    b"The package includes the 17-run count matrix, DESeq2 and edgeR results, P5 comparisons, figures and report code. "
+    b"The merged-P5 analysis is exploratory because the library repeat type is not documented.\n\n"
+    b"[Report PDF](reports/PDAC_KRAS_Week4_2026-10-06_v4.pdf) and "
+    b"[Report DOCX](reports/PDAC_KRAS_Week4_2026-10-06_v4.docx)\n\n"
+    b"File checksums are in MANIFEST.json. The paper comparison requires the Data S1 CSV identified in classroom_provenance.json.\n"
 )
 records.append(
     dict(
@@ -57,9 +63,9 @@ records.append(
 manifest = dict(
     input_commit="462867100fa1628d716cb7722a574da5f90577df",
     analysis_commit="6f34d7fe90474f61d3519574ecccfa22d4880e41",
-    source_base_commit="eaa5930a0515531b80007f4dc86ee9176986fb96",
-    snapshot_date="2026-10-07",
-    source_revision=6,
+    source_base_commit="615a1525f8c1fc74660bc66786392577b6fa87ac",
+    snapshot_date="2026-10-06",
+    source_revision=7,
     report_revision=4,
     file_count=len(entries),
     archive_entry_count=len(entries) + 1,
@@ -73,7 +79,7 @@ entries["MANIFEST.json"] = json.dumps(manifest, indent=2).encode()
 target.parent.mkdir(parents=True, exist_ok=True)
 with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
     for name, data in sorted(entries.items()):
-        zi = zipfile.ZipInfo(name, date_time=(2026, 10, 7, 0, 0, 0))
+        zi = zipfile.ZipInfo(name, date_time=(2026, 10, 6, 0, 0, 0))
         zi.compress_type = zipfile.ZIP_DEFLATED
         z.writestr(zi, data, compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
 with zipfile.ZipFile(target) as z:
