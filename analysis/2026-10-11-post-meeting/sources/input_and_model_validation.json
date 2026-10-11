@@ -1,0 +1,44 @@
+{
+  "gene_rows": 28395,
+  "raw_runs": 17,
+  "merged_observations": 16,
+  "LOO_rounds": 8,
+  "all_integer_nonnegative": true,
+  "raw_run_tables_match": true,
+  "assigned_counts_match": true,
+  "ENA_saved_snapshot_matches": true,
+  "ENA_snapshot_date": "2026-10-04",
+  "P5_raw_integer_sum_exact": true,
+  "all_designs_full_rank": true,
+  "each_omission_removes_Control_Treatment_pair": true,
+  "baseline_week4_numerical_match": {
+    "DESeq2": {
+      "log2FoldChange": 0.0,
+      "padj": 0.0,
+      "pvalue": 0.0
+    },
+    "edgeR": {
+      "logFC": 0.0,
+      "FDR": 0.0,
+      "PValue": 0.0
+    }
+  },
+  "expected_screen_counts_verified": true,
+  "nonconverged_DESeq2_by_round": {
+    "full": 0,
+    "omit_HPAC": 0,
+    "omit_MiaPaca-2": 0,
+    "omit_Pa01C": 0,
+    "omit_Pa02C": 0,
+    "omit_Pa04C": 0,
+    "omit_Pa14C": 0,
+    "omit_Pa16C": 0,
+    "omit_PANC-1": 0
+  },
+  "sha256": {
+    "analysis/2026-10-01/counts/counts_raw.txt": "da09d6b5dda4801382a73d664408acb37647bc6c7a18f1f4700171e94c223b68",
+    "analysis/2026-10-01/counts/sample_annotation.txt": "4371f8a062dd2e5eacd0e963593541935df0f6f88ef12b0575eafbf29a1a9b6e",
+    "analysis/2026-10-01/counts/annotate_geneID.txt": "485ab66058a9392e86dc54b3a8f95b3e003ada56908c765425405945936933be",
+    "analysis/2026-10-04-week4/sources/ena_runs_2026-10-04.tsv": "07692ba9cefbf2572c8bf00cbfbdf7e384a810162b8c883cb4e26f27a52ed382"
+  }
+}

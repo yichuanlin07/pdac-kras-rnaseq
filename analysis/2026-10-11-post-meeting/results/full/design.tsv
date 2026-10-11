@@ -1,0 +1,17 @@
+sample	(Intercept)	conditionTreatment	cell_lineMiaPaca-2	cell_linePa01C	cell_linePa02C	cell_linePa04C	cell_linePa14C	cell_linePa16C	cell_linePANC-1
+Pa01C_Control	1	0	0	1	0	0	0	0	0
+Pa02C_Control	1	0	0	0	1	0	0	0	0
+Pa04C_Control	1	0	0	0	0	1	0	0	0
+Pa16C_Control	1	0	0	0	0	0	0	1	0
+PANC-1_Control	1	0	0	0	0	0	0	0	1
+Pa14C_Control	1	0	0	0	0	0	1	0	0
+HPAC_Control	1	0	0	0	0	0	0	0	0
+MiaPaca-2_Control	1	0	1	0	0	0	0	0	0
+Pa01C_KRAS	1	1	0	1	0	0	0	0	0
+Pa02C_KRAS	1	1	0	0	1	0	0	0	0
+Pa04C_KRAS	1	1	0	0	0	1	0	0	0
+Pa16C_KRAS	1	1	0	0	0	0	0	1	0
+PANC-1_KRAS	1	1	0	0	0	0	0	0	1
+Pa14C_KRAS	1	1	0	0	0	0	1	0	0
+HPAC_KRAS	1	1	0	0	0	0	0	0	0
+MiaPaca-2_KRAS	1	1	1	0	0	0	0	0	0

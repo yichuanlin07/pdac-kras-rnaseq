@@ -1,0 +1,23 @@
+{
+  "DESeq2": {
+    "full_screen_pass": 2088,
+    "direction_stable_all8": 13328,
+    "descriptive_screen_ge7of8": 1561,
+    "descriptive_screen_all8": 1331
+  },
+  "edgeR": {
+    "full_screen_pass": 2919,
+    "direction_stable_all8": 13353,
+    "descriptive_screen_ge7of8": 2043,
+    "descriptive_screen_all8": 1641
+  },
+  "full_joint_2020": {
+    "baseline": 2020,
+    "both_direction_all8": 2017,
+    "both_ge7of8": 1517,
+    "both_all8": 1291,
+    "simultaneous_joint_ge7of8": 1515,
+    "simultaneous_joint_all8": 1291,
+    "either_effect_drift_ge05": 52
+  }
+}

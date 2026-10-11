@@ -1,0 +1,7 @@
+{
+  "DESeq2_primary": "results() log2FoldChange; before apeglm shrinkage",
+  "DESeq2_display_alternative": "lfcShrink(type=apeglm); posterior effect and posterior SD",
+  "edgeR_primary": "glmQLFTest() reported logFC from fitted coefficients; default prior.count=0.125",
+  "edgeR_evidence": "installed edgeR 4.8.2 glmFit.default and glmLRT; edgeR_installed_effect_source.txt",
+  "screen": "adjusted P<0.05 AND abs(primary effect)>0.5 after zero-effect testing"
+}

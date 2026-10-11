@@ -1,0 +1,4 @@
+scenario	DESeq2_unshrunk_gate	edgeR_reported_gate	intersection	source
+merge_p5	2088	2919	2020	archived Week4 fits; recalculated screens, no new single-library fits
+retain_SRR24828472	2094	2827	2008	archived Week4 fits; recalculated screens, no new single-library fits
+retain_SRR24828471	2086	2855	1991	archived Week4 fits; recalculated screens, no new single-library fits

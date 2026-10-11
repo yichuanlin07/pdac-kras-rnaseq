@@ -1,0 +1,12 @@
+{
+  "independent_csv_joint_screen_check": true,
+  "all_eight_rounds_counted": true,
+  "joint_7of8_rows": 1515,
+  "joint_8of8_rows": 1291,
+  "amplitude_inspection_rows": 52,
+  "PDF_pages": 6,
+  "all_six_rendered_pages_visually_reviewed": true,
+  "no_clipping_overlap_missing_glyphs": true,
+  "figure_labels_and_denominators_checked": true,
+  "PDF_sha256": "41ab54c07d31afac3399373255150b37d687ec80a227edb104d41267a7554113"
+}

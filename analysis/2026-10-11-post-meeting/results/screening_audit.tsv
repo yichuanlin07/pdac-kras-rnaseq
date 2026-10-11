@@ -1,0 +1,7 @@
+method_effect	FDR_lt	abs_log2FC_gt	selected	down	up
+DESeq2_unshrunk	0.05	0	5943	2912	3031
+DESeq2_unshrunk	0.05	0.5	2088	781	1307
+DESeq2_apeglm	0.05	0	5943	2912	3031
+DESeq2_apeglm	0.05	0.5	1702	614	1088
+edgeR	0.05	0	6431	2923	3508
+edgeR	0.05	0.5	2919	1017	1902

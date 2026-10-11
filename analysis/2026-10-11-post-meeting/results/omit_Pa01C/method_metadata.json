@@ -1,0 +1,13 @@
+{
+  "round": "omit_Pa01C",
+  "model": "~condition+cell_line",
+  "contrast": "Treatment (KRAS siRNA) / Control",
+  "prefilter": "count >=10 in at least 2 retained observations; recalculated each fit",
+  "zero_effect_null": true,
+  "screen": "FDR<0.05 and abs(unshrunk log2FC)>0.5, after testing",
+  "alpha": 0.050000000000000003,
+  "independent_filter_threshold": 18.80682042502859,
+  "edgeR_legacy": false,
+  "reverse_contrast_verified": true,
+  "P5": "raw integer counts summed before filtering and normalization; repeat identity unresolved"
+}
