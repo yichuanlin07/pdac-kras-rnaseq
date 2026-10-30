@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-30",
+  "Python_files_compiled_and_without_comments_or_docstrings": 17,
+  "R_files_parsed_and_without_comments": 6,
+  "comment_removal_preserves_executable_AST_and_R_expressions": true,
+  "fresh_CAMERA_models": 11,
+  "byte_identical_numeric_TSV_files": 57,
+  "table_comparisons": [
+    {
+      "file": "camera_P5_SRR24828471.tsv",
+      "sha256": "00fcba44dd7cc67eaf7cf3ba8d16169dbce97119e081a3e3f1c7a73a458b2f62"
+    },
+    {
+      "file": "camera_P5_SRR24828472.tsv",
+      "sha256": "4a0663f6bca3323993f2fcc7eda5b1755386a6a195585a272a169c80c177c6b9"
+    },
+    {
+      "file": "camera_all_fits.tsv",
+      "sha256": "f53563675836d3b928a0d2e644d7b83d577336c4b20bf2be7785ddd83689e171"
+    },
+    {
+      "file": "camera_full.tsv",
+      "sha256": "c4d0773c03bf6c98b428a7b13b4c580c8c57a5bcda445ebafe365b89aa790150"
+    },
+    {
+      "file": "camera_full_fixed_correlation_001.tsv",
+      "sha256": "a9baaafd422c4144cd212ce61ccce9e7895041adef50e0c634a7cb7c3c81063c"
+    },
+    {
+      "file": "camera_omit_HPAC.tsv",
+      "sha256": "79276977b2325b87e08dd8640b07e99b3eb187eba81c96535f3fd45356d96a6e"
+    },
+    {
+      "file": "camera_omit_MiaPaca-2.tsv",
+      "sha256": "642afd0ae4872be27b56fb51f0e97e5de10b9175e15d053833ac6eccc380b98e"
+    },
+    {
+      "file": "camera_omit_PANC-1.tsv",
+      "sha256": "3cc654afb9e1fba020e5d7b9dc24bf37b28796cc612251c0beba5f54a778366f"
+    },
+    {
+      "file": "camera_omit_Pa01C.tsv",
+      "sha256": "8fc953b047f28d200b603a0cf611da9935e372e7cf3a023850cd966a93fd3692"
+    },
+    {
+      "file": "camera_omit_Pa02C.tsv",
+      "sha256": "19484c8d169820bfb58e02bfc45f09af4e00919cc1bf38ea3d349170e165c44b"
+    },
+    {
+      "file": "camera_omit_Pa04C.tsv",
+      "sha256": "a584a403f22b7c1255bf3d8a8eb2f6b249c56adf399bfade8b7fd60126e70982"
+    },
+    {
+      "file": "camera_omit_Pa14C.tsv",
+      "sha256": "11c7b08c3ab3ace9aef45e6435d510cc5b7bb88c1c82a157c4771efd945d796a"
+    },
+    {
+      "file": "camera_omit_Pa16C.tsv",
+      "sha256": "720841bcf54b41d04f8ac65c91e3c7faf4ca38eb377b1f209807f346de958535"
+    },
+    {
+      "file": "camera_stability.tsv",
+      "sha256": "0b25e5b233366a7d9e1a3faf47dddf16a455c30ddc439c309573b2b0331511b1"
+    },
+    {
+      "file": "design_P5_SRR24828471.tsv",
+      "sha256": "09bfd098df2673a83bbf8894cf44757928427cb3b6300eb13540eded8e77b6b5"
+    },
+    {
+      "file": "design_P5_SRR24828472.tsv",
+      "sha256": "9207eaab3fbb053a50da3614fcabb40e0490c46dcbe1f2ca5928c75b8309f5bf"
+    },
+    {
+      "file": "design_full.tsv",
+      "sha256": "3a0072009d84b306456d9f57d884e01812c41c4841e9e063a9ecad4b72a3c34a"
+    },
+    {
+      "file": "design_omit_HPAC.tsv",
+      "sha256": "24a098b44a25d1ba03bc2a7356fa93a1bba93aa4c378df9e4a263516763f9271"
+    },
+    {
+      "file": "design_omit_MiaPaca-2.tsv",
+      "sha256": "5735d3e5a54d76b45ae1ebf37096dc748c72418977fcf9dd68dbb362dbfb5bf6"
+    },
+    {
+      "file": "design_omit_PANC-1.tsv",
+      "sha256": "f5f6be266a6399f6aad2ea260b9332346360a75965c485265ef02a8469e420ec"
+    },
+    {
+      "file": "design_omit_Pa01C.tsv",
+      "sha256": "5be6bf0c7d5234fa286c03a3baf6ae4663ab419503035e3663c0a0c53076ebd0"
+    },
+    {
+      "file": "design_omit_Pa02C.tsv",
+      "sha256": "571196aa4e7fc492b2a54de6c5c96bd78764d5361a2507b2f41fe0cd0fa27a9e"
+    },
+    {
+      "file": "design_omit_Pa04C.tsv",
+      "sha256": "6d159b3cc084dfa8656be5412dae436c2807e69a6c2d90a1d8698db51a9d9b66"
+    },
+    {
+      "file": "design_omit_Pa14C.tsv",
+      "sha256": "8c1bf303a88193279dbeb4eb32708ab4706acd4a0c3aa911182f657182c08cee"
+    },
+    {
+      "file": "design_omit_Pa16C.tsv",
+      "sha256": "e9732ec79482cb97a8e2c04481491bb43cea9ef7852cc36938c7bf109bd0f4ed"
+    },
+    {
+      "file": "fit_summary.tsv",
+      "sha256": "59f90b0a1c6abcf46bc06e7832f9b0063b2b826690fa29508b9df4c735ed13a6"
+    },
+    {
+      "file": "gene_effects_P5_SRR24828471.tsv",
+      "sha256": "4ebc0829eeb4e5f4e9ae0c06385d5f8247e0696806e19fe8c973fa24d8bd8cd0"
+    },
+    {
+      "file": "gene_effects_P5_SRR24828472.tsv",
+      "sha256": "e9592a089281e755062a501e34da3af941b3de3147bb82398f1e43e513fec4b2"
+    },
+    {
+      "file": "gene_effects_full.tsv",
+      "sha256": "55a115e0a874aba9d7c4fa0237a72ca34abee46b4c30d8fe81f4a9a001dcba11"
+    },
+    {
+      "file": "gene_effects_omit_HPAC.tsv",
+      "sha256": "51e77afa9adf8ee31510c1f9b8070b5bc767fc76a5733e7d8d1699a35629cc3f"
+    },
+    {
+      "file": "gene_effects_omit_MiaPaca-2.tsv",
+      "sha256": "3af75836c7f9607714954716d80879ed9227f0b0c6e87667b7bf572b0e7e0671"
+    },
+    {
+      "file": "gene_effects_omit_PANC-1.tsv",
+      "sha256": "3b6cc2bf2c4429cd6593c45cbad150149ff7627071fea0c08aa9eac54d194134"
+    },
+    {
+      "file": "gene_effects_omit_Pa01C.tsv",
+      "sha256": "a8b193adb61b518e2083d075b0dd4f3d840b4d45c1b2537a1e3ae230ed25ed35"
+    },
+    {
+      "file": "gene_effects_omit_Pa02C.tsv",
+      "sha256": "5074ccc13d9dd144647c669f853ce348a13fe49f96266a1e847842debfa80aed"
+    },
+    {
+      "file": "gene_effects_omit_Pa04C.tsv",
+      "sha256": "814e831d495f60622b6c65bdab061e93db8a96796f4645baabce3b12ac44fa7d"
+    },
+    {
+      "file": "gene_effects_omit_Pa14C.tsv",
+      "sha256": "161e6d6c8794c3b36e33feb8c27371025acfd7c327b305bf7fedacceca85fab5"
+    },
+    {
+      "file": "gene_effects_omit_Pa16C.tsv",
+      "sha256": "4213527bfce6f609879a938f14fdf36afffd7ddec8d947be8c7bcd1b0acc6d60"
+    },
+    {
+      "file": "joint_2020_direction_audit.tsv",
+      "sha256": "b0bcab2bf89cb1ff1ea0b2b251316312b4caf420179527d6403568c9598745d2"
+    },
+    {
+      "file": "limma_trend_mean_variance.tsv",
+      "sha256": "3ab4a218124468921ae2c0184603f78d64a44f399f20791f87ec00809adf1afc"
+    },
+    {
+      "file": "ora_all.tsv",
+      "sha256": "e9f35daa472d22e4c1e150d61c5dadae01cacb16124fc1ed16238504ecde4953"
+    },
+    {
+      "file": "ora_eligible_background.tsv",
+      "sha256": "bdd1ca501d337eeffcff2cfcf97639fc5c0eb6e5dd477c09673214cc2d4b0234"
+    },
+    {
+      "file": "ora_universe_summary.tsv",
+      "sha256": "bc1258af94e7b7605c0f9afecf66fafb2154d8756e0ea5636f2c4346cdcfef0a"
+    },
+    {
+      "file": "report_hallmark_ora.tsv",
+      "sha256": "965acc84f200a0dbc9b0913db46a8e05471fbabffdfdabcc4941efdb10e8e773"
+    },
+    {
+      "file": "report_method_comparison.tsv",
+      "sha256": "a33d437f88bff93df96a849d33770cac964ab86f272f0cf40c60c36c1828c9ee"
+    },
+    {
+      "file": "report_reactome_ora.tsv",
+      "sha256": "55a31a4e4518f584321bd0b77eb58b7030da73a008ea71a11a29e49d71c915e1"
+    },
+    {
+      "file": "samples_P5_SRR24828471.tsv",
+      "sha256": "ea1f26f6edcd9098a979a46461215cdd8e9faba3a96eda96c1e1e6faebad72d7"
+    },
+    {
+      "file": "samples_P5_SRR24828472.tsv",
+      "sha256": "df3fcbe676bdf474a916e0ac865c2c4a15c673da0605092d1c7375d40d7e8444"
+    },
+    {
+      "file": "samples_full.tsv",
+      "sha256": "23f378e61e1bb755d1b24c94417ed777b5af64efb4a2830e36cc6f634bbc4de1"
+    },
+    {
+      "file": "samples_omit_HPAC.tsv",
+      "sha256": "2f307c80926d67fd76cb43649c4906d6ef1b34cde433e660e8c5a8aca80432d4"
+    },
+    {
+      "file": "samples_omit_MiaPaca-2.tsv",
+      "sha256": "ae2b8c988ad34e97ec82997825535fe852f515465e5b173281365542c953ac02"
+    },
+    {
+      "file": "samples_omit_PANC-1.tsv",
+      "sha256": "c49c4485f4768ae69d8b30a5b7e4047255126441e400ba3f63b41e4cc3c8fcef"
+    },
+    {
+      "file": "samples_omit_Pa01C.tsv",
+      "sha256": "748fd0f909efb67f52995e3f209ee4b69de9e5275c16dc385b1b7f46843474f6"
+    },
+    {
+      "file": "samples_omit_Pa02C.tsv",
+      "sha256": "855f6e42a5e1f4800b30e3ac11cb09157897904db6bdc5228a93e97a9941169a"
+    },
+    {
+      "file": "samples_omit_Pa04C.tsv",
+      "sha256": "e5f83c5ac9927f9f75ff6ebc2f8d5e22f9783b050cf47bf97ff1cf2d87cc11be"
+    },
+    {
+      "file": "samples_omit_Pa14C.tsv",
+      "sha256": "2e341f08fc81b625e390348d31e632430fa553886cf44ae8f2e171b52b6a8e82"
+    },
+    {
+      "file": "samples_omit_Pa16C.tsv",
+      "sha256": "f3a9a9187eb4613db2a71bd401432ec552d841ed7f73d6c1c8aeb06c8f83e3a1"
+    },
+    {
+      "file": "selected_pathway_contributors.tsv",
+      "sha256": "0f030f2036d89398902984210f8fd496c77a350be1cc32565803e426477bcf16"
+    }
+  ],
+  "hypergeometric_and_BH_recalculation": "passed",
+  "CAMERA_order_and_reverse_contrast": "passed; all 1172 directions reversed; maximum P-value difference below 1e-10",
+  "source_count_tables_rechecked": 17,
+  "corrected_M1_assigned_counts": 37657740,
+  "rebuilt_English_report_text_and_superscripts_match_delivered_DOCX": true,
+  "fixes": [
+    "The report generator retains every in-paragraph superscript citation.",
+    "The heatmap rejects missing or invalid direction values.",
+    "Week 6 script defaults resolve within the checkout; input preparation accepts an output directory."
+  ],
+  "Python_scientific_versions": {
+    "numpy": "2.4.0",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.8"
+  },
+  "R_versions": {
+    "R": "4.5.2",
+    "edgeR": "4.8.2",
+    "limma": "3.66.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-30",
+  "task": "Week 6 PDAC/KRAS pathway analysis and English progress report",
+  "created_report_directory": "/home/ylin/Documents/TRNTLabArchives/reports/Week6_2026-10-30",
+  "created_code_directory": "/home/ylin/Documents/TRNTLabArchives/scripts/week6",
+  "deletions": [],
+  "diagnostic_moves": [
+    {
+      "from": "reports/Week6_2026-10-30/results (weighted trial)",
+      "to": "records/analysis_checks/Week6_2026-10-30_voom_camera_rejected/results",
+      "reason": "Failed observation-order and contrast invariance; excluded from delivered scientific results."
+    },
+    {
+      "from": "reports/Week6_2026-10-30/figures (weighted trial)",
+      "to": "records/analysis_checks/Week6_2026-10-30_voom_camera_rejected/figures",
+      "reason": "Retain rejected trial provenance."
+    },
+    {
+      "from": "reports/Week6_2026-10-30/results (partial limma-trend run)",
+      "to": "records/analysis_checks/Week6_2026-10-30_voom_camera_rejected/partial_limmatrend_before_vector_attribute_fix",
+      "reason": "Stopped at a vector-attribute assertion before completing the models; final results were recomputed in a fresh directory."
+    }
+  ],
+  "original_count_tables_and_source_snapshots": "Original source-table and snapshot SHA-256 values rechecked after analysis; unchanged.",
+  "Galaxy_backup": "Not changed; paths and recovery manifests retained.",
+  "existing_reports": "Not changed; new report uses a copy of the saved template.",
+  "input_repository": "/home/ylin/Documents/Codex/2026-10-10/task-2/pdac-kras-rnaseq",
+  "input_commit": "7e3fe15664597474008b63753dd9e4b20efec04a",
+  "input_repository_status": "Clean after analysis; no commit or remote push performed.",
+  "final_report_pages": 6,
+  "figures": 4,
+  "tables": 4
+}

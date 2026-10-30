@@ -1,0 +1,48 @@
+{
+  "metrics": {
+    "input_gene_rows": 28395,
+    "input_runs": 17,
+    "full_observations": 16,
+    "retained_genes": 17819,
+    "camera_sets": 1172,
+    "Hallmark_sets": 50,
+    "Reactome_sets": 1122,
+    "primary_CAMERA_significant": 0,
+    "primary_CAMERA_min_global_q": 0.354350102860066,
+    "primary_Hallmark_min_collection_q": 0.368335412049131,
+    "camera_models": 11,
+    "ORA_background": 15055,
+    "ORA_joint_up": 1275,
+    "ORA_joint_down": 745,
+    "ORA_tests": 2266,
+    "ORA_significant_set_direction_tests": 46,
+    "ORA_Hallmark_significant": 9,
+    "ORA_Reactome_significant": 37,
+    "stable_list_genes": 1515,
+    "stable_ORA_significant": 38,
+    "fixed_correlation_significant": 272,
+    "source_and_model_checks_passed": true,
+    "independent_hypergeometric_and_BH_checks_passed": true,
+    "software": {
+      "numpy": "2.4.0",
+      "pandas": "2.3.3",
+      "matplotlib": "3.10.8",
+      "scipy": "1.16.3",
+      "python": "3.12.14"
+    }
+  },
+  "input_identity": {
+    "gene_rows": 28395,
+    "runs": 17,
+    "all_source_values_match": true,
+    "M1_assigned": 37657740,
+    "pooled_P5_assigned": 68124190
+  },
+  "primary_model": "~cell_line+condition; Control reference; TMM logCPM prior count 2; limma-trend; unweighted CAMERA, estimated correlation; global BH across eligible Hallmark+Reactome sets",
+  "model_invariance": "PASS: all 1172 CAMERA P values preserved after reversing sample order and contrast.\nPASS: all 1172 directions reverse with Control / KRAS.\nMaximum absolute P-value difference: 1.09356967926e-14\n",
+  "ORA_independent_verification": "SciPy hypergeometric survival probabilities and independent BH calculations match every ORA table row.",
+  "unregistered_local_analysis": true,
+  "reported_results_exclude_rejected_weighted_trial": true,
+  "independent_membership_verification": "PASS: Every ORA background, selected list, measured pathway and overlap reconstructed by Entrez identifier; all 1172 full-model CAMERA memberships match the frozen gene-set files.",
+  "source_repository_worktree_unchanged": true
+}

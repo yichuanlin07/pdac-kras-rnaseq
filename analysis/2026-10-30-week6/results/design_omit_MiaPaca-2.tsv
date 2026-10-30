@@ -1,0 +1,15 @@
+sample	(Intercept)	cell_linePa01C	cell_linePa02C	cell_linePa04C	cell_linePa14C	cell_linePa16C	cell_linePANC-1	conditionKRAS
+Control_siRNA_M1	1	1	0	0	0	0	0	0
+Control_siRNA_M2	1	0	1	0	0	0	0	0
+Control_siRNA_M3	1	0	0	1	0	0	0	0
+Control_siRNA_P1	1	0	0	0	0	1	0	0
+Control_siRNA_P2	1	0	0	0	0	0	1	0
+Control_siRNA_P3	1	0	0	0	1	0	0	0
+Control_siRNA_P4	1	0	0	0	0	0	0	0
+KRAS_siRNA_M1	1	1	0	0	0	0	0	1
+KRAS_siRNA_M2	1	0	1	0	0	0	0	1
+KRAS_siRNA_M3	1	0	0	1	0	0	0	1
+KRAS_siRNA_P1	1	0	0	0	0	1	0	1
+KRAS_siRNA_P2	1	0	0	0	0	0	1	1
+KRAS_siRNA_P3	1	0	0	0	1	0	0	1
+KRAS_siRNA_P4	1	0	0	0	0	0	0	1

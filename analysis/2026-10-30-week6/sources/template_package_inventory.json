@@ -1,0 +1,188 @@
+[
+  {
+    "path": "[Content_Types].xml",
+    "bytes": 1916,
+    "sha256": "641cf94154dbac62b28308772123f5a2b1fb5dd09a73216a53b4f09d6e0a3990",
+    "editable": true
+  },
+  {
+    "path": "_rels/.rels",
+    "bytes": 734,
+    "sha256": "a9ae57efe9186f07d48303bcac5d54c7e359bf3f503939c03ad2954e5c59a5c4",
+    "editable": false
+  },
+  {
+    "path": "docProps/core.xml",
+    "bytes": 835,
+    "sha256": "478ad4c3facfa79781410441048e153b7d4ad68f36df589bd09942a30d659209",
+    "editable": true
+  },
+  {
+    "path": "docProps/app.xml",
+    "bytes": 1132,
+    "sha256": "be664981c3141cddfc59362beb287ebf20d0773660e2dd6faac5968a5930a081",
+    "editable": false
+  },
+  {
+    "path": "word/document.xml",
+    "bytes": 111386,
+    "sha256": "ce06b0b0e944301228baadf65c7cbfd47d2de15c473820289dd6e2d7e95786f4",
+    "editable": true
+  },
+  {
+    "path": "word/_rels/document.xml.rels",
+    "bytes": 3088,
+    "sha256": "4806e3a540eca9bec069e187f26d32b6f8506af50ebe25d4af242061878d057e",
+    "editable": true
+  },
+  {
+    "path": "word/styles.xml",
+    "bytes": 349494,
+    "sha256": "8be8d241902e5e1f384b5b6f451a37ade201a32f6186e781ac8e7b45c4cb066d",
+    "editable": false
+  },
+  {
+    "path": "word/stylesWithEffects.xml",
+    "bytes": 438131,
+    "sha256": "463ae0928cf0d84775dbf8cf18d6c3029f6707c81bf590f6d6dd8757a5e93f15",
+    "editable": false
+  },
+  {
+    "path": "word/settings.xml",
+    "bytes": 2565,
+    "sha256": "86c73de844b13fc27c417004b8fc5a7fdf76224ea4f5bdd0fb3996abedf5c6bb",
+    "editable": true
+  },
+  {
+    "path": "word/webSettings.xml",
+    "bytes": 438,
+    "sha256": "349d36de7434d09f86987ff671d8814964a0588c1e630c06e562cda7e75e9f95",
+    "editable": false
+  },
+  {
+    "path": "word/fontTable.xml",
+    "bytes": 2811,
+    "sha256": "79385fb7f60247507ecaffc292e9ebd52ea0657b8634f629ba6fccc54011d6bb",
+    "editable": false
+  },
+  {
+    "path": "word/theme/theme1.xml",
+    "bytes": 10939,
+    "sha256": "e3a8ab7db9ca7afca56f5f2820a56e8b660016c647773555b060b0a02ac76941",
+    "editable": false
+  },
+  {
+    "path": "customXml/item1.xml",
+    "bytes": 262,
+    "sha256": "a86086ffc5d8e83ebd6c71a55d1d2efaa31b137977f5f3a752366e1023612144",
+    "editable": false
+  },
+  {
+    "path": "customXml/_rels/item1.xml.rels",
+    "bytes": 295,
+    "sha256": "1ca6c9a64edcebe24ee703a54403611b322d96da33371779e742d2d3f7ed7a6c",
+    "editable": false
+  },
+  {
+    "path": "customXml/itemProps1.xml",
+    "bytes": 354,
+    "sha256": "c542307b13ec29a8b546217bb37936ab4822e044b265d2952985ec3d6afed24e",
+    "editable": false
+  },
+  {
+    "path": "word/numbering.xml",
+    "bytes": 5513,
+    "sha256": "70976f19cbcd896e51890859fe6ecb3467a5a7ad0c040160fedc5a1993cb09ce",
+    "editable": false
+  },
+  {
+    "path": "word/footer1.xml",
+    "bytes": 1736,
+    "sha256": "ffb899f257b9c0b537244cd26e799a85c3d73b88f51a5cd5637b21185f29418a",
+    "editable": false
+  },
+  {
+    "path": "word/media/image2.png",
+    "bytes": 189861,
+    "sha256": "eab0ebb5d95795f7230f771052fa1efd31977765caf5929126f6ca7c91765af8",
+    "editable": true
+  },
+  {
+    "path": "word/media/image3.png",
+    "bytes": 191426,
+    "sha256": "3dd9c1ea8ce266fff044a1a707f50f3dbbe65ca519289e5341c2530835098050",
+    "editable": true
+  },
+  {
+    "path": "word/media/image4.png",
+    "bytes": 461137,
+    "sha256": "e0669f1a43d154bd2bc8c8e14efc0334a4bbbb82bf29e8e71bf4dc393cb0278a",
+    "editable": true
+  },
+  {
+    "path": "word/media/image5.png",
+    "bytes": 98611,
+    "sha256": "bd18b9839c87a2f0b6d057c7de095b60aac6e3ef6e45e2e715e67c6a712277ca",
+    "editable": true
+  },
+  {
+    "path": "docProps/thumbnail.jpeg",
+    "bytes": 8324,
+    "sha256": "96367138dc44ce09bf2c8f0f8e49348a1478d2c5c0af69bbc2bbc38b63cdcead",
+    "editable": false
+  },
+  {
+    "path": "word/media/image1.png",
+    "bytes": 94889,
+    "sha256": "cc4e76be48fb5e95d47d067e4e3b94285fb2eb9733d94dbfbcb42688aebd8e1a",
+    "editable": true
+  },
+  {
+    "path": "word/media/image6.png",
+    "bytes": 120069,
+    "sha256": "159a8201a4ddb5198f42592537ba48dfd55acdf753f8dfcb451166d54c5443a7",
+    "editable": true
+  },
+  {
+    "path": "word/media/image7.png",
+    "bytes": 340841,
+    "sha256": "47417d273396b945974ad85be482dd38f8a807790d4aa751cd930757ca9c4aba",
+    "editable": true
+  },
+  {
+    "path": "word/media/image8.png",
+    "bytes": 143013,
+    "sha256": "b6d9b5a4155c876f6c7dfee58a9249e5c2d604884c24872d113a5b66a143cbd8",
+    "editable": true
+  },
+  {
+    "path": "word/media/image9.png",
+    "bytes": 114598,
+    "sha256": "dccc680114ca5cbbf07548f80db3f8c053897324638e2a05afd5404dbc4424a6",
+    "editable": true
+  },
+  {
+    "path": "word/media/image10.png",
+    "bytes": 163057,
+    "sha256": "8abce26dd2376be648320f49cf730ec25bc7783709fc45e4eca6ed8ae1a9bba5",
+    "editable": true
+  },
+  {
+    "path": "word/media/image11.png",
+    "bytes": 243484,
+    "sha256": "f0fca5cf47caa9bb9e794086eab472b1e18669354cc2765b386120f880801107",
+    "editable": true
+  },
+  {
+    "path": "word/media/image12.png",
+    "bytes": 110156,
+    "sha256": "1f251638f203a4c01fae6a8ef71f8b6ab4da721fb6d465c7e9cf92d380313f35",
+    "editable": true
+  },
+  {
+    "path": "word/media/image13.png",
+    "bytes": 307006,
+    "sha256": "1257f75db63f3fb7af9e9abaffe1d2b0cc8f8f2329ba03064f4eee138116b613",
+    "editable": true
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "preserve_only_parts_identical": [
+    "_rels/.rels",
+    "docProps/app.xml",
+    "word/styles.xml",
+    "word/stylesWithEffects.xml",
+    "word/webSettings.xml",
+    "word/fontTable.xml",
+    "word/theme/theme1.xml",
+    "customXml/item1.xml",
+    "customXml/_rels/item1.xml.rels",
+    "customXml/itemProps1.xml",
+    "word/numbering.xml",
+    "word/footer1.xml",
+    "docProps/thumbnail.jpeg"
+  ],
+  "section_geometry_identical": true,
+  "reference_sha256": "c8d2358ef845ee28e4befef4f321bd10663be0e37ee4a36b5ad9cfbe92b89d3d",
+  "new_figures": 4,
+  "tables": 4
+}

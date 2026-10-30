@@ -1,0 +1,30 @@
+{
+  "input_gene_rows": 28395,
+  "input_runs": 17,
+  "full_observations": 16,
+  "retained_genes": 17819,
+  "camera_sets": 1172,
+  "Hallmark_sets": 50,
+  "Reactome_sets": 1122,
+  "primary_CAMERA_significant": 0,
+  "primary_CAMERA_min_global_q": 0.354350102860066,
+  "primary_Hallmark_min_collection_q": 0.368335412049131,
+  "camera_models": 11,
+  "ORA_background": 15055,
+  "ORA_joint_up": 1275,
+  "ORA_joint_down": 745,
+  "ORA_tests": 2266,
+  "ORA_significant_set_direction_tests": 46,
+  "ORA_Hallmark_significant": 9,
+  "ORA_Reactome_significant": 37,
+  "stable_list_genes": 1515,
+  "stable_ORA_significant": 38,
+  "fixed_correlation_significant": 272,
+  "source_and_model_checks_passed": true,
+  "independent_hypergeometric_and_BH_checks_passed": true,
+  "software": {
+    "numpy": "2.4.0",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.8"
+  }
+}

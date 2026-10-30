@@ -1,4 +1,3 @@
-"""Audit raw inputs, validate nine fits, and summarize effect stability without pooling P values."""
 import sys, json, hashlib
 from pathlib import Path
 import numpy as np

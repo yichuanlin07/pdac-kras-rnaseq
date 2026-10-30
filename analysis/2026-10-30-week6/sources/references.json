@@ -1,0 +1,19 @@
+{
+  "references": [
+    "Klomp JA, Klomp JE, Stalnecker CA, Bryant KL, Edwards AC, Drizyte-Miller K, et al. Defining the KRAS- and ERK-dependent transcriptome in KRAS-mutant cancers. Science. 2024 Jun 7;384(6700):eadk0775. doi:10.1126/science.adk0775.",
+    "Lin Y. PDAC KRAS RNA-seq Week 6 pathway analysis [dataset]. 2026 Oct 30. Input source revision 7e3fe15664597474008b63753dd9e4b20efec04a. Analysis archive: Week6_2026-10-30 (sources/input_validation.json; results/).",
+    "Molecular Signatures Database. Human Hallmark and Reactome gene sets, version 2026.2.Hs [Internet]. 2026 Oct [cited 2026 Oct 30]. Available from: https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2026.2.Hs/ . Release notes: https://docs.gsea-msigdb.org/MSigDB/Release_Notes/MSigDB_2026.2.Hs/ .",
+    "Robinson MD, Oshlack A. A scaling normalization method for differential expression analysis of RNA-seq data. Genome Biol. 2010 Mar 2;11(3):R25. doi:10.1186/gb-2010-11-3-r25.",
+    "Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, et al. limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Res. 2015 Apr 20;43(7):e47. doi:10.1093/nar/gkv007.",
+    "Wu D, Smyth GK. Camera: a competitive gene set test accounting for inter-gene correlation. Nucleic Acids Res. 2012 Sep;40(17):e133. doi:10.1093/nar/gks461."
+  ],
+  "citation_sequence": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "accessed": "2026-10-30"
+}

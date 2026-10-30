@@ -1,4 +1,3 @@
-"""Build the English discussion report from verified analysis outputs."""
 import sys,json,re
 from pathlib import Path
 import pandas as pd

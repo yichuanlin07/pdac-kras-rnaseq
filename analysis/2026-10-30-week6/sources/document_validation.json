@@ -1,0 +1,49 @@
+{
+  "docx": "PDAC_KRAS_Week6_2026-10-30_rewritten.docx",
+  "pdf": "PDAC_KRAS_Week6_2026-10-30_rewritten.pdf",
+  "pages": 6,
+  "figures": 4,
+  "tables": 4,
+  "all_rewritten_English_paragraphs_present": true,
+  "Chinese_paragraph_pairs_complete": false,
+  "table_values_preserved": true,
+  "citation_sequence": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "PDF_bookmarks": 0,
+  "PDF_internal_jump_links": 0,
+  "only_document_and_core_package_parts_changed": true,
+  "page_visual_review": "Changed pages inspected at full resolution; all other pages are pixel-identical to the preceding inspected final. All delivered PDF pages match these inspected renders.",
+  "final_PDF_raster_comparison": [
+    {
+      "page": 1,
+      "pixel_identical_to_inspected_render": true
+    },
+    {
+      "page": 2,
+      "pixel_identical_to_inspected_render": true
+    },
+    {
+      "page": 3,
+      "pixel_identical_to_inspected_render": true
+    },
+    {
+      "page": 4,
+      "pixel_identical_to_inspected_render": true
+    },
+    {
+      "page": 5,
+      "pixel_identical_to_inspected_render": true
+    },
+    {
+      "page": 6,
+      "pixel_identical_to_inspected_render": true
+    }
+  ],
+  "author_centred_phrases_removed": true
+}

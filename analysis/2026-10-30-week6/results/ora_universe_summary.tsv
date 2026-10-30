@@ -1,0 +1,9 @@
+list	background	direction	universe	selected
+full_joint	eligible	Up	15055	1275
+full_joint	eligible	Down	15055	745
+full_joint	retained	Up	17819	1275
+full_joint	retained	Down	17819	745
+stable_ge7of8	eligible	Up	15055	977
+stable_ge7of8	eligible	Down	15055	538
+stable_ge7of8	retained	Up	17819	977
+stable_ge7of8	retained	Down	17819	538
