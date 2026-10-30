@@ -18,7 +18,7 @@
   "PDF_bookmarks": 0,
   "PDF_internal_jump_links": 0,
   "only_document_and_core_package_parts_changed": true,
-  "page_visual_review": "Changed pages inspected at full resolution; all other pages are pixel-identical to the preceding inspected final. All delivered PDF pages match these inspected renders.",
+  "page_visual_review": "Changed pages inspected at full resolution. Every other page is pixel-identical to the preceding inspected version. Delivered PDF pages match the inspected renders.",
   "final_PDF_raster_comparison": [
     {
       "page": 1,
@@ -45,5 +45,11 @@
       "pixel_identical_to_inspected_render": true
     }
   ],
-  "author_centred_phrases_removed": true
+  "Next_steps_section_removed": true,
+  "repeated_future_actions_removed_from_summary": true,
+  "main_sections": [
+    "1 Overview",
+    "2 Work completed",
+    "3 Summary"
+  ]
 }

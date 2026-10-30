@@ -177,10 +177,8 @@ para('Hallmark and Reactome gene sets from the Molecular Signatures Database (MS
 para('The primary analysis tested 50 Hallmark and 1,122 Reactome sets containing 15-500 measured genes. Benjamini-Hochberg correction covered all 1,172 tests together. The minimum global q was 0.354, with zero sets at q < 0.05. Fixing the correlation at 0.01 yielded 272 sets at q < 0.05. Appendix C gives the correlation and degrees-of-freedom settings.<cite:2>')
 para('The earlier DESeq2/edgeR joint list contains 2,020 genes: 745 decreases and 1,275 increases, with matching directions between methods. Over-representation analysis (ORA) used a background of 15,055 genes with adjusted P values in both methods. Across 2,266 tests, 46 set-direction combinations met q < 0.05: nine Hallmark and 37 Reactome. E2F targets and the G2M checkpoint had the strongest Hallmark enrichment among decreases.<cite:2>')
 para('Sensitivity analyses comprised eight paired cell-line omissions and two single-library P5 models. The selected E2F, G2M and MYC sets retained their downward competitive direction across all 11 models. ORA of the 1,515-gene stability list also retained E2F and G2M enrichment.<cite:2>')
-para('3 Next steps', 'heading')
-para('Review the shared E2F and G2M contributor genes with the supervisor, confirm the preparation and replicate relationship of the two P5 libraries, and test these expression patterns in independent data.')
-para('4 Summary', 'heading')
-para('E2F targets and the G2M checkpoint are the priorities for follow-up. The next stage is to examine their shared contributor genes and test the expression pattern in independent data.')
+para('3 Summary', 'heading')
+para('E2F targets and the G2M checkpoint show the strongest Hallmark enrichment among downregulated genes in the joint list.')
 para('Appendix A Samples and analysis design', 'heading', page=True)
 meta = pd.read_csv(OUT / 'sources/samples.tsv', sep='\t')
 rows = []

@@ -1,6 +1,6 @@
 # Week 6 pathway analysis
 
-Cell-cycle gene sets are enriched among genes with lower expression after KRAS siRNA treatment. E2F targets and the G2M checkpoint are the priorities for follow-up. The primary CAMERA analysis has a minimum global adjusted P value of 0.354; 46 ORA set-direction combinations meet q < 0.05.
+Cell-cycle gene sets are enriched among genes with lower expression after KRAS siRNA treatment. E2F targets and the G2M checkpoint show the strongest Hallmark enrichment among downregulated genes in the joint list. The primary CAMERA analysis has a minimum global adjusted P value of 0.354; 46 ORA set-direction combinations meet q < 0.05.
 
 The [English PDF](../../reports/Week6_2026-10-30/PDAC_KRAS_Week6_2026-10-30.pdf) and [editable English report](../../reports/Week6_2026-10-30/PDAC_KRAS_Week6_2026-10-30.docx) contain the findings, methods, figures and tables. The prose describes data, methods and results directly.
 

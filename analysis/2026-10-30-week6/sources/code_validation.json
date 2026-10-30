@@ -255,5 +255,6 @@
     "R": "4.5.2",
     "edgeR": "4.8.2",
     "limma": "3.66.0"
-  }
+  },
+  "report_revision": "Next steps section removed; Summary renumbered 3 and repeated future actions removed."
 }
